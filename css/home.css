@@ -1,0 +1,3196 @@
+.hero {
+  position: relative; 
+  background-color: #15151857;
+  background: url("../img/hero-road.jpg") center/cover no-repeat;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 212px;
+  text-align: center;
+  color: #FFFFFF;
+  height: 100vh;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.hero-road {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  bottom: 0;
+}
+  
+.hero-car {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  max-width: 50%; 
+  height: auto;
+}
+
+.hero-field-mobile {
+  display: none;
+}
+
+.hero-content {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.hero-content h1 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 69.44px;
+  margin: 0 0 24px;
+}
+
+.hero-content p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.27px;
+  margin: 0 0 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.stopwatch-block {
+  display: flex;
+  flex-direction: row;
+  bottom: -40%;
+  position: absolute;
+  right: 0%;
+  align-items: center;
+}
+
+.stopwatch-block img {
+  margin-left: 0px;
+  margin-right: 12px;
+  height: 32px;
+  width: 32px;
+}
+
+.stopwatch-block p {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* Car BuyBack section */
+
+.car-buyback {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 130px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.car-buyback-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.car-buyback-image-block {
+  margin-top: 60px;
+}
+
+.car-buyback-content img {
+  position: relative;
+  border-radius: 32px;
+  height: 249px;
+  width: auto;
+  z-index: 1;
+}
+
+.car-buyback-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+}
+
+.car-buyback-content-text-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.car-buyback-info {
+  max-width: 690px;
+}
+
+.car-buyback-content-text-block p {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin-bottom: 80px;
+  color: #E3EAF1;
+}
+
+.car-buyback-mobile {
+  display: none;
+}
+
+/* BuyBack process section */
+
+.buyback-process {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.buyback-process-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.buyback-process-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+}
+
+.buyback-process-steps-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.buyback-process-step-block-1-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buyback-process-step-block-1-row div {
+  max-width: 592px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  background-color: #E3EAF1;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buyback-process-step-block-1-row img {
+  height: 92px;
+  width: auto;
+  margin-right: 48px;
+}
+
+.buyback-process-step-block-1-row p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  text-align: center;
+  color: #000000;
+}
+
+.buyback-process-2-step {
+  position: relative;
+  overflow: hidden;
+}
+
+.buyback-process-logo {
+  position: absolute;
+  top: -20px;
+  right: -28px;
+  margin-right: 0px !important;
+  height: 65px !important;
+}
+
+#buyback-process-logo-step-3 {
+  display: none;
+}
+
+.buyback-process-step-block-2-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buyback-process-step-block-2-row div {
+  max-width: 592px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  background-color: #7AB8FF;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buyback-process-step-block-2-row img {
+  height: 92px;
+  width: auto;
+  margin-left: 48px;
+}
+
+.buyback-process-step-block-2-row p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  text-align: center;
+  color: #000000;
+  margin-left: 12px;
+}
+
+/* Urgent buyout section */
+
+.urgent-buyout {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.urgent-buyout-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.urgent-buyout-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 48px;
+  margin-top: 0px;
+}
+
+.urgent-buyout-advantages-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: 674px;
+}
+
+.urgent-buyout-1-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 110px;
+  height: 490px;
+  border-radius: 32px;
+}
+
+.urgent-buyout-1-block {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 85px;
+  height: 155px;
+  border-radius: 12px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.urgent-buyout-2-image {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  height: 186px;
+  border-radius: 16px;
+}
+
+.urgent-buyout-2-block {
+  position: absolute;
+  bottom: 30px;
+  right: 320px;
+  width: 72px;
+  height: 82px;
+  border-radius: 12px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.urgent-buyout-3-image {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  height: 213px;
+  border-radius: 16px;
+}
+
+.urgent-buyout-3-block {
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  width: 59px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgba(227, 234, 241, 1);
+}
+
+.urgent-buyout-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.urgent-buyout-list-item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.urgent-buyout-list-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.urgent-buyout-list-item p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin-left: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.urgent-buyout-guarantees-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-top: 64px;
+}
+
+.urgent-buyout-list-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* Repurchased cars section */
+
+.repurchased-cars {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.repurchased-cars-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.repurchased-cars-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+  margin-top: 0px;
+}
+
+.repurchased-cars-slider-wrapper {
+  position: relative;
+  display: block;
+}
+
+.repurchased-cars-slider-wrapper-mobile {
+  position: relative;
+  display: none;
+}
+
+.repurchased-cars-slider-block {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-bottom: 80px;
+}
+
+.repurchased-cars-slider-block-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(122, 184, 255, 1);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.repurchased-cars-slider-block-item img {
+  height: 288px;
+  width: 384px;
+  border-radius: 32px;
+}
+
+.repurchased-cars-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.repurchased-cars-image:hover {
+  transform: scale(1.1);
+}
+
+.repurchased-cars-info-block {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.repurchased-cars-info-block p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.repurchased-cars-info-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.repurchased-cars-slider-nav-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.repurchased-cars-slider-nav-line {
+  height: 1px;
+  max-width: 945px;
+  width: 100%;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.repurchased-cars-slider-nav {
+  position: relative;
+  width: 144px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 56px;
+}
+
+.repurchased-cars-slider-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.repurchased-cars-slider-nav img {
+  width: 56px;
+  height: 56px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next:before {
+  content: none;
+}
+
+.slick-prev:before {
+  content: none;
+}
+
+.repurchased-cars-pagination {
+  display: flex;
+  max-width: 95px;
+  width: 100%;
+  height: 27px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.repurchased-cars-page p {
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+.repurchased-cars-page.active p {
+  color: rgba(122, 184, 255, 1);
+}
+
+/* Cities section */
+
+.cities {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cities-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cities-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+  margin-top: 0px;
+}
+
+.cities-info-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.cities-text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.cities-mark {
+  height: 40px;
+  align-self: flex-start;
+}
+
+.cities-info-block p, a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin: 0;
+}
+
+.cities-info-block a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  text-decoration-skip-ink: auto;
+  color: rgba(122, 184, 255, 1);
+  cursor: pointer;
+}
+
+.cities-car {
+  height: 300px;
+  border-radius: 32px;
+}
+
+/* Video section */
+
+.video-section {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  padding-bottom: 60px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.video-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section-content img {
+  height: 683px;
+  width: 460px;
+  border-radius: 32px;
+}
+
+.video-section-1-block {
+  position: absolute;
+  width: 91px;
+  height: 38px;
+  left: 0;
+  top: 40%;
+  background-color: rgba(227, 234, 241, 1);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.video-section-2-block {
+  position: absolute;
+  width: 93px;
+  height: 197px;
+  right: 10%;
+  top: 20%;
+  background-color: rgba(227, 234, 241, 1);
+  border-radius: 12px;
+}
+
+.video-section-3-block {
+  position: absolute;
+  width: 87px;
+  height: 58px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(122, 184, 255, 1);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.video-section-4-block {
+  position: absolute;
+  width: 136px;
+  height: 107px;
+  left: 15%;
+  bottom: 0%;
+  background-color: rgba(122, 184, 255, 1);
+  border-radius: 12px;
+}
+
+.video-section-5-block {
+  display: none;
+}
+
+.video-section-6-block {
+  display: none;
+}
+
+/* Blog articles section */
+
+.blog-articles {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.blog-articles-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.blog-articles-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+}
+
+.blog-articles-slider-wrapper {
+  display: none;
+}
+
+.blog-articles-info-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.blog-articles-info-block-item {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  box-shadow: 
+  0 0 68px rgba(0, 0, 0, 0.25),
+  0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-articles-info-block-item:hover {
+  background-color: #1a191e;
+  box-shadow: 
+  0 0 68px rgba(0, 0, 0, 0.25),
+  0 4px 4px rgba(0, 0, 0, 0.25),
+  0 10px 32px rgba(122, 184, 255, 0.3);
+}
+
+.blog-articles-info-block-item img {
+  height: 280px;
+  border-radius: 24px;
+}
+
+.blog-articles-item-info-block {
+  padding: 0 24px 24px 24px;
+}
+
+.blog-articles-item-date {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: right;
+}
+
+.blog-articles-item-question {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+}
+
+.blog-articles-item-answer {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin-top: 12px;
+}
+
+.blog-articles-read-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blog-articles-read-block p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.8px;
+  color: rgba(122, 184, 255, 1);
+}
+
+.blog-articles-read-block img {
+  height: 64px;
+  width: auto;
+}
+
+/* Common questions section */
+
+.common-questions {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.common-questions-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.common-questions-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+  margin-top: 0px;
+}
+
+.common-questions-info-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.common-questions-info-block img {
+  height: 382px;
+  border-radius: 32px;
+}
+
+.common-questions-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 796px;
+  width: 100%;
+  height: fit-content;
+}
+
+.common-questions-list-item {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom-color: #7AB8FF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.common-questions-question-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.common-questions-question-container p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(227, 234, 241, 1);
+  margin: 0;
+}
+
+.common-questions-question-container img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+}
+
+.common-questions-image {
+  display: block;
+}
+
+.common-questions-answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.common-questions-answer-container p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgba(227, 234, 241, 1);
+  margin: 24px 0 0 0;
+}
+
+.common-questions-logo-block {
+  position: relative; 
+  width: 100%;
+  height: 500px;
+  background-color: #15151857;
+  overflow: hidden;
+}
+
+.common-questions-line {
+  position: absolute;
+  left: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  width: 101vw;
+  height: 46px;
+}
+
+.common-questions-white-line {
+  top: 35%;
+  height: 24px;
+  background-color: #FFFFFF;
+  transform: translate(-50%, -50%) rotate(-9deg);
+}
+
+.common-questions-blue-line {
+  top: 60%;
+  z-index: 1;
+  background-color: #7AB8FF; 
+  transform: translate(-50%, -50%) rotate(8.5deg);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.common-questions-line p {
+  margin: 0;
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 45px;
+  color: rgba(34, 34, 39, 1);
+}
+
+/* Reviews section */
+
+.reviews {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.reviews-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+}
+
+.reviews-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-info-item { 
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom-color: #7AB8FF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.reviews-info-date {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: right;
+  margin: 0;
+}
+
+.reviews-info-review-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.reviews-info-review-block p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 815px;
+  margin: 0;
+}
+
+.review-info-star-block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  width: 151px;
+  text-align: center;
+}
+
+.review-info-star-block p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.review-info-star-block img {
+  height: 22.5px;
+}
+
+.reviews-leave-review {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-leave-review h3 {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.reviews-leave-review-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews-leave-review-inputs-block {
+  max-width: 903px;
+  width: 100%;
+}
+
+.reviews-leave-review-name-input-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.feedback-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.feedback-form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form-group label span {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+}
+
+.feedback-form-group input,
+.feedback-form-group textarea {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.feedback-form-group input[type="text"],
+.feedback-form-group input[type="email"] {
+  width: 440px;
+  height: 49px;
+  box-sizing: border-box;
+}
+
+.feedback-form-group textarea {
+  width: 903px;
+  height: 151px;
+  background: rgba(255, 255, 255, 0.04);
+  box-sizing: border-box;
+}
+
+.feedback-form-group textarea::placeholder, input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.reviews-select-stars-mobile {
+  display: none;
+}
+
+.reviews-select-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: min-content;
+}
+
+.reviews-select-stars img {
+  height: 33px;
+  width: 33px;
+}
+
+/* Editor group section */
+
+.editor-group {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 190px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.editor-group-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.editor-group-content h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+}
+
+.editor-group-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor {
+  padding: 24px 32px 24px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.editor:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0 0 68px rgba(0, 0, 0, 0.24),
+    0 0 48px rgba(0, 0, 0, 0.24);
+}
+
+.editor img {
+  border-radius: 50%;
+  height: 115px;
+}
+
+.editor-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 259px;
+}
+
+.editor-info a {
+  color: rgba(80, 160, 255, 1);
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  text-decoration-skip-ink: auto;
+}
+
+.editor-info p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+.logo-block {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.logo-block img {
+  position: absolute;
+  width: 86px;
+  height: 65px;
+  right: 5px;
+}
+
+/* Send request section */
+
+.send-request {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 110px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.send-request-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  align-items: center;
+}
+
+.send-request-content h1 {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 69.44px;
+  text-align: center;
+  margin-bottom: 64px;
+  color: rgba(122, 184, 255, 1);
+}
+
+.floating-white-block {
+  position: absolute;
+  left: 3%;
+  bottom: 35%;
+  border-radius: 8px;
+  width: 34px;
+  height: 32px;
+  background-color: rgba(227, 234, 241, 1);
+}
+
+.floating-blue-block {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  border-radius: 12px;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+
+.sell-car-form {
+  width: 566px;
+  border-radius: 24px;
+  padding: 40px 32px;
+  background-color: rgba(227, 234, 241, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.sell-car-title {
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.sell-car-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  height: 49px;
+  border-radius: 12px;
+  padding: 18px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+  border: 2px solid #000;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.attach-photo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attach-photo-label {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: rgba(80, 160, 255, 1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-photo-name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 1439px) and (min-width: 1280px) {
+  /* Hero section */
+  .hero-content h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero-content p {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 0 30px;
+  }
+
+  .stopwatch-block {
+    bottom: -50%;
+    right: -5%;
+  }
+
+  .stopwatch-block p {
+    margin: 0;
+  }
+
+  /* Car BuyBack section */
+
+  .car-buyback-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 64px;
+  }
+
+  .car-buyback-content img {
+    height: 230px;
+  }
+
+  .car-buyback-content-text-block p {
+    font-size: 17px;
+    line-height: 23px;
+    margin-top: 0;
+  }
+
+
+  /* BuyBack process section */
+
+  .buyback-process-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .buyback-process-step-block-1-row div {
+    max-width: 500px;
+  }
+
+  .buyback-process-step-block-1-row img {
+    margin-right: 24px;
+  }
+
+  .buyback-process-step-block-2-row div {
+    max-width: 500px;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+
+  .buyback-process-step-block-2-row img {
+    margin-left: 24px;
+  }
+
+  .buyback-process-step-block-2-row p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* Urgent buyout section */
+
+  .urgent-buyout-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .urgent-buyout-1-image {
+    right: 90px;
+    height: 330px;
+  }
+  
+  .urgent-buyout-1-block {
+    width: 65px;
+    height: 115px;
+  }
+
+  .urgent-buyout-2-image {
+    bottom: 0;
+    top: 250px;
+    height: 150px;
+  }
+
+  .urgent-buyout-2-block {
+    bottom: 200px;
+    right: 220px;
+    width: 52px;
+    height: 62px;
+  }
+
+  .urgent-buyout-3-image {
+    bottom: 80px;
+    height: 180px;
+    border-radius: 16px;
+  }
+  
+  .urgent-buyout-3-block {
+    bottom: 37%;
+  }
+
+  .urgent-buyout-list-item p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .urgent-buyout-list-item img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .urgent-buyout-guarantees-block {
+    margin-top: 0;
+  }
+
+  /* Repurchased cars section */
+
+  .repurchased-cars-slider-block-item img {
+    height: 230px;
+    width: 307px;
+  }
+
+  .repurchased-cars-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /* Cities section */
+
+  .cities-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .cities-text-block {
+    margin-bottom: 60px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  
+  .cities-info-block {
+    max-width: 600px;
+  }
+
+  .cities-car {
+    height: 270px;
+  }
+
+  /* Video section */
+
+  .video-section-2-block {
+    width: 83px;
+    height: 177px;
+    right: 7%;
+    top: 20%;
+  }
+
+  .video-section-4-block {
+    width: 126px;
+    height: 97px;
+    left: 10%;
+  }
+
+  /* Blog articles section */
+
+  .blog-articles-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .blog-articles-item-info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 24px 24px 24px;
+  }
+
+  .blog-articles-info-block-item img {
+    height: 240px;
+  }
+
+  .blog-articles-read-block img {
+    height: 64px;
+  }
+
+  .blog-articles-item-answer {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* Common questions section */
+
+  .common-questions-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .common-questions-list {
+    max-width: 700px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .common-questions-info-block img {
+    height: 350px;
+  }
+
+  .common-questions-question-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Reviews section */
+
+  .reviews-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 17px;
+    line-height: 23px;
+    max-width: 730px;
+  }
+
+  .feedback-form {
+    max-width: 800px;
+    gap: 32px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: 380px;
+  }
+
+  .feedback-form-group textarea {
+    width: 803px;
+  }
+
+  /* Editor group section */
+
+  .editor-group-content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .editor-info p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .editor {
+    padding: 16px 24px 16px 16px;
+  }
+
+  .editor img {
+    height: 95px;
+  }
+
+}
+
+@media (max-width: 1278px) and (min-width: 1024px) {
+  /* Hero section */
+  .hero {
+    padding-top: 172px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 25px;
+  }
+
+  .stopwatch-block {
+    bottom: -90%;
+    right: 0;
+  }
+
+  .stopwatch-block img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .stopwatch-block p {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+  }
+
+  /* Car BuyBack section */
+
+  .car-buyback {
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .car-buyback-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .car-buyback-content-text-block p {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+
+  /* BuyBack process section */
+
+  .buyback-process {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .buyback-process-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 48px;
+  }
+
+  .buyback-process-steps-section {
+    gap: 24px;
+  }
+
+  .buyback-process-step-block-1-row div {
+    max-width: 392px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .buyback-process-step-block-1-row img {
+    height: 62px;
+    width: auto;
+    margin-right: 24px;
+  }
+  
+  .buyback-process-step-block-1-row p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .buyback-process-logo {
+    top: -15px;
+    right: -20px;
+    margin-right: 0px !important;
+    height: 55px !important;
+  }
+
+  .buyback-process-step-block-2-row div {
+    max-width: 392px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .buyback-process-step-block-2-row img {
+    height: 62px;
+    margin-left: 24px;
+  }
+  
+  .buyback-process-step-block-2-row p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* Urgent buyout section */
+
+  .urgent-buyout {
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-top: 80px;
+  }
+
+  .urgent-buyout-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+  }
+
+  .urgent-buyout-list-item {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .urgent-buyout-list-item img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .urgent-buyout-list-item p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 12px;
+  }
+
+  .urgent-buyout-images-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .urgent-buyout-1-image {
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    bottom: 65px;
+    right: 100px;
+    height: 361px;
+    width: 206px;
+  }
+  
+  .urgent-buyout-1-block {
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    bottom: 43%;
+    right: 5px;
+    width: 65px;
+    height: 135px;
+  }
+  
+  .urgent-buyout-2-image {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    height: 125px;
+  }
+  
+  .urgent-buyout-2-block {
+    position: absolute;
+    bottom: 30px;
+    right: 320px;
+    width: 52px;
+    height: 62px;
+  }
+  
+  .urgent-buyout-3-image {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    height: 163px;
+  }
+  
+  .urgent-buyout-3-block {
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    width: 59px;
+    height: 30px;
+  }
+
+  /* Repurchased cars section */
+
+  .repurchased-cars {
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .repurchased-cars-slider-block {
+    justify-content: space-evenly;
+  }
+
+  .repurchased-cars-slider-block-item img {
+    height: 230px;
+    width: 307px;
+  }
+
+  .repurchased-cars-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+  }
+
+  .repurchased-cars-info-block {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .repurchased-cars-info-block p {
+    margin-bottom: 10px;
+  }
+
+  .repurchased-cars-info-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Cities section */
+
+  .cities {
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .cities-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .cities-text-block {
+    margin-bottom: 40px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .cities-info-block {
+    max-width: 500px;
+  }
+
+  .cities-car {
+    height: 220px;
+  }
+
+  .cities-mark {
+    height: 25px;
+  }
+
+  /* Video section */
+
+  .video-section {
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .video-section-2-block {
+    width: 63px;
+    height: 157px;
+    right: 3%;
+    top: 15%;
+  }
+
+  .video-section-4-block {
+    width: 106px;
+    height: 77px;
+    left: 5%;
+  }
+
+  /* Blog articles section */
+
+  .blog-articles {
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+  
+
+  .blog-articles-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .blog-articles-info-block {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .blog-articles-item-info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 24px 24px 24px;
+  }
+
+  .blog-articles-info-block-item img {
+    height: 200px;
+  }
+
+  .blog-articles-item-info-block {
+    padding: 0 16px 16px 16px;
+  }
+  
+
+  .blog-articles-item-date {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .blog-articles-item-answer {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+  }
+
+  .blog-articles-item-question {
+    margin-bottom: 10px;
+  }
+
+  .blog-articles-read-block img {
+    height: 36px;
+  }
+
+  .blog-articles-read-block {
+    align-items: center;
+  }
+
+  .blog-articles-read-block p {
+    font-size: 18px;
+  }
+
+  /* Common questions section */
+
+  .common-questions {
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-top: 80px;
+  }
+
+  .common-questions-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .common-questions-info-block {
+    margin-bottom: 60px;
+  }
+
+  .common-questions-list {
+    max-width: 530px;
+  }
+
+  .common-questions-question-container p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .common-questions-info-block img {
+    height: 300px;
+  }
+
+  .common-questions-question-container img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .common-questions-logo-block {
+    height: 400px;
+  }
+
+  .common-questions-line p {
+    margin: 0;
+    font-family: 'Unbounded';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    color: rgba(34, 34, 39, 1);
+  }
+
+  /* Reviews section */
+
+  .reviews {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+  
+
+  .reviews-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 520px;
+  }
+
+  .reviews-info-date {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .feedback-form {
+    max-width: 500px;
+    gap: 24px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .feedback-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+  }
+  
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: 300px;
+  }
+
+  .feedback-form-group textarea {
+    width: 500px;
+  }
+
+  /* Editor group section */
+
+  .editor-group {
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-top: 80px;
+  }
+
+  .editor-group-content h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .editor-info p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .editor-info {
+    margin-left: 15px;
+  }
+
+  .editor {
+    padding: 12px;
+  }
+
+  .editor img {
+    height: 75px;
+  }
+
+  .logo-block {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-block img {
+    width: 66px;
+    height: 45px;
+    right: -5px;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 80px 92px 92px;
+  }
+
+  .send-request-content h1 {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 24px;
+  }
+
+  .sell-car-form {
+    width: 466px;
+    padding: 30px 22px;
+    gap: 24px;
+  }
+
+  .sell-car-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .selected-photo-name {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    position: relative; 
+    background: none;
+    background-color: #15151857;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 106px;
+  }
+
+  .hero-field-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+  }
+
+  .hero-car {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.76px;
+    margin: 0 0 40px;
+  }
+
+  .hero-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 0 0 24px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .stopwatch-block {
+    position: relative;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+  }
+
+  .stopwatch-block p {
+    margin: 0;
+  }
+  
+  .stopwatch-block img {
+    margin-left: 0px;
+    margin-right: 12px;
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Car BuyBack section */
+
+  .car-buyback {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 80px;
+  }
+
+  .car-buyback-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+  
+  .car-buyback-content-text-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .car-buyback-content-text-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-bottom: 64px;
+    margin-top: 0;
+  }
+
+  .car-buyback-image-block {
+    display: none;
+  }
+  
+  .car-buyback-mobile {
+    display: block;
+  }
+
+  .car-buyback-mobile img {
+    height: 192px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* BuyBack process section */
+
+  .buyback-process {
+    padding: 80px 16px 16px;
+  }
+
+  .buyback-process-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+
+  .buyback-process-steps-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .buyback-process-step-block-1-row {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .buyback-process-step-block-1-row div {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buyback-process-step-block-1-row img {
+    height: 38px;
+    width: auto;
+    margin-right: 24px;
+  }
+  
+  .buyback-process-step-block-1-row p {
+    font-size: 16px;
+    line-height: 19.84px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .buyback-process-2-step img {
+    margin-right: 0px;
+  }
+
+  .buyback-process-2-step p {
+    margin-right: 24px;
+  }
+
+  .buyback-process-2-step {
+    padding-right: 16px;
+    flex-direction: row-reverse !important;
+    background-color: #7AB8FF !important;
+  }
+
+  #buyback-process-logo-step-2 {
+    display: none;
+  }
+
+  #buyback-process-logo-step-3 {
+    display: block;
+  }
+
+  .buyback-process-3-step img {
+    margin-right: 0px;
+  }
+
+  .buyback-process-3-step p {
+    margin-right: 24px;
+  }
+
+  .buyback-process-3-step {
+    position: relative;
+    overflow: hidden;
+    padding-right: 16px;
+    flex-direction: row-reverse !important;
+    background-color: #E3EAF1 !important;
+  }
+
+  .buyback-process-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0px !important;
+    height: 25px !important;
+    width: 40px !important;
+  }
+
+  .buyback-process-step-block-2-row {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .buyback-process-step-block-2-row div {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 88px;
+  }
+
+  .buyback-process-step-block-2-row img {
+    height: 38px;
+    width: 80px;
+    margin-left: 0;
+  }
+  
+  .buyback-process-step-block-2-row p {
+    font-size: 16px;
+    line-height: 19.84px;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Urgent buyout section */
+
+  .urgent-buyout {
+    padding: 80px 16px 16px;
+  }
+
+  .urgent-buyout-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+
+  .urgent-buyout-advantages-block {
+    min-height: 799px;
+  }
+
+  .urgent-buyout-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .urgent-buyout-list-item {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .urgent-buyout-list-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .urgent-buyout-list-item p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .urgent-buyout-1-image {
+    z-index: 1;
+    bottom: 90px;
+    top: unset;
+    right: 57px;
+    height: 245px;
+    border-radius: 16px;
+  }
+
+  .urgent-buyout-1-block {
+    top: unset;
+    right: 0;
+    width: 25px;
+    height: 77px;
+    bottom: 260px;
+    border-radius: 6px;
+  }
+
+  .urgent-buyout-2-image {
+    bottom: 50px;
+    right: 5px;
+    height: 93px;
+    border-radius: 8px;
+  }
+
+  .urgent-buyout-2-block {
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    width: 49px;
+    height: 46px;
+    border-radius: 6px;
+  }
+
+  .urgent-buyout-3-image {
+    bottom: 0;
+    left: 0;
+    height: 106px;
+    border-radius: 8px;
+  }
+  
+  .urgent-buyout-3-block {
+    bottom: 144px;
+    left: 35px;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  .urgent-buyout-guarantees-block {
+    margin-top: 80px;
+  }
+
+  .urgent-buyout-guarantees-block h3 {
+    margin-bottom: 20px;
+  }
+
+  .urgent-buyout-list-2 {
+    margin-bottom: 64px;
+  }
+
+  /* Repurchased cars section */
+
+  .repurchased-cars {
+    padding: 80px 16px 16px;
+  }
+
+  .repurchased-cars-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+
+  .repurchased-cars-slider-wrapper {
+    position: relative;
+    display: none;
+  }
+  
+  .repurchased-cars-slider-wrapper-mobile {
+    display: block;
+  }
+
+  .repurchased-cars-slider-block {
+    justify-content: center;
+  }
+  
+
+  .repurchased-cars-slider-block-item img {
+    height: 195px;
+    width: 260px;
+  }
+
+  .repurchased-cars-info-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .repurchased-cars-info-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .repurchased-cars-slider-mobile .slick-slide:not(.slick-center) {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .repurchased-cars-slider-mobile .slick-center {
+    filter: none;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    padding: 0;
+    border: none;
+  }
+
+  .slick-dots li button:before {
+    content: none;
+  }
+
+  .slick-dots li button:focus {
+    outline: none;
+  }
+
+  .slick-dots li.slick-active {
+    width: 60px;
+    background-color: rgba(122, 184, 255, 1);
+  }
+
+  /* Cities section */
+
+  .cities {
+    padding: 80px 16px 16px;
+    padding-bottom: 64px;
+  }
+
+  .cities-content {
+    flex-direction: column;
+  }
+
+  .cities-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+
+  .cities-text-block {
+    margin-bottom: 64px;
+  }
+
+  .cities-mark {
+    height: 32px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .cities-car {
+    display: none;
+  }
+
+  /* Video section */
+
+  .video-section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 170px;
+    padding-bottom: 120px;
+  }
+
+  .video-section-content img {
+    height: 510px;
+    width: 343px;
+    border-radius: 16px;
+  }
+
+  .video-section-1-block {
+    width: 24px;
+    height: 46px;
+    left: 0;
+    top: unset;
+    bottom: 0;
+    border-radius: 6px;
+  }
+
+  .video-section-2-block {
+    width: 49px;
+    height: 46px;
+    right: 5%;
+    top: 7%;
+    border-radius: 6px;
+  }
+
+  .video-section-3-block {
+    width: 25px;
+    height: 77px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .video-section-4-block {
+    width: 15px;
+    height: 15px;
+    left: unset;
+    right: 25%;
+    bottom: 8%;
+    background-color: rgba(227, 234, 241, 1);
+    border-radius: 4px;
+  }
+
+  .video-section-5-block {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    right: 20%;
+    top: 17%;
+    background-color: rgba(122, 184, 255, 1);
+    border-radius: 4px;
+  }
+
+  .video-section-6-block {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 30px;
+    left: 5%;
+    top: 12%;
+    background-color: rgba(122, 184, 255, 1);
+    border-radius: 4px;
+  }
+
+  /* Blog articles section */
+
+  .blog-articles {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .blog-articles-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+
+  .blog-articles-info-block {
+    display: none;
+  }
+
+  .blog-articles-slider-wrapper {
+    position: relative;
+    display: block;
+  }
+
+  .blog-articles-cars-slider {
+    margin-bottom: 80px !important;
+  }
+
+  .blog-articles-cars-slider-block {
+    height: 500px;
+  }
+
+  .blog-articles-info-block-item {
+    width: 260px;
+  }
+
+  .blog-articles-info-block-item img {
+    height: 190px;
+  }
+
+  .blog-articles-item-info-block {
+    padding: 0 16px 16px 16px;
+  }
+
+  .blog-articles-item-date {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .blog-articles-item-question {
+    font-size: 16px;
+    line-height: 19.84px;
+    min-height: 59px;
+  }
+  
+  .blog-articles-item-answer {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .blog-articles-read-block {
+    align-items: center;
+  }
+
+  .blog-articles-read-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .blog-articles-read-block img {
+    height: 32px;
+    width: auto;
+  }
+
+  /* Common questions section */
+
+  .common-questions {
+    padding: 80px 16px 0;
+  }
+
+  .common-questions-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+
+  .common-questions-line {
+    width: 103vw;
+  }
+
+  .common-questions-info-block {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .common-questions-info-block img {
+    height: 233px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+  }
+
+  .common-questions-list {
+    margin-bottom: 32px;
+  }
+
+  .common-questions-list-item {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .common-questions-question-container p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 16px 0 0 0;
+  }
+
+  .common-questions-question-container img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+  }
+
+  .common-questions-image {
+    display: none;
+  }
+
+  .common-questions-logo-block {
+    width: 100%;
+    height: 300px;
+  }
+
+  .common-questions-white-line {
+    top: 35%;
+    height: 24px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%) rotate(-11deg);
+  }
+
+  .common-questions-blue-line {
+    top: 46%;
+    height: fit-content;
+  }
+
+  .common-questions-line p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22.5px;
+  }
+
+  /* Reviews section */
+
+  .reviews {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    text-align: start;
+  }
+
+  .reviews-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 0;
+  }
+
+  .reviews-info-date {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .reviews-info-review-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .review-info-star-block {
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: auto;
+    text-align: left;
+  }
+
+  .review-info-star-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .reviews-leave-review {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-leave-review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reviews-select-stars {
+    display: none;
+  }
+
+  .reviews-select-stars-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    height: min-content;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .reviews-select-stars-mobile img {
+    height: 33px;
+    width: 33px;
+  }
+
+  .feedback-form {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .feedback-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .feedback-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+
+  .feedback-form-group label span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: auto;
+    height: 56px;
+  }
+
+  .feedback-form-group textarea {
+    width: auto;
+    height: 190px;
+  }
+
+  /* Editor group section */
+
+  .editor-group {
+    padding: 80px 16px 0;
+    color: #FFFFFF;
+  }
+
+  .editor-group-content h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+
+  .editor-group-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .editor {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .editor img {
+    border-radius: 50%;
+    height: 64px;
+  }
+
+  .editor-info {
+    margin-left: 16px;
+    gap: 16px;
+  }
+
+  .editor-info a {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .editor-info p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .logo-block {
+    width: 40px;
+    height: 30px;
+    position: relative;
+  }
+
+  .logo-block img {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right: 0;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 80px 16px 64px;
+  }
+
+  .send-request-content h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+    margin-bottom: 32px;
+  }
+
+  .sell-car-form {
+    width: auto;
+    padding: 24px 16px 24px 16px;
+    gap: 16px;
+  }
+
+  .sell-car-title {
+    font-size: 18px;
+    line-height: 22.32px;
+  }
+
+  .sell-car-fields {
+    gap: 16px;
+  }
+
+  .form-group {
+    gap: 12px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="tel"] {
+    height: 56px;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .attach-photo-label {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+
+  .selected-photo-name {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .floating-white-block {
+    position: absolute;
+    left: 3%;
+    bottom: 35%;
+    border-radius: 8px;
+    width: 34px;
+    height: 32px;
+    background-color: rgba(227, 234, 241, 1);
+    display: none;
+  }
+  
+  .floating-blue-block {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(122, 184, 255, 1);
+    display: none;
+  }
+  
+}
