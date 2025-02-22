@@ -5,7 +5,7 @@ async function loadComponent(targetId, componentPath) {
     const html = await response.text();
     document.getElementById(targetId).innerHTML = html;
   } catch (error) {
-    return console.error('Error loading component:', error);
+    console.error('Error loading component:', error);
   }
 }
 
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   citiesArrowText.addEventListener('click', function(e) {
     e.preventDefault();
-    const popup = document.getElementById('popup');
-    popup.classList.toggle('hidden');
+    const menuPopUp = document.getElementById('menu-pop-up');
+    menuPopUp.classList.toggle('hidden');
     arrowIcon.classList.toggle('rotated');
   });
   
-  document.getElementById('popup').addEventListener('click', function(e) {
+  document.getElementById('menu-pop-up').addEventListener('click', function(e) {
     if (e.target === this) {
       this.classList.add('hidden');
       arrowIcon.classList.remove('rotated');

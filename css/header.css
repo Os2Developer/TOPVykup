@@ -142,7 +142,7 @@ nav ul li a:hover {
   display: none;
 }
 
-.popup {
+.menu-pop-up {
   position: fixed;
   top: 0;
   left: 0;
@@ -153,7 +153,7 @@ nav ul li a:hover {
   z-index: 9990;
 }
 
-.popup-content {
+.menu-pop-up-content {
   margin-top: 85px;
   background-color: rgba(20, 20, 22, 0.56);
   backdrop-filter: blur(48px);
@@ -167,7 +167,7 @@ nav ul li a:hover {
   left: 35%;
 }
 
-.popup-content span {
+.menu-pop-up-content span {
   display: block;
   font-family: 'Unbounded';
   font-weight: 400;
@@ -178,7 +178,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.popup-content span:hover {
+.menu-pop-up-content span:hover {
   color: rgba(122, 184, 255, 1);
 }
 
@@ -188,7 +188,7 @@ nav ul li a:hover {
     padding: 8px 52px;
   }
 
-  .popup-content {
+  .menu-pop-up-content {
     left: 34%;
   }
 }
@@ -235,7 +235,7 @@ nav ul li a:hover {
     line-height: 17px;
   }
 
-  .popup-content {
+  .menu-pop-up-content {
     left: 32%;
   }
 }

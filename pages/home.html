@@ -40,8 +40,19 @@
         </div>
 
         <div class="hero-buttons">
-          <global-button text="НАДІСЛАТИ ЗАЯВКУ" bgcolor="#7AB8FF" imgsrc="../img/button-arrow.svg"></global-button>
-          <global-button text="НАПИСАТИ У VIBER" bgcolor="#E3EAF1" imgsrc="../img/button-arrow.svg"></global-button>
+          <global-button
+            text="НАДІСЛАТИ ЗАЯВКУ"
+            bgcolor="#7AB8FF"
+            imgsrc="../img/button-arrow.svg"
+            openPopUp="true"
+          >
+          </global-button>
+          <global-button
+            text="НАПИСАТИ У VIBER"
+            bgcolor="#E3EAF1"
+            imgsrc="../img/button-arrow.svg"
+          >
+          </global-button>
         </div>
       </div>
 
@@ -71,6 +82,7 @@
               text="ЗВ’ЯЗАТИСЯ"
               bgcolor="#7AB8FF"
               imgsrc="../img/button-arrow.svg"
+              openPopUp="true"
             >
             </global-button>
           </div>
@@ -247,6 +259,7 @@
             text="ПРОДАТИ"
             bgcolor="#7AB8FF"
             imgsrc="../img/button-arrow.svg"
+            openPopUp="true"
           >
           </global-button>
         </div>
@@ -678,7 +691,8 @@
               text="ЗВ’ЯЗАТИСЯ"
               bgcolor="#7AB8FF"
               imgsrc="../img/button-arrow.svg"
-            >
+              openPopUp="true"
+            ></global-button>
         </div>
         <img class="cities-car" src="../img/cities-car.jpg" alt="cities-car">
       </div>
@@ -841,6 +855,7 @@
             bgcolor="#7AB8FF"
             imgsrc="../img/button-arrow.svg"
             align-self="center"
+            href="blog.html"
           >
           </global-button>
       </div>
@@ -1041,36 +1056,7 @@
       <div class="floating-blue-block"></div>
       <div class="send-request-content">
         <h1>TOPVykup</h1>
-        <div class="sell-car-form">
-          <h2 class="sell-car-title">ПРОДАЙТЕ АВТОМОБІЛЬ ВЖЕ СЬОГОДНІ</h2>
-          <form class="sell-car-fields">
-            <div class="form-group">
-              <label for="name">Ім’я</label>
-              <input type="text" id="name" placeholder="Введіть Ім’я" />
-            </div>
-            <div class="form-group">
-              <label for="phone" id="phone-label">
-                <span style="color: red;">*</span> Телефон
-              </label>
-              <input type="tel" id="phone" placeholder="Введіть телефон" />
-            </div>
-            <div class="attach-photo-block">
-              <label for="photo" class="attach-photo-label">Прикріпити фотографію</label>
-              <input type="file" id="photo" accept="image/*" style="display: none;" />
-              <p class="selected-photo-name"></p>
-            </div>
-            <div style="align-self: center;">
-              <global-button
-                id="send-application-button"
-                text="НАДІСЛАТИ ЗАЯВКУ"
-                bgcolor="rgba(34, 34, 39, 1)"
-                textcolor="#ffffff"
-                imgsrc="../img/send-request-icon.svg"
-              >
-              </global-button>
-            </div>
-          </form>
-        </div>
+        <application-form></application-form>
       </div>
     </div>
 
@@ -1080,6 +1066,8 @@
 
 
   <script src="../components/GlobalButton.js"></script>
+  <script src="../components/ApplicationForm.js"></script>
+  <script src="../components/ApplicationFormPopUp.js"></script>
   <script src="../js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

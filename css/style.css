@@ -47,6 +47,216 @@ global-button {
   width: fit-content;
 }
 
+/* ApplicationForm */
+
+.sell-car-form {
+  width: 566px;
+  border-radius: 24px;
+  padding: 40px 32px; /* 80px 32px 32px */
+  background-color: rgba(227, 234, 241, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  position: relative;
+}
+
+.sell-car-title {
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.sell-car-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  height: 49px;
+  border-radius: 12px;
+  padding: 18px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+  border: 2px solid #000;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-group input[type="tel"]::placeholder,
+.form-group input[type="text"]::placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form-group input.error-placeholder::placeholder {
+  color: rgba(240, 79, 73, 1);
+}
+
+.attach-photo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attach-photo-label {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: rgba(80, 160, 255, 1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-photo-name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-top: 8px;
+}
+
+#phone-label.error {
+  color: rgba(240, 79, 73, 1);
+}
+
+/* ApplicationFormPopUp */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  z-index: 9997;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.popup.visible {
+  opacity: 1;
+}
+
+.popup-content {
+  position: relative;
+  top: 60px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 32px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  z-index: 9998;
+}
+
+.close-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.thank-you-message h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.thank-you-message .success {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.thank-you-message .follow-up {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.thank-you-message .signature {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  display: block;
+}
+
+:host(application-form-popup) .close-btn {
+  display: block;
+}
+
+:host(application-form-popup) .popup application-form::part(sell-car-form) {
+  padding: 80px 32px 32px;
+}
+
+/* Thank-you state padding */
+:host(application-form-popup) .sell-car-form.thank-you {
+  padding: 163px 32px;
+}
+
+:host(application-form-popup) .pop-up-close-icon {
+  display: none;
+}
+
 @media (max-width: 1278px) and (min-width: 1024px) {
   .global-btn {
     width: 290px;
@@ -58,6 +268,23 @@ global-button {
   .global-btn img {
     margin-left: 12px;
     height: 48px;
+  }
+
+  .sell-car-form {
+    width: 466px;
+    padding: 30px 22px;
+    gap: 24px;
+  }
+
+  .sell-car-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .selected-photo-name {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0;
   }
 }
 
@@ -78,5 +305,75 @@ global-button {
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  .sell-car-form {
+    width: auto;
+    padding: 24px 16px 24px 16px;
+    gap: 16px;
+  }
+
+  .sell-car-title {
+    font-size: 18px;
+    line-height: 22.32px;
+  }
+
+  .sell-car-fields {
+    gap: 16px;
+  }
+
+  .form-group {
+    gap: 12px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="tel"] {
+    height: 56px;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .attach-photo-label {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+
+  .selected-photo-name {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .popup {
+    z-index: 9999;
+  }
+
+  .popup-content {
+    padding: 0 23px;
+  }
+
+  :host(application-form-popup) .popup application-form::part(sell-car-form) {
+    padding: 24px 16px;
+  }
+  :host(application-form-popup) .sell-car-form.thank-you {
+    padding: 105px 32px;
+  }
+
+  :host(application-form-popup) .close-btn {
+    display: none;
+  }
+
+  :host(application-form-popup) .pop-up-close-icon {
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
   }
 }
