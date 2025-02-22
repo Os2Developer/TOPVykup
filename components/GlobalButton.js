@@ -22,7 +22,7 @@ class GlobalButton extends HTMLElement {
     const bgColor = this.getAttribute('bgcolor') || '#7AB8FF';
     const textColor = this.getAttribute('textcolor') || '#000';
     const imgSrc = this.getAttribute('imgsrc') || '../img/button-arrow.svg';
-    const href = this.getAttribute('href') || '#';
+    const href = this.getAttribute('href');
     const width = this.getAttribute('width');
     const customId = this.getAttribute('id');
     const disableAnimation = this.getAttribute('disable-animation') === 'true';
@@ -31,7 +31,7 @@ class GlobalButton extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../css/style.css">
-      <a class="global-btn" href="${href}" style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id="${customId}"` : ''}">
+      <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id="${customId}"` : ''}">
         <span>${text}</span>
         <img src="${imgSrc}" alt="button-arrow">
       </a>
