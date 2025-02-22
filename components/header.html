@@ -5,6 +5,7 @@
     </a>
   </div>
 
+  <!-- mobile phones block -->
   <div class="header-call-mobile">
     <img src="../img/call.svg" alt="Call icon" class="call-icon">
     <div class="phones">
@@ -17,7 +18,7 @@
     <ul>
       <li><a href="home.html">Автовикуп після ДТП</a></li>
       <li>
-        <a class="arrow-block-text" href="#">
+        <a class="cities-arrow-text">
           Міста
           <img src="../img/Arrow down.svg" alt="Arrow down" class="arrow-down">
         </a>
@@ -28,13 +29,22 @@
     </ul>
   </nav>
 
-  <div class="header-phones">
+  <div class="header-mobile">
     <div class="header-lang">
       <img src="../img/globe.svg" alt="Globe icon" class="lang-icon">
-      <span class="lang lang-ukr">УКР</span>
-      <span class="lang lang-rus">РУС</span>
+      <div class="lang-column">
+        <div class="lang-row">
+          <span id="lang-ukr" class="lang lang-ukr">УКР</span>
+          <img id="arrow-down" src="../img/Arrow down.svg" alt="Arrow down" class="arrow-down">
+        </div>
+        <div class="lang-extra" style="display: none;">
+          <span id="lang-rus" class="lang lang-rus">РОС</span>
+        </div>
+      </div>
     </div>
+    
 
+    <!-- desktop phones block -->
     <div class="header-call">
       <img src="../img/call.svg" alt="Call icon" class="call-icon">
       <div class="phones">
@@ -74,7 +84,7 @@
   </div>
 </div>
 
-<div class="mobile-menu-overlay">
+<div class="mobile-menu-pop-up">
   <div class="mobile-menu-header">
     <img
       src="../img/pop-up-back-arrow.svg"

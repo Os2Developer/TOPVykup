@@ -38,7 +38,7 @@ const buttonConfigs = [
   {
     id: "send-application-button",
     large: "392px",
-    medium: "294px",
+    medium: "392px",
     small: "294px",
     extraSmall: "297px",
   },
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextArrow: $('.slick-next'),
       centerMode: true,
       centerPadding: '22px',
-      dots: window.innerWidth <= 768,
+      dots: true,
     });
 
     $('.blog-articles-cars-slider').slick({
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } else {
     $('.repurchased-cars-slider').slick({
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -118,10 +118,30 @@ document.addEventListener('DOMContentLoaded', () => {
       nextArrow: $('.slick-next'),
       centerMode: false, 
       dots: false,
+    }).on('init afterChange', function(event, slick, currentSlide) {
+      // currentSlide might be undefined on initialization, default to 0
+      currentSlide = (typeof currentSlide !== 'undefined') ? currentSlide : 0;
+      const totalSlides = slick.$slides.length;
+      
+      // Update the forward arrow:
+      if (currentSlide === totalSlides - 1) {
+        $('.slick-next img').attr('src', '../img/repurchased-cars-slider-forward-icon-disabled.svg');
+        $('.slick-next').addClass('disabled');
+      } else {
+        $('.slick-next img').attr('src', '../img/repurchased-cars-slider-forward-icon.svg');
+        $('.slick-next').removeClass('disabled');
+      }
+      
+      // Update the back arrow:
+      if (currentSlide === 0) {
+        $('.slick-prev img').attr('src', '../img/repurchased-cars-slider-back-icon-disabled.svg');
+        $('.slick-prev').addClass('disabled');
+      } else {
+        $('.slick-prev img').attr('src', '../img/repurchased-cars-slider-back-icon.svg');
+        $('.slick-prev').removeClass('disabled');
+      }
     });
-  
   }
-
 
   updatePagination(0);
 
@@ -129,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePagination(currentSlide);
   });
 
-  // Optional: click on a pagination number to go to that slide
+  // Click on a pagination number to go to that slide
   $('.repurchased-cars-page').on('click', function(){
     const index = $(this).data('index');
     $('.repurchased-cars-slider').slick('slickGoTo', index);
@@ -137,16 +157,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const questionContainers = document.querySelectorAll('.common-questions-list-item .common-questions-question-container');
 
-  questionContainers.forEach(container => {
+  questionContainers.forEach((container) => {
     container.addEventListener('click', function() {
       // Get the parent list item
       const listItem = this.parentElement;
-      // Find the corresponding answer container within this list item
       const answerContainer = listItem.querySelector('.common-questions-answer-container');
-      // Find the icon image within the question container
       const iconImg = this.querySelector('img');
 
-      // Determine whether we are expanding or collapsing
       if (answerContainer.style.maxHeight && answerContainer.style.maxHeight !== '0px') {
         // Collapse
         $(iconImg).fadeOut(200, function() {
@@ -160,16 +177,16 @@ document.addEventListener('DOMContentLoaded', () => {
           iconImg.src = "../img/common-questions-list-icon-white.svg";
           $(iconImg).fadeIn(200);
         });
-        // Expand
         answerContainer.style.maxHeight = answerContainer.scrollHeight + 'px';
       }
     });
   });
+
+  // Application form
   
   const photoInput = document.getElementById('photo');
   const fileNameElement = document.querySelector('.selected-photo-name');
 
-  // When the user selects a file
   photoInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -177,6 +194,135 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       fileNameElement.textContent = '';
     }
+  });
+
+  // PHONE INPUT MASKING AND VALIDATION
+
+  const phoneInput = document.getElementById("phone");
+  const phoneLabel = document.getElementById("phone-label");
+  const sendButton = document.getElementById("send-application-button");
+
+  function isPhoneValid() {
+    const phoneDigits = phoneInput.value.replace(/[^0-9]/g, "").slice(3);
+    return phoneDigits.length === 9; // Removed !includes("_") since it's redundant
+  }
+
+  function updatePhoneLabel() {
+    if (isPhoneValid()) {
+      phoneLabel.innerHTML = "<span style='color: red;'>*</span>Телефон";
+      phoneLabel.classList.remove("error");
+    } else if (phoneInput.value !== "" && phoneInput.value !== "Введіть телефон" && phoneInput.value !== "+380 (__) ___-__-__") {
+      phoneLabel.innerHTML = "<span style='color: red;'>*</span>Телефон";
+      phoneLabel.classList.remove("error");
+    }
+  }
+
+  // We'll store the entered digits (up to 9 digits).
+  let digits = "";
+
+  // Returns the formatted phone number by replacing underscores with entered digits.
+  function formatPhone() {
+    // Pad the digits string with underscores up to 9 characters
+    const padded = digits.padEnd(9, "_");
+    // Build the formatted string:
+    // First two digits go into the parentheses, then three, then two, then two.
+    return `+380 (${padded.slice(0, 2)}) ${padded.slice(2, 5)}-${padded.slice(5, 7)}-${padded.slice(7, 9)}`;
+  }
+
+  // Update the input value and set the caret position to the first underscore.
+  function updateInput() {
+    phoneInput.value = formatPhone();
+    // Find the position of the first underscore
+    let pos = phoneInput.value.indexOf("_");
+    if (pos === -1) pos = phoneInput.value.length; // no underscore found, all digits entered
+    phoneInput.setSelectionRange(pos, pos);
+    sendButton.setAttribute("bgcolor", "rgba(34, 34, 39, 1)");
+  }
+
+  // On focus, update the input (and place the caret appropriately)
+  phoneInput.addEventListener("focus", () => {
+    updateInput();
+    updatePhoneLabel();
+  });
+
+  // Prevent default behavior for navigation keys
+  phoneInput.addEventListener("keydown", (e) => {
+    // Allow digits (0-9)
+    if (/^\d$/.test(e.key)) {
+      e.preventDefault();
+      if (digits.length < 9) {
+        digits += e.key;
+        updateInput();
+      }
+    } else if (e.key === "Backspace") {
+      e.preventDefault();
+      // Remove the last digit (if any)
+      digits = digits.slice(0, -1);
+      updateInput();
+    } else if (["Tab", "Shift", "Control", "Alt"].includes(e.key)) {
+      // Allow navigation/control keys
+    } else {
+      // Prevent any other key (e.g., arrow keys, letters, etc.)
+      e.preventDefault();
+    }
+  });
+
+  // Button click validation
+  sendButton.addEventListener("click", (e) => {
+    if (!isPhoneValid()) {
+      sendButton.setAttribute("bgcolor", "rgba(190, 190, 190, 1)");
+      phoneLabel.innerHTML = "* Заповніть обов’язкове поле";
+      phoneLabel.classList.add("error");
+    } else {
+      sendButton.setAttribute("bgcolor", "rgba(34, 34, 39, 1)");
+      phoneLabel.innerHTML = "<span style='color: red;'>*</span>Телефон";
+      phoneLabel.classList.remove("error");
+    }
+  });
+
+  // Review stars
+
+  let starsContainer;
+
+  if (window.innerWidth <= 768) {
+    starsContainer = document.querySelector(".reviews-select-stars-mobile");
+  } else {
+    starsContainer = document.querySelector(".reviews-select-stars");
+  }
+
+  const stars = starsContainer.querySelectorAll(".star");
+  let isRated = false;
+  let currentRating = -1; // Tracks the last clicked star index
+  
+  stars.forEach((star, index) => {
+    star.addEventListener("mouseover", () => {
+      if (!isRated) { // Apply hover if no rating
+        for (let i = 0; i <= index; i++) {
+          stars[i].src = "../img/reviews-star.svg";
+        }
+      }
+    });
+  
+    star.addEventListener("mouseout", () => {
+      if (!isRated) { // Reset if no rating
+        stars.forEach((s) => {
+          s.src = "../img/reviews-star-empty.svg";
+        });
+      }
+    });
+  
+    star.addEventListener("click", () => {
+      isRated = true;
+      currentRating = index;
+  
+      // Set clicked star and all previous ones to blue
+      for (let i = 0; i <= index; i++) {
+        stars[i].src = "../img/reviews-star.svg";
+      }
+      for (let i = index + 1; i < stars.length; i++) {
+        stars[i].src = "../img/reviews-star-empty.svg";
+      }
+    });
   });
 
 });

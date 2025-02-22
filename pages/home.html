@@ -34,7 +34,7 @@
           Приймаємо цілі, биті, дорогі, дешеві та після ДТП машини
         </p>
 
-        <div class="stopwatch-block">
+        <div class="stopwatch-block-mobile">
           <img src="../img/stopwatch.svg" alt="stopwatch">
           <p>Працюємо цілодобово</p>
         </div>
@@ -43,6 +43,11 @@
           <global-button text="НАДІСЛАТИ ЗАЯВКУ" bgcolor="#7AB8FF" imgsrc="../img/button-arrow.svg"></global-button>
           <global-button text="НАПИСАТИ У VIBER" bgcolor="#E3EAF1" imgsrc="../img/button-arrow.svg"></global-button>
         </div>
+      </div>
+
+      <div class="stopwatch-block">
+        <img src="../img/stopwatch.svg" alt="stopwatch">
+        <p>Працюємо цілодобово</p>
       </div>
 
     </div>
@@ -501,7 +506,7 @@
             <div class="repurchased-cars-slider-nav-line"></div>
             <div class="repurchased-cars-slider-nav">
               <button type="button" class="slick-prev">
-                <img src="../img/repurchased-cars-slider-back-icon.svg" alt="Back">
+                <img src="../img/repurchased-cars-slider-back-icon-disabled.svg" alt="Back">
               </button>
               <button type="button" class="slick-next">
                 <img src="../img/repurchased-cars-slider-forward-icon.svg" alt="Forward">
@@ -947,11 +952,11 @@
         <div class="reviews-leave-review">
           <h3>ЗАЛИШИТИ ВІДГУК</h3>
           <div class="reviews-select-stars-mobile">
-            <img src="../img/reviews-star.svg" alt="reviews-star-image">
-            <img src="../img/reviews-star.svg" alt="reviews-star-image">
-            <img src="../img/reviews-star.svg" alt="reviews-star-image">
-            <img src="../img/reviews-star.svg" alt="reviews-star-image">
-            <img src="../img/reviews-star.svg" alt="reviews-star-image">
+            <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+            <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+            <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+            <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+            <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
           </div>
           <div class="reviews-leave-review-content">
             <div class="reviews-leave-review-inputs-block">
@@ -987,11 +992,11 @@
               </global-button>
             </div>
             <div class="reviews-select-stars">
-              <img src="../img/reviews-star.svg" alt="reviews-star-image">
-              <img src="../img/reviews-star.svg" alt="reviews-star-image">
-              <img src="../img/reviews-star.svg" alt="reviews-star-image">
-              <img src="../img/reviews-star.svg" alt="reviews-star-image">
-              <img src="../img/reviews-star.svg" alt="reviews-star-image">
+              <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+              <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+              <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+              <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
+              <img src="../img/reviews-star-empty.svg" alt="reviews-star-image" class="star">
             </div>
           </div>
         </div>
@@ -1040,30 +1045,20 @@
           <h2 class="sell-car-title">ПРОДАЙТЕ АВТОМОБІЛЬ ВЖЕ СЬОГОДНІ</h2>
           <form class="sell-car-fields">
             <div class="form-group">
-              <label for="name">
-                Ім’я
-              </label>
+              <label for="name">Ім’я</label>
               <input type="text" id="name" placeholder="Введіть Ім’я" />
             </div>
-        
             <div class="form-group">
-              <label for="phone">
-                <span style="color: red;">*</span>Телефон
+              <label for="phone" id="phone-label">
+                <span style="color: red;">*</span> Телефон
               </label>
               <input type="tel" id="phone" placeholder="Введіть телефон" />
             </div>
-        
             <div class="attach-photo-block">
               <label for="photo" class="attach-photo-label">Прикріпити фотографію</label>
-              <input 
-                type="file" 
-                id="photo" 
-                accept="image/*" 
-                style="display: none;"
-              />
+              <input type="file" id="photo" accept="image/*" style="display: none;" />
               <p class="selected-photo-name"></p>
             </div>
-
             <div style="align-self: center;">
               <global-button
                 id="send-application-button"
@@ -1074,7 +1069,6 @@
               >
               </global-button>
             </div>
-
           </form>
         </div>
       </div>

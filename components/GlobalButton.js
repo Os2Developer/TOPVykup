@@ -1,8 +1,22 @@
 class HeroButton extends HTMLElement {
   constructor() {
     super();
-    // Create a shadow DOM to encapsulate the markup and styles
     this.attachShadow({ mode: 'open' });
+  }
+
+  // Define which attributes to observe
+  static get observedAttributes() {
+    return ['bgcolor']; // Watch for bgcolor changes
+  }
+
+  // Called when an observed attribute changes
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'bgcolor' && oldValue !== newValue) {
+      const wrapper = this.shadowRoot.querySelector('.global-btn');
+      if (wrapper) {
+        wrapper.style.setProperty('--bg-color', newValue); // Update bg color
+      }
+    }
   }
 
   connectedCallback() {

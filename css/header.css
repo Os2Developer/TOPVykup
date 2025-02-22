@@ -51,7 +51,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.arrow-block-text {
+.cities-arrow-text {
   display: flex;
 }
 
@@ -59,9 +59,14 @@ nav ul li a:hover {
   width: 20px;
   height: 20px;
   margin-left: 6px;
+  transition: transform 0.5s ease;
 }
 
-.header-phones {
+.arrow-down.rotated {
+  transform: rotate(180deg);
+}
+
+.header-mobile {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -76,6 +81,10 @@ nav ul li a:hover {
   width: 32px;
   height: 32px;
   margin-right: 4px;
+}
+
+.header-lang:hover {
+  cursor: pointer;
 }
 
 .header-lang .lang {
@@ -125,7 +134,7 @@ nav ul li a:hover {
   color: #BEBEBE;
 }
 
-.mobile-menu-overlay {
+.mobile-menu-pop-up {
   display: none;
 }
 
@@ -167,6 +176,10 @@ nav ul li a:hover {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.popup-content span:hover {
+  color: rgba(122, 184, 255, 1);
 }
 
 
@@ -273,7 +286,7 @@ nav ul li a:hover {
     margin: 0;
   }
 
-  .header-phones {
+  .header-mobile {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -281,7 +294,29 @@ nav ul li a:hover {
   
   .header-lang {
     display: flex;
+    flex-direction: row;
     align-items: center;
+  }
+
+  .lang-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .lang-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lang-extra {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
   }
   
   .header-lang .lang-icon {
@@ -300,6 +335,7 @@ nav ul li a:hover {
   
   .lang-ukr {
     color: #FFFFFF;
+    margin-top: 4px;
   }
   
   .lang-rus {
@@ -321,7 +357,7 @@ nav ul li a:hover {
     border-radius: 3px;
   }
 
-  .mobile-menu-overlay {
+  .mobile-menu-pop-up {
     display: block;
     position: fixed;
     top: 0;
@@ -340,7 +376,7 @@ nav ul li a:hover {
     transition: opacity 0.5s ease;
   }
   
-  .mobile-menu-overlay.open {
+  .mobile-menu-pop-up.open {
     opacity: 1;
     pointer-events: auto;
   }
@@ -369,6 +405,10 @@ nav ul li a:hover {
     line-height: 24.8px;
     color: rgba(227, 234, 241, 1);
     cursor: pointer;
+  }
+
+  .mobile-menu-content span:hover, .mobile-cities-list span:hover {
+    color: rgba(122, 184, 255, 1);
   }
 
   .mobile-cities-list {
