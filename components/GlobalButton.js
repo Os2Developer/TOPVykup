@@ -26,9 +26,9 @@ class GlobalButton extends HTMLElement {
     const width = this.getAttribute('width');
     const customId = this.getAttribute('id');
     const disableAnimation = this.getAttribute('disable-animation') === 'true';
-    const alignSelf = this.getAttribute('align-self');
-    const openPopUp = this.getAttribute('openPopUp') === 'true'; // Default false
-
+    const alignSelf = this.getAttribute('alignSelf');
+    const openPopUp = this.getAttribute('openPopUp') === 'true';
+  
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../css/style.css">
       <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id="${customId}"` : ''}">
@@ -36,11 +36,11 @@ class GlobalButton extends HTMLElement {
         <img src="${imgSrc}" alt="button-arrow">
       </a>
     `;
-
+  
     const wrapper = this.shadowRoot.querySelector('.global-btn');
     if (alignSelf) this.style.alignSelf = alignSelf;
-
-    if (!disableAnimation) {
+  
+    if (!disableAnimation && window.innerWidth > 768) {
       wrapper.addEventListener('mouseenter', () => {
         const btnWidth = wrapper.clientWidth;
         const textWidth = wrapper.querySelector('span').clientWidth;
@@ -51,12 +51,12 @@ class GlobalButton extends HTMLElement {
         const targetX = btnWidth - textWidth - imgWidth - leftOffset - parseFloat(paddingRight);
         wrapper.querySelector('img').style.transform = `translateX(${targetX}px)`;
       });
-
+  
       wrapper.addEventListener('mouseleave', () => {
         wrapper.querySelector('img').style.transform = 'translateX(0)';
       });
     }
-
+  
     if (openPopUp) {
       wrapper.addEventListener('click', () => {
         let popup = document.querySelector('application-form-popup');

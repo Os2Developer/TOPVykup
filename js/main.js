@@ -1,3 +1,5 @@
+import { manageBodyScroll } from '../utils/body-scroll.js';
+
 // Load and Paste HTML component and return a Promise
 async function loadComponent(targetId, componentPath) {
   try {
@@ -10,8 +12,10 @@ async function loadComponent(targetId, componentPath) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  await loadComponent('header', '../components/header.html');
-  await loadComponent('footer', '../components/footer.html');
+  await Promise.all([
+    loadComponent('header', '../components/header.html'),
+    loadComponent('footer', '../components/footer.html')
+  ]);
 
   const toTopButton = document.querySelector('.footer-to-top-button');
   if (toTopButton) {
@@ -21,21 +25,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   const citiesArrowText = document.querySelector('.cities-arrow-text');
-  const arrowIcon = citiesArrowText.querySelector('img');
+  const arrowIcon = citiesArrowText?.querySelector('img');
+  const menuPopUp = document.getElementById('menu-pop-up');
   
-  citiesArrowText.addEventListener('click', function(e) {
-    e.preventDefault();
-    const menuPopUp = document.getElementById('menu-pop-up');
-    menuPopUp.classList.toggle('hidden');
-    arrowIcon.classList.toggle('rotated');
-  });
+  if (citiesArrowText && arrowIcon) {
+    citiesArrowText.addEventListener('click', function(e) {
+      e.preventDefault();
+      const isHidden = menuPopUp.classList.toggle('hidden');
+      arrowIcon.classList.toggle('rotated', !isHidden);
+      manageBodyScroll(menuPopUp, isHidden ? 'enable' : 'disable');
+    });
   
-  document.getElementById('menu-pop-up').addEventListener('click', function(e) {
-    if (e.target === this) {
-      this.classList.add('hidden');
-      arrowIcon.classList.remove('rotated');
-    }
-  });
+    menuPopUp.addEventListener('click', function(e) {
+      if (e.target === menuPopUp) {
+        menuPopUp.classList.add('hidden');
+        arrowIcon.classList.remove('rotated');
+        manageBodyScroll(menuPopUp, 'enable');
+      }
+    });
+  }
 
   // language block
   $('.lang-row').on('click', function() {
@@ -77,20 +85,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     mobileLogoImage.src = "../img/editor-logo.svg";
 
     hamburgerBtn.addEventListener('click', () => {
-      mobileOverlay.classList.add('open');
+      manageBodyScroll(mobileOverlay, 'disable');
     });
-  
+
     backArrow.addEventListener('click', () => {
       if ($('.mobile-cities-list').is(':visible')) {
         $('.mobile-cities-list').fadeOut(300, function() {
           $('.mobile-menu-content').fadeIn(300);
         });
       } else {
-        mobileOverlay.classList.remove('open');
+        manageBodyScroll(mobileOverlay, 'enable');
       }
     });
+
     closeIcon.addEventListener('click', () => {
-      mobileOverlay.classList.remove('open');
+      manageBodyScroll(mobileOverlay, 'enable');
     });
   
     const citiesMenuItem = document.querySelector('.mobile-menu-content .menu-item[data-target="cities"]');

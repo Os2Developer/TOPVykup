@@ -13,7 +13,6 @@ const updateButtonWidths = (configs) => {
   configs.forEach(({ id, widths }) => {
     const btn = document.getElementById(id);
     if (!btn) return;
-
     const width = window.innerWidth >= 1440 ? widths.lg :
                   window.innerWidth >= 1280 ? widths.md :
                   window.innerWidth >= 1024 ? widths.sm : widths.xs;
@@ -111,8 +110,6 @@ const initFAQ = () => {
     });
   });
 };
-
-
 
 // Star Rating
 const initStarRating = () => {

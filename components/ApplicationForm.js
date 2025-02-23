@@ -36,11 +36,11 @@ class ApplicationForm extends HTMLElement {
         </div>
         <div style="align-self: center;">
             <global-button
-            id="send-application-button"
-            text="НАДІСЛАТИ ЗАЯВКУ"
-            bgcolor="rgba(34, 34, 39, 1)"
-            textcolor="#ffffff"
-            imgsrc="../img/send-request-icon.svg"
+              id="send-application-button"
+              text="НАДІСЛАТИ ЗАЯВКУ"
+              bgcolor="rgba(34, 34, 39, 1)"
+              textcolor="#ffffff"
+              imgsrc="../img/send-request-icon.svg"
             ></global-button>
         </div>
         </form>
