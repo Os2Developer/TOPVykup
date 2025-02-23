@@ -34,15 +34,15 @@ class ApplicationForm extends HTMLElement {
             <input type="file" id="photo" accept="image/*" style="display: none;" />
             <p class="selected-photo-name"></p>
         </div>
-        <div style="align-self: center;">
-            <global-button
-              id="send-application-button"
-              text="НАДІСЛАТИ ЗАЯВКУ"
-              bgcolor="rgba(34, 34, 39, 1)"
-              textcolor="#ffffff"
-              imgsrc="../img/send-request-icon.svg"
-            ></global-button>
-        </div>
+          <global-button
+            id="send-application-button"
+            text="НАДІСЛАТИ ЗАЯВКУ"
+            bgcolor="rgba(34, 34, 39, 1)"
+            textcolor="#ffffff"
+            imgsrc="../img/send-request-icon.svg"
+            alignSelf="center"
+          >
+          </global-button>
         </form>
     </div>
     `;

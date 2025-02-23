@@ -1,21 +1,27 @@
 // Button Configurations
 const buttonConfigs = [
-  { id: "car-buyback-connect-button", widths: { lg: "294px", md: "294px", sm: "230px", xs: "216px" } },
-  { id: "urgent-buyout-connect-button", widths: { lg: "259px", md: "259px", sm: "205px", xs: "190px" } },
-  { id: "cities-button", widths: { lg: "294px", md: "294px", sm: "230px", xs: "216px" } },
-  { id: "blog-articles-button", widths: { lg: "203px", md: "203px", sm: "160px", xs: "150px" } },
-  { id: "review-send-button", widths: { lg: "300px", md: "294px", sm: "230px", xs: "223px" } },
-  { id: "send-application-button", widths: { lg: "392px", md: "392px", sm: "294px", xs: "297px" } },
+  { id: "car-buyback-connect-button", widths: { xl: "294px", lg: "294px", md: "220px", sm: "220px", xs: "216px" } },
+  { id: "urgent-buyout-connect-button", widths: { xl: "259px", lg: "259px", md: "195px", sm: "195px", xs: "190px" } },
+  { id: "cities-button", widths: { xl: "294px", lg: "294px", md: "220px", sm: "220px", xs: "216px" } },
+  { id: "blog-articles-button", widths: { xl: "203px", lg: "203px", md: "160px", sm: "160px", xs: "150px" } },
+  { id: "review-send-button", widths: { xl: "300px", lg: "294px", md: "230px", sm: "230px", xs: "223px" } },
+  { id: "send-application-button", widths: { xl: "392px", lg: "392px", md: "300px", sm: "294px", xs: "297px" } },
 ];
 
 // Responsive Button Widths
 const updateButtonWidths = (configs) => {
   configs.forEach(({ id, widths }) => {
-    const btn = document.getElementById(id);
+    let btn;
+    if (id === "send-application-button") {
+      const applicationForm = document.querySelector('application-form');
+      btn = applicationForm?.shadowRoot?.getElementById(id);
+    } else btn = document.getElementById(id);
+
     if (!btn) return;
-    const width = window.innerWidth >= 1440 ? widths.lg :
-                  window.innerWidth >= 1280 ? widths.md :
-                  window.innerWidth >= 1024 ? widths.sm : widths.xs;
+    const width = window.innerWidth >= 1440 ? widths.xl :
+                  window.innerWidth >= 1280 ? widths.lg :
+                  window.innerWidth >= 1024 ? widths.md :
+                  window.innerWidth >= 768 ? widths.sm : widths.xs;
 
     const wrapper = btn.shadowRoot?.querySelector('.global-btn');
     if (wrapper) wrapper.style.setProperty('width', width, 'important');

@@ -31,7 +31,7 @@ class GlobalButton extends HTMLElement {
   
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../css/style.css">
-      <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id="${customId}"` : ''}">
+      <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id=${customId}` : ''}">
         <span>${text}</span>
         <img src="${imgSrc}" alt="button-arrow">
       </a>

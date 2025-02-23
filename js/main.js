@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // all header and pop up mobile related code
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1023) {
     const hamburgerBtn = document.getElementById('hamburger-button');
     const mobileOverlay = document.querySelector('.mobile-menu-pop-up');
     const backArrow = document.querySelector('.pop-up-back-arrow');
