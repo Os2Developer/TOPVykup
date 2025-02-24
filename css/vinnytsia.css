@@ -12,7 +12,7 @@ p { margin: 0; }
 .hero {
   position: relative; 
   background-color: #15151857;
-  background: url("../img/lviv-hero-image.png") no-repeat center center;
+  background: url("../img/vinnytsia-hero-image.png") no-repeat center center;
   background-size: cover;
   padding-left: 110px;
   padding-right: 110px;
@@ -24,7 +24,7 @@ p { margin: 0; }
   border-bottom-left-radius: 32px;
 }
 
-.lviv-hero-mobile {
+.vinnytsia-hero-mobile {
   display: none;
 }
 
@@ -45,7 +45,7 @@ p { margin: 0; }
   width: 100%;
   position: relative;
   max-width: 1216px;
-  z-index: 2; /* Above the overlay */
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -132,48 +132,9 @@ p { margin: 0; }
   color: #FFFFFF;
 }
 
-/* Service point section */
+/* Urgent buyback section */
 
-.service-point {
-  position: relative; 
-  background-color: #15151857;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 150px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.service-point-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  max-width: 1216px;
-}
-
-.service-point-content-text-block {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  border-left: 4px solid rgba(122, 184, 255, 1);
-  margin-bottom: 80px;
-  padding-left: 24px;
-}
-
-.service-point-content-text-block p {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  color: rgba(227, 234, 241, 1);
-}
-
-/* Urgent car section */
-
-.urgent-car-buyout {
+.urgent-buyback {
   position: relative; 
   background-color: #15151857;
   padding: 150px 110px 0px;
@@ -183,7 +144,7 @@ p { margin: 0; }
   display: flex;
 }
 
-.urgent-car-buyout-content {
+.urgent-buyback-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -191,215 +152,126 @@ p { margin: 0; }
   max-width: 1216px;
 }
 
-.urgent-car-buyout-content .h3 {
-  max-width: 950px;
+.urgent-buyback-content-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
 }
 
-.urgent-car-buyout-cards {
-  position: relative;
+.urgent-buyback-content-text-block p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+
+.urgent-buyback-connect-block {
+  align-items: flex-start;
+  min-height: 392px;
+}
+
+.urgent-buyback-white-block {
+  background-color: #E3EAF1;
+  width: 175px;
+  height: 71px;
+  border-radius: 16px;
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  left: 30%;
+  bottom: -8%;
+  z-index: 1;
+}
+
+.urgent-buyback-white-block-mobile { display: none; }
+
+.urgent-buyback-mobile { display: none; }
+
+.urgent-buyback-image-block {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.urgent-buyback-image-block img {
+  height: 392px;
+}
+
+/* How to buyback section */
+
+.how-to-buyback {
+  position: relative; 
+  background-color: #15151857;
+  padding: 220px 0 0;
+  color: #FFFFFF;
   align-items: center;
-  min-height: 435px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.urgent-car-buyout-cards-1-block {
+.how-to-buyback-content {
   display: flex;
-  min-height: 435px;
-  width: 48%;
+  flex-direction: column;
+  width: 100%;
   position: relative;
+  max-width: 1216px;
 }
 
-.urgent-car-buyout-cards-2-block {
+.how-to-buyback-info {
   display: flex;
-  min-height: 435px;
-  width: 48%;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.how-to-buyback-info p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+
+.how-to-buyback-image-steps {
+  display: flex;
+  flex-direction: row;
+  min-height: 538px;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  width: 100%;
+  gap: 32px;
+}
+
+.how-to-buyback-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  height: 538px;
+}
+
+.how-to-buyback-image-mobile {
+  display: none;
 }
 
 .step-card {
-  width: 345px;
+  width: 280px;
   height: 225px;
-  padding: 32px 28px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 24px;
   position: relative;
-}
-
-.step-1, .step-3 {
-  align-self: flex-start;
-  padding: 18px 16px;
-  border-radius: 24px;
-}
-
-.step-2, .step-4 {
-  position: absolute;
-  align-self: flex-end;
-  right: -12%;
-  bottom: 0;
-  z-index: 1;
-  padding: 18px 16px;
-  border-radius: 24px;
-}
-
-.step-4 {
-  border: 2px solid #E3EAF1;
-}
-
-.step-2 div, .step-4 div {
-  background-color: #7AB8FF;
-}
-
-.step-1 div, .step-3 div {
-  background-color: #E3EAF1;
-}
-
-.step-1 {
-  z-index: 1;
-  position: relative;
-}
-
-.step-1::before,
-.step-1::after {
-  position: absolute;
-  content: "";
-}
-
-.step-1::before {
-  width: 72%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  border-left: 2px solid #7AB8FF;
-  border-bottom: 2px solid #7AB8FF;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-}
-
-.step-1::after {
-  width: 100%;
-  height: 40%;
-  right: 0;
-  top: 0;
-  border-top: 2px solid #7AB8FF;
-  border-right: 2px solid #7AB8FF;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-}
-
-.step-1-arrow {
-  border-left: 2px solid #7AB8FF;
-  border-bottom: 2px solid #7AB8FF;
-  width: 10px;
-  height: 10px;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 37%;
-  right: -4px;
-  background-color: unset !important;
-}
-
-.step-2 { z-index: 2; }
-
-.step-2::before,
-.step-2::after {
-  position: absolute;
-  content: "";
-}
-
-.step-2::before {
-  width: 70%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-left: 2px solid #7AB8FF;
-  border-top: 2px solid #7AB8FF;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-}
-
-.step-2::after {
-  width: 100%;
-  height: 42%;
-  left: 0;
-  bottom: 0;
-  border-bottom: 2px solid #7AB8FF;
-  border-right: 2px solid #7AB8FF;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-}
-
-.step-2-arrow {
-  border-right: 2px solid #7AB8FF;
-  border-top: 2px solid #7AB8FF;
-  width: 10px;
-  height: 10px;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: 39%;
-  right: -6px;
-  background-color: unset !important;
-}
-
-.step-3 {
-  z-index: 3;
-  position: relative;
-}
-
-.step-3::before,
-.step-3::after {
-  position: absolute;
-  content: "";
-}
-
-.step-3::before {
-  width: 72%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  border-left: 2px solid #E3EAF1;
-  border-bottom: 2px solid #E3EAF1;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-}
-
-.step-3::after {
-  width: 100%;
-  height: 40%;
-  right: 0;
-  top: 0;
-  border-top: 2px solid #E3EAF1;
-  border-right: 2px solid #E3EAF1;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-}
-
-.step-3-arrow {
-  border-left: 2px solid #E3EAF1;
-  border-bottom: 2px solid #E3EAF1;
-  width: 10px;
-  height: 10px;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 37%;
-  right: -4px;
-  background-color: unset !important;
-}
-
-.step-4 { z-index: 4; }
-
-.step-image {
-  height: 92px;
-}
-
-.step-2 .step-image {
-  height: 97px;
-}
-
-.step-3 .step-image {
-  height: 94px;
+  align-items: center;
 }
 
 .step-card span {
@@ -411,9 +283,30 @@ p { margin: 0; }
   text-align: center;
 }
 
-/* Buyout advantages section */
+.step-1, .step-3 { background-color: #E3EAF1; }
 
-.buyout-advantages {
+.step-2, .step-4 { background-color: #7AB8FF; }
+
+.step-image {
+  height: 92px;
+  width: 207px;
+}
+
+.step-1 .step-image {
+  width: 150px;
+}
+
+.step-2 .step-image {
+  height: 97px;
+}
+
+.step-3 .step-image {
+  height: 94px;
+}
+
+/* Best service section */
+
+.best-service {
   position: relative; 
   background-color: #15151857;
   padding-left: 110px;
@@ -425,7 +318,7 @@ p { margin: 0; }
   display: flex;
 }
 
-.buyout-advantages-content {
+.best-service-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -433,7 +326,7 @@ p { margin: 0; }
   max-width: 1216px;
 }
 
-.buyout-advantages-info-block {
+.best-service-info-block {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -442,18 +335,16 @@ p { margin: 0; }
   z-index: 1;
 }
 
-.buyout-advantages-text-block {
+.best-service-text-block {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   border-left-width: 4px;
   border-left-color: #7AB8FF;
   border-left-style: solid;
   padding-left: 24px;
-  max-width: 64%;
 }
 
-.buyout-advantages-text-block span {
+.best-service-text-block span {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 20px;
@@ -461,70 +352,34 @@ p { margin: 0; }
   color: #E3EAF1;
 }
 
-.buyout-advantages-info-block img {
-  height: 424px;
+.best-service-info-block img {
+  height: 430px;
 }
 
-.buyout-advantages-white-block {
+.best-service-blue-block {
   position: absolute;
-  background-color: #E3EAF1;
-  width: 280px;
-  height: 65px;
-  border-radius: 16px;
-  right: 35%;
-  bottom: -5%;
-}
-
-.buyout-advantages-blue-block {
-  position: absolute;
-  right: 26%;
-  bottom: -19%;
+  left: 40%;
+  bottom: 0%;
   background-color: #7AB8FF;
   width: 70px;
   height: 65px;
   border-radius: 12px;
 }
 
-.buyout-advantages-small-blue-block {
+.best-service-small-block {
   position: absolute;
   left: -5%;
   bottom: -10%;
-  background-color: #7AB8FF;
+  background-color: #E3EAF1;
   width: 34px;
   height: 32px;
   border-radius: 8px;
 }
 
-/* Send request section */
-
-.send-request {
-  position: relative; 
-  background-color: #15151857;
-  padding: 150px 110px 0px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+.best-service-small-block-mobile {
+  display: none;
 }
 
-.send-request-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  max-width: 1216px;
-  align-items: center;
-}
-
-.send-request-content span {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22.32px;
-  color: #E3EAF1;
-  margin-bottom: 64px;
-  text-align: center;
-}
 
 /* Guarantees section */
 
@@ -549,7 +404,6 @@ p { margin: 0; }
 .guarantees-list {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
   width: 100%;
 }
 
@@ -560,10 +414,6 @@ p { margin: 0; }
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 80px;
-}
-
-.guarantees-info-block img {
-  height: 467px;
 }
 
 .guarantees-list-item {
@@ -580,7 +430,6 @@ p { margin: 0; }
 .guarantees-list {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
   width: 100%;
 }
 
@@ -785,6 +634,7 @@ p { margin: 0; }
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 
 .cities-content {
@@ -795,6 +645,28 @@ p { margin: 0; }
   max-width: 1216px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 110px;
+}
+
+.cities-blue-block {
+  position: absolute;
+  background-color: #7AB8FF;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  left: 3%;
+  bottom: 10%;
+}
+
+.cities-small-block {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+  left: 25%;
+  bottom: -3%;
+  z-index: 1;
 }
 
 .cities-info-block {
@@ -928,74 +800,12 @@ p { margin: 0; }
   max-width: 1115px;
 }
 
-/* Sell today section */
-
-.sell-today {
-  position: relative; 
-  background-color: #15151857;
-  padding: 150px 0px 0px 110px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.sell-today-content {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  position: relative;
-  min-height: 714px;
-}
-
-.sell-today-info-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.sell-today-info-block span {
-  font-family: Unbounded;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 27.28px;
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 47px;
-}
-
-.sell-today-image-block {
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-  right: 0;
-}
-
-.sell-today-image-block img {
-  height: 714px;
-  position: absolute;
-  bottom: -15%;
-  right: 0;
-  z-index: 1;
-}
-
-.sell-today-blue-block {
-  background-color: #7AB8FF;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  width: 518px;
-  height: 622px;
-}
-
 /* Reviews section */
 
 .reviews {
   position: relative; 
   background-color: #15151857;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 50px;
+  padding: 150px 110px 0;
   color: #FFFFFF;
   align-items: center;
   justify-content: center;
@@ -1302,7 +1112,7 @@ p { margin: 0; }
   line-height: 24.38px;
   color: #E3EAF1;
 }
-  
+
 @media (max-width: 1439px) and (min-width: 1280px) {
   .h3 {
     font-size: 28px;
@@ -1334,70 +1144,43 @@ p { margin: 0; }
     margin: 0;
   }
 
-  /* Service point section */
+  /* Urgent buyback section */
 
-  .service-point-content-text-block p {
+  .urgent-buyback-content-text-block p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  
+  /* How to buyback section */
+
+  .how-to-buyback-info p {
     font-size: 17px;
     line-height: 23px;
   }
 
-  /* Urgent car section */
-
-  .step-card {
-    width: 305px;
-    height: 205px;
-    padding: 24px 20px;
+  .urgent-buyback-white-block {
+    left: 20%;
   }
 
-  .step-image {
-    height: 82px;
-  }
-  
-  .step-2 .step-image {
-    height: 87px;
-  }
-  
-  .step-3 .step-image {
-    height: 84px;
-  }
-  
+  /* How to buyback section */
 
-  /* Buyout advantages section */
-
-  .buyout-advantages-text-block {
-    gap: 24px;
+  .how-to-buyback-image-steps {
+    min-height: 508px;
   }
 
-  .buyout-advantages-text-block span {
+  .how-to-buyback-image {
+    height: 508px;
+  }
+
+  /* Best service section */
+
+  .best-service-text-block span {
     font-size: 17px;
     line-height: 23px;
   }
 
-  .buyout-advantages-info-block img {
-    height: 300px;
-  }
-
-  .buyout-advantages-white-block {
-    width: 250px;
-    height: 55px;
-    border-radius: 16px;
-    right: 35%;
-    bottom: -15%;
-  }
-
-  .buyout-advantages-blue-block {
-    width: 60px;
-    height: 55px;
-  }
-  
-  .buyout-advantages-small-blue-block {
-    position: absolute;
-    left: -5%;
-    bottom: -10%;
-    background-color: #7AB8FF;
-    width: 34px;
-    height: 32px;
-    border-radius: 8px;
+  .best-service-info-block img {
+    height: 385px;
   }
 
   /* Guarantees section */
@@ -1405,14 +1188,6 @@ p { margin: 0; }
   .guarantees-list-item p {
     font-size: 17px;
     line-height: 23px;
-  }
-
-  .guarantees-list {
-    max-width: 700px;
-  }
-
-  .guarantees-info-block img {
-    height: 370px;
   }
 
   .guarantees-list-item {
@@ -1467,21 +1242,6 @@ p { margin: 0; }
     height: 40px;
   }
 
-  /* Sell today section */
-
-  .sell-today-content {
-    min-height: 614px;
-  }
-
-  .sell-today-content img {
-    height: 614px;
-  }
-
-  .sell-today-blue-block {
-    width: 450px;
-    height: 562px;
-  }
-
   /* Reviews section */
 
   .reviews-info-review-block p {
@@ -1505,7 +1265,7 @@ p { margin: 0; }
   .feedback-form-group textarea {
     width: 803px;
   }
-  
+
   /* Buyback info section */
 
   .buyback-info-text-block span {
@@ -1559,91 +1319,139 @@ p { margin: 0; }
     margin: 0;
   }
 
-  /* Service point section */
+  /* Urgent buyback section */
 
-  .service-point {
+  .urgent-buyback {
     padding: 80px 92px 0;
   }
 
-  .service-point-content-text-block {
+  .urgent-buyback-content-text-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  /* How to buyback section */
+
+  .urgent-buyback-content-text-block {
+    display: flex;
+    flex-direction: column;
     gap: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
-  .service-point-content-text-block p {
+  .urgent-buyback-connect-block {
+    align-items: flex-start;
+    min-height: 300px;
+  }
+
+  .urgent-buyback-white-block {
+    width: 135px;
+    height: 51px;
+    left: 20%;
+  }
+
+  .urgent-buyback-white-block img {
+    width: 66px;
+    height: 45px;
+  }
+
+  .urgent-buyback-image-block img {
+    height: 300px;
+  }
+
+  /* How to buyback section */
+
+  .how-to-buyback {
+    padding: 160px 0 0;
+  }
+  
+  .how-to-buyback-content {
+    padding: 0px 92px;
+  }
+
+  .how-to-buyback-info {
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .how-to-buyback-info p {
     font-size: 16px;
     line-height: 19px;
   }
 
-  /* Urgent car section */
-
-  .urgent-car-buyout {
-    padding: 80px 92px 0;
-  }
-
-  .step-card {
-    width: 285px;
-    height: 185px;
-    padding: 16px;
-    justify-content: space-around;
-  }
-
-  .step-image {
-    height: 72px;
-  }
-  
-  .step-2 .step-image {
-    height: 77px;
-  }
-  
-  .step-3 .step-image {
-    height: 74px;
-  }
-
-  /* Buyout advantages section */
-
-  .buyout-advantages {
-    padding: 80px 92px 0;
-  }
-
-  .buyout-advantages-text-block {
+  .how-to-buyback-image-steps {
+    min-height: 405px;
+    width: 100%;
     gap: 16px;
   }
 
-  .buyout-advantages-text-block span {
+  .how-to-buyback-image {
+    height: 405px;
+  }
+
+  .step-card {
+    width: 215px;
+    height: 190px;
+    padding: 16px 8px;
+  }
+  
+  .step-card span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .step-image {
+    height: 62px;
+    width: 157px;
+  }
+  
+  .step-1 .step-image {
+    width: 110px;
+  }
+  
+  .step-2 .step-image {
+    height: 67px;
+  }
+  
+  .step-3 .step-image {
+    height: 64px;
+  }
+
+  /* Best service section */
+
+  .best-service {
+    padding: 80px 92px 0;
+  }
+
+  .best-service-text-info {
+    max-width: 540px;
+  }
+
+  .best-service-text-block span {
     font-size: 16px;
     line-height: 19px;
   }
 
-  .buyout-advantages-info-block img {
-    height: 260px;
+  .best-service-info-block img {
+    height: 280px;
   }
 
-  .buyout-advantages-white-block {
-    width: 200px;
-    height: 45px;
-    bottom: -20%;
-  }
-
-  .buyout-advantages-blue-block {
+  .best-service-blue-block {
+    left: 40%;
+    bottom: -10%;
     width: 50px;
     height: 45px;
-    right: 23%;
-    bottom: -12%;
+    border-radius: 6px;
   }
   
-  .buyout-advantages-small-blue-block {
+  .best-service-small-block {
+    position: absolute;
+    left: -5%;
     bottom: -15%;
-  }
-
-  /* Send request section */
-
-  .send-request {
-    padding: 150px 92px 0;
-  }
-
-  .send-request-content span {
-    margin-bottom: 32px;
+    background-color: #E3EAF1;
+    width: 24px;
+    height: 22px;
+    border-radius: 4px;
   }
 
   /* Guarantees section */
@@ -1662,21 +1470,13 @@ p { margin: 0; }
     margin-bottom: 40px;
   }
 
-  .guarantees-info-block img {
-    height: 337px;
-  }
-
-  .guarantees-list {
-    max-width: 500px;
-  }
-
   .guarantees-list-item span {
     font-size: 16px;
     line-height: 22px;
   }
   
   .guarantees-list-item p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
   }
 
@@ -1759,35 +1559,6 @@ p { margin: 0; }
   .common-questions-question-container img {
     width: 30px;
     height: 30px;
-  }
-
-  /* Sell today section */
-
-  .sell-today {
-    padding: 80px 0 110px;
-  }
-
-  .sell-today-content {
-    min-height: 514px;
-  }
-
-  .sell-today-content img {
-    height: 514px;
-  }
-
-  .sell-today-info-block {
-    padding-left: 92px;
-  }
-
-  .sell-today-info-block span {
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 47px;
-  }
-
-  .sell-today-blue-block {
-    width: 370px;
-    height: 562px;
   }
 
   /* Reviews section */
@@ -1896,7 +1667,7 @@ p { margin: 0; }
     display: none;
   }
 
-  .lviv-hero-mobile {
+  .vinnytsia-hero-mobile {
     display: block;
     position: absolute;
     bottom: 0;
@@ -1969,47 +1740,133 @@ p { margin: 0; }
     width: 22px;
   }
 
-  /* Service point section */
+  /* Urgent buyback section */
 
-  .service-point {
-    padding: 60px 32px 0;
+  .urgent-buyback {
+    position: relative; 
+    background-color: #15151857;
+    padding: 60px 32px 0px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
-  .service-point-content-text-block {
-    gap: 16px;
+  .urgent-buyback-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    max-width: 1216px;
+  }
+
+  .urgent-buyback-content-text-block {
     margin-bottom: 64px;
   }
 
-  .service-point-content-text-block p {
+  .urgent-buyback-content-text-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .urgent-buyback-connect-block {
+    min-height: fit-content;
+  }
+
+  .urgent-buyback-image-block {
+    display: none;
+  }
+
+  .urgent-buyback-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .urgent-buyback-mobile-image-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .urgent-buyback-mobile-image-block img{
+    height: 280px !important;
+  }
+
+  .urgent-buyback-white-block {
+    display: none;
+  }
+
+  .urgent-buyback-white-block-mobile {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    width: 103px;
+    height: 41px;
+    border-radius: 16px;
+    background-color: #E3EAF1;
+    right: 5%;
+  }
+
+  .urgent-buyback-white-block-mobile img {
+    width: 54px;
+    height: 41px;
+  }
+
+  /* How to buyback section */
+
+  .how-to-buyback {
+    padding: 50px 0 0;
+  }
+
+  .how-to-buyback-content {
+    padding: 0 32px;
+  }
+
+  .how-to-buyback-info {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+  
+  .how-to-buyback-info p {
     font-size: 16px;
     line-height: 19.5px;
   }
 
-  /* Urgent car section */
-
-  .urgent-car-buyout {
-    padding: 60px 32px 0;
-  }
-
-  .urgent-car-buyout-cards {
-    flex-direction: column;
+  .how-to-buyback-image-steps {
+    flex-direction: row;
     gap: 16px;
-  }
-
-  .urgent-car-buyout-cards-1-block, .urgent-car-buyout-cards-2-block {
-    display: flex;
+    padding: 200px 16px 0;
     min-height: auto;
-    width: 100%;
-    position: relative;
-    gap: 16px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .how-to-buyback-image {
+    display: none;
+  }
+
+  .how-to-buyback-image-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 313px;
+    width: 100vw;
+    object-fit: cover;
   }
 
   .step-card {
-    width: 285px;
-    height: 185px;
+    width: 48%;
+    height: 88px;
     padding: 16px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    border-radius: 16px;
+    position: relative;
+    align-items: center;
   }
   
   .step-card span {
@@ -2017,89 +1874,82 @@ p { margin: 0; }
     line-height: 19.84px;
   }
 
-  .step-2 {
-    align-self: flex-start;
-    right: unset;
-    position: relative;
-  }
-  
-  .step-4 {
-    align-self: flex-start;
-    right: unset;
-    position: relative;
-  }
+  .step-1, .step-3 { flex-direction: row-reverse; }
 
   .step-image {
-    height: 52px;
+    height: 38px;
+    width: 80px;
+  }
+  
+  .step-1 .step-image {
+    width: 64px;
   }
   
   .step-2 .step-image {
-    height: 57px;
+    height: 38px;
   }
   
   .step-3 .step-image {
-    height: 54px;
+    height: 38px;
   }
 
-  /* Buyout advantages section */
+  /* Best service section */
 
-  .buyout-advantages {
-    padding: 60px 32px;
+  .best-service {
+    padding: 80px 16px 64px;
   }
 
-  .buyout-advantages-info-block {
+  .best-service-info-block {
+    display: flex;
     flex-direction: column;
-  }
-
-  .buyout-advantages-info-block img {
-    display: none;
-  }
-
-  .buyout-advantages-text-block {
-    gap: 16px;
-    padding-left: 16px;
-    max-width: 100%;
     width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
   }
 
-  .buyout-advantages-text-block span {
+  .best-service-text-block {
+    display: flex;
+    flex-direction: column;
+    border-left-width: 4px;
+    border-left-color: #7AB8FF;
+    border-left-style: solid;
+    padding-left: 24px;
+  }
+
+  .best-service-text-block span {
     font-size: 16px;
     line-height: 19.5px;
   }
-
-  .buyout-advantages-white-block {
-    position: absolute;
-    background-color: #E3EAF1;
-    width: 15px;
-    height: 15px;
-    border-radius: 4px;
-    left: 0%;
-    bottom: -10%;
+  
+  .best-service-info-block img {
+    display: none;
   }
   
-  .buyout-advantages-blue-block {
-    right: 0;
-    bottom: -9%;
-    width: 60px;
-    height: 30px;
-    border-radius: 4px;
+  .best-service-blue-block {
+    left: unset;
+    right: 2%;
+    bottom: -15%;
+    background-color: #7AB8FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
   }
   
-  .buyout-advantages-small-blue-block {
+  .best-service-small-block {
     display: none;
   }
 
-  /* Send request section */
-
-  .send-request {
-    padding: 60px 32px 0px;
-  }
-
-  .send-request-content span {
-    font-size: 16px;
-    line-height: 19.84px;
-    margin-bottom: 32px;
-    text-align: left;
+  .best-service-small-block-mobile {
+    display: flex;
+    position: absolute;
+    right: 4%;
+    bottom: -12%;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #E3EAF1;
+    z-index: 1;
   }
 
   /* Guarantees section */
@@ -2115,14 +1965,9 @@ p { margin: 0; }
     margin-bottom: 64px;
   }
 
-  .guarantees-info-block img {
-    display: none;
-  }
-
   .guarantees-list {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
     width: 100%;
     gap: 24px;
   }
@@ -2145,7 +1990,7 @@ p { margin: 0; }
     font-size: 16px;
     line-height: 19.5px;
   }
-  
+
   /* Repurchased cars section */
 
   .repurchased-cars {
@@ -2232,6 +2077,7 @@ p { margin: 0; }
 
   .cities-content {
     flex-direction: column;
+    margin-bottom: 48px;
   }
 
   .cities-text-block {
@@ -2253,12 +2099,24 @@ p { margin: 0; }
 
   .car-buyback-mobile {
     display: block;
+    position: relative;
   }
 
   .car-buyback-mobile img {
     min-height: 192px;
     width: 100%;
     object-fit: cover;
+  }
+
+  .cities-blue-block {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+  }
+
+  .cities-small-block {
+    bottom: 5%;
+    left: 20%;
   }
 
   /* Common questions section */
@@ -2305,57 +2163,6 @@ p { margin: 0; }
     width: 40px;
     height: 40px;
     transition: transform 0.5s ease;
-  }
-
-  /* Sell today section */
-
-  .sell-today {
-    position: relative; 
-    background-color: #15151857;
-    padding: 64px 16px;
-    color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-
-  .sell-today-content {
-    flex-direction: column-reverse;
-    min-height: 303px;
-  }
-
-  .sell-today-info-block span {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22.32px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .sell-today-image-block {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    right: unset;
-    margin-bottom: 104px;
-    justify-content: flex-end;
-    min-height: 403px;
-  }
-  
-  .sell-today-image-block img {
-    height: 403px;
-    position: absolute;
-    bottom: -15%;
-    right: -5%;
-    z-index: 1;
-  }
-
-  .sell-today-blue-block {
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 290px;
-    height: 403px;
-    margin-right: -5%;
   }
 
   /* Reviews section */
@@ -2551,7 +2358,7 @@ p { margin: 0; }
     display: none;
   }
 
-  .lviv-hero-mobile {
+  .vinnytsia-hero-mobile {
     display: block;
     position: absolute;
     bottom: 0;
@@ -2624,168 +2431,216 @@ p { margin: 0; }
     width: 22px;
   }
 
-  /* Service point section */
+  /* Urgent buyback section */
 
-  .service-point {
-    padding: 80px 16px 0;
+  .urgent-buyback {
+    position: relative; 
+    background-color: #15151857;
+    padding: 80px 16px 0px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
-  .service-point-content-text-block {
-    gap: 16px;
+  .urgent-buyback-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    max-width: 1216px;
+  }
+
+  .urgent-buyback-content-text-block {
     margin-bottom: 64px;
   }
 
+  .urgent-buyback-content-text-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
 
-  .service-point-content-text-block p {
+  .urgent-buyback-connect-block {
+    min-height: fit-content;
+  }
+
+  .urgent-buyback-image-block {
+    display: none;
+  }
+
+  .urgent-buyback-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .urgent-buyback-mobile-image-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 64px;
+  }
+
+  .urgent-buyback-white-block {
+    display: none;
+  }
+
+  .urgent-buyback-white-block-mobile {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    width: 103px;
+    height: 41px;
+    border-radius: 16px;
+    background-color: #E3EAF1;
+    right: 2%;
+  }
+
+  .urgent-buyback-white-block-mobile img {
+    width: 54px;
+    height: 41px;
+  }
+
+  /* How to buyback section */
+
+  .how-to-buyback {
+    padding: 10px 0 0;
+  }
+
+  .how-to-buyback-content {
+    padding: 0 16px;
+  }
+
+  .how-to-buyback-info {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+  
+  .how-to-buyback-info p {
     font-size: 16px;
     line-height: 19.5px;
   }
 
-  /* Urgent car section */
-
-  .urgent-car-buyout {
-    padding: 80px 16px 0;
-  }
-
-  .urgent-car-buyout-cards {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto;
-    gap: 16px;
-  }
-
-  .urgent-car-buyout-cards-1-block, .urgent-car-buyout-cards-2-block {
-    display: flex;
-    min-height: auto;
-    width: 100%;
-    position: relative;
+  .how-to-buyback-image-steps {
     flex-direction: column;
     gap: 16px;
+    padding: 170px 16px 0;
+  }
+
+  .how-to-buyback-image {
+    display: none;
+  }
+
+  .how-to-buyback-image-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 313px;
+    width: 100vw;
+    object-fit: cover;
   }
 
   .step-card {
-    min-width: 319px;
-    width: auto;
-    min-height: auto;
+    width: 100%;
     height: 88px;
     padding: 24px 16px;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-radius: 16px;
+    position: relative;
+    align-items: center;
   }
-
+  
   .step-card span {
     font-size: 16px;
     line-height: 19.84px;
   }
 
-  .step-1, .step-3 {
-    align-self: center;
-    padding: 12px;
-    border-radius: 16px;
-    width: 100%;
-  }
-  
-  .step-2, .step-4 {
-    position: relative;
-    align-self: center;
-    right: unset;
-    bottom: unset;
-    z-index: 1;
-    padding: 12px;
-    border-radius: 16px;
-    width: 100%;
-  }
+  .step-1, .step-3 { flex-direction: row-reverse; }
 
   .step-image {
-    height: 38px !important;
+    height: 38px;
+    width: 80px;
+  }
+  
+  .step-1 .step-image {
+    width: 64px;
+  }
+  
+  .step-2 .step-image {
+    height: 38px;
+  }
+  
+  .step-3 .step-image {
+    height: 38px;
   }
 
-  .step-2::before { width: 72%; }
+  /* Best service section */
 
-  .step-1-arrow {
-    top: 34%;
-    right: -4px;
+  .best-service {
+    padding: 80px 16px 64px;
   }
 
-  .step-2-arrow {
-    bottom: 36%;
-    right: -6px;
-  }
-
-  .step-3-arrow {
-    top: 34%;
-    right: -4px;
-  }
-
-  /* Buyout advantages section */
-
-  .buyout-advantages {
-    padding: 80px 16px;
-  }
-
-  .buyout-advantages-info-block {
+  .best-service-info-block {
+    display: flex;
     flex-direction: column;
-  }
-
-  .buyout-advantages-info-block img {
-    display: none;
-  }
-
-  .buyout-advantages-text-block {
-    gap: 16px;
-    padding-left: 16px;
-    max-width: 100%;
     width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
   }
 
-  .buyout-advantages-text-block span {
+  .best-service-text-block {
+    display: flex;
+    flex-direction: column;
+    border-left-width: 4px;
+    border-left-color: #7AB8FF;
+    border-left-style: solid;
+    padding-left: 24px;
+  }
+
+  .best-service-text-block span {
     font-size: 16px;
     line-height: 19.5px;
   }
-
-  .buyout-advantages-white-block {
-    position: absolute;
-    background-color: #E3EAF1;
-    width: 15px;
-    height: 15px;
-    border-radius: 4px;
-    left: 0%;
-    bottom: -10%;
+  
+  .best-service-info-block img {
+    display: none;
   }
   
-  .buyout-advantages-blue-block {
-    right: 0;
-    bottom: -9%;
-    width: 60px;
-    height: 30px;
-    border-radius: 4px;
+  .best-service-blue-block {
+    left: unset;
+    right: 2%;
+    bottom: -15%;
+    background-color: #7AB8FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
   }
   
-  .buyout-advantages-small-blue-block {
+  .best-service-small-block {
     display: none;
   }
 
-  /* Send request section */
-
-  .send-request {
-    padding: 80px 16px 0px;
-  }
-
-  .send-request-content span {
-    font-size: 16px;
-    line-height: 19.84px;
-    margin-bottom: 32px;
-    text-align: left;
+  .best-service-small-block-mobile {
+    display: flex;
+    position: absolute;
+    right: 4%;
+    bottom: -10%;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #E3EAF1;
+    z-index: 1;
   }
 
   /* Guarantees section */
 
   .guarantees {
-    padding: 80px 16px 64px;
+    padding: 80px 16px 0;
   }
 
   .guarantees-info-block {
@@ -2795,14 +2650,9 @@ p { margin: 0; }
     margin-bottom: 64px;
   }
 
-  .guarantees-info-block img {
-    display: none;
-  }
-
   .guarantees-list {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
     width: 100%;
     gap: 24px;
   }
@@ -2825,7 +2675,7 @@ p { margin: 0; }
     font-size: 16px;
     line-height: 19.5px;
   }
-  
+
   /* Repurchased cars section */
 
   .repurchased-cars {
@@ -2896,12 +2746,13 @@ p { margin: 0; }
   /* Cities section */
 
   .cities {
-    padding: 80px 16px 16px;
+    padding: 80px 16px;
     padding-bottom: 64px;
   }
 
   .cities-content {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .cities-text-block {
@@ -2923,6 +2774,7 @@ p { margin: 0; }
 
   .car-buyback-mobile {
     display: block;
+    position: relative;
   }
 
   .car-buyback-mobile img {
@@ -2930,6 +2782,23 @@ p { margin: 0; }
     height: auto;
     width: 100%;
     object-fit: cover;
+  }
+
+  .cities-blue-block {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    right: 5%;
+    left: unset;
+    bottom: 5%;
+  }
+
+  .cities-small-block {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    bottom: 4%;
+    left: 2%;
   }
 
   /* Common questions section */
@@ -2972,57 +2841,6 @@ p { margin: 0; }
     width: 40px;
     height: 40px;
     transition: transform 0.5s ease;
-  }
-
-  /* Sell today section */
-
-  .sell-today {
-    position: relative; 
-    background-color: #15151857;
-    padding: 64px 16px 0px;
-    color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-
-  .sell-today-content {
-    flex-direction: column-reverse;
-    min-height: 303px;
-  }
-
-  .sell-today-info-block span {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22.32px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .sell-today-image-block {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    right: unset;
-    margin-bottom: 104px;
-    justify-content: flex-end;
-    min-height: 303px;
-  }
-  
-  .sell-today-image-block img {
-    height: 303px;
-    position: absolute;
-    bottom: -15%;
-    right: -5%;
-    z-index: 1;
-  }
-
-  .sell-today-blue-block {
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 260px;
-    height: 263px;
-    margin-right: -5%;
   }
 
   /* Reviews section */
@@ -3114,7 +2932,6 @@ p { margin: 0; }
     gap: 8px;
   }
   
-
   .feedback-form-group label span {
     font-size: 16px;
     line-height: 19.5px;
