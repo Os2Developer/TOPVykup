@@ -39,13 +39,13 @@ const initSliders = () => {
       const prevBtn = document.querySelector('.slick-prev');
 
       nextImg.src = currentSlide === totalSlides - 1 
-        ? '../img/repurchased-cars-slider-forward-icon-disabled.svg' 
-        : '../img/repurchased-cars-slider-forward-icon.svg';
+        ? '../img/slider-forward-icon-disabled.svg' 
+        : '../img/slider-forward-icon.svg';
       nextBtn.classList.toggle('disabled', currentSlide === totalSlides - 1);
 
       prevImg.src = currentSlide === 0 
-        ? '../img/repurchased-cars-slider-back-icon-disabled.svg' 
-        : '../img/repurchased-cars-slider-back-icon.svg';
+        ? '../img/slider-back-icon-disabled.svg' 
+        : '../img/slider-back-icon.svg';
       prevBtn.classList.toggle('disabled', currentSlide === 0);
 
       updatePagination(currentSlide);

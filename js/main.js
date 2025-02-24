@@ -23,6 +23,8 @@ const buttonConfigs = [
   // LVIV
   { id: "service-point-button", widths: { xl: "291px", lg: "291px", md: "291px", sm: "230px", xs: "216px" } },
   { id: "sell-today-button", widths: { xl: "394px", lg: "394px", md: "394px", sm: "294px", xs: "297px" } },
+  // BLOG
+  { id: "sell-today-button", widths: { xl: "290px", lg: "290px", md: "290px", sm: "290px", xs: "290px" } },
 ];
 
 // Responsive Button Widths

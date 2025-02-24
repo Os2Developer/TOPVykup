@@ -1,15 +1,112 @@
-<div class="container-block" id="iwk5t">
-    <div class="faq">
-      <span class="faq-question-container">
-        <p class="text-blk faq-questions">
-          Lorem ipsum dolor sit amet?
-        </p>
-        <img class="openimg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/arrow.svg">
-      </span>
-      <div class="answer-box">
-        <p class="text-blk faq-answer">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400&family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/blog.css">
+  </head>
+  <body>
+
+    <div id="header"></div>
+
+    <main style="width: 100%;background-color: #15151857;">
+      <div class="blog">
+        <div class="blog-content">
+          <div class="blog-blue-block"></div>
+          <div class="blog-top-white-block"></div>
+          <div class="blog-middle-white-block"></div>
+          <div class="blog-bottom-white-block"></div>
+
+          <div class="blog-navigation">
+            <a href="home.html">
+              <span>Головна сторінка</span>
+            </a>
+            <div></div>
+            <a href="blog.html">
+              <span style="color:rgba(122, 184, 255, 1);">Блог</span>
+            </a>
+          </div>
+          <div class="header">
+            <h1>Блог про автовикуп</h1>
+            <span>
+              Слідкуйте за новинами індустрії автовикупу та нашими експертними аналізами
+            </span>
+          </div>
+          <div class="blog-articles-wrapper">
+            <div class="blog-articles-slider">
+              <div class="blog-articles-page-items" data-page="1"></div>
+              <div class="blog-articles-page-items" data-page="2"></div>
+            </div>
+            <div class="show-more-articles">
+              <global-button
+                id="blog-show-more-button"
+                text="ЗАВАНТАЖИТИ ЩЕ"
+                bgcolor="#E3EAF1"
+                imgsrc="../img/blog-show-more-button.svg"
+              ></global-button>
+            </div>
+            <div class="blog-articles-slider-nav-block">
+              <div class="blog-articles-slider-nav-line"></div>
+              <div class="blog-articles-slider-nav">
+                <button type="button" class="slick-prev">
+                  <img src="../img/slider-back-icon-disabled.svg" alt="Back">
+                </button>
+                <button type="button" class="slick-next">
+                  <img src="../img/slider-forward-icon.svg" alt="Forward">
+                </button>
+              </div>
+              <div class="blog-articles-pagination">
+                <div class="blog-articles-page" data-index="0">
+                  <p>1</p>
+                </div>
+                <div class="blog-articles-page" data-index="1">
+                  <p>2</p>
+                </div>
+                <div class="blog-articles-page" data-index="2">
+                  <p>3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-</div>
+
+      <div class="sell-today-image-mobile">
+        <img src="../img/blog-sell-today-image-mobile.png" alt="blog-sell-today-image-mobile" />
+      </div>
+
+      <div class="sell-today">
+        <div class="sell-today-content">
+          <h1>ПРОДАЙТЕ АВТОМОБІЛЬ ВЖЕ СЬОГОДНІ</h1>
+          <global-button
+            text="НАДІСЛАТИ ЗАЯВКУ"
+            bgcolor="#7AB8FF"
+            imgsrc="../img/button-arrow.svg"
+            openPopUp="true"
+          ></global-button>
+        </div>
+        <div class="sell-today-white-block"></div>
+      </div>
+      <div id="footer"></div>
+    </main>
+
+
+
+  <script type="module" src="../components/GlobalButton.js"></script>
+  <script type="module" src="../components/ApplicationForm.js"></script>
+  <script type="module" src="../components/ApplicationFormPopUp.js"></script>
+  <script type="module" src="../components/BlogItem.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/blog.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </body>
+</html>
