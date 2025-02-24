@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded';
   background-color: #222227;
   display: flex;
 }
@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-color, #7AB8FF);
   color: #000;
   text-decoration: none;
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded';
   font-weight: 400;
   font-size: 20px;
   line-height: 24.8px;
@@ -203,7 +203,7 @@ global-button {
 }
 
 .thank-you-message h1 {
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded';
   font-weight: 500;
   font-size: 22px;
   line-height: 27.28px;
@@ -214,7 +214,7 @@ global-button {
 }
 
 .thank-you-message .success {
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded';
   font-weight: 500;
   font-size: 22px;
   line-height: 27.28px;
@@ -226,7 +226,7 @@ global-button {
 }
 
 .thank-you-message .follow-up {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
@@ -238,7 +238,7 @@ global-button {
 }
 
 .thank-you-message .signature {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;

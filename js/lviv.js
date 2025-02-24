@@ -8,8 +8,7 @@ const updatePagination = (currentSlide) => {
 
 // Slider Initialization
 const initSliders = () => {
-  const isMobile = window.innerWidth <= 767;
-  const isTablet = window.innerWidth >= 768 && window.innerWidth <= 1024;
+  const isMobile = window.innerWidth <= 768;
   const baseConfig = {
     infinite: true,
     speed: 500,
@@ -19,15 +18,8 @@ const initSliders = () => {
     nextArrow: document.querySelector('.slick-next'),
   };
 
-  if (isMobile || isTablet) {
+  if (isMobile) {
     $('.repurchased-cars-slider-mobile').slick({
-      ...baseConfig,
-      centerMode: true,
-      centerPadding: '22px',
-      dots: true,
-    });
-
-    $('.blog-articles-cars-slider').slick({
       ...baseConfig,
       centerMode: true,
       centerPadding: '22px',
@@ -120,10 +112,22 @@ const initStarRating = () => {
   });
 };
 
-// DOM Loaded Handler
+const updateStep4Text = () => {
+  const step4Span = document.querySelector('.step-4 .step-card span');
+  if (step4Span) {
+    if (window.innerWidth <= 768) {
+      step4Span.textContent = 'Оформлення документів';
+    } else {
+      step4Span.textContent = 'Оформлення документів, швидкий розрахунок';
+    }
+  }
+};
+
+
 document.addEventListener('DOMContentLoaded', () => {
-  initSliders();
   initFAQ();
   initStarRating();
+  initSliders();
   updatePagination(0);
+  updateStep4Text();
 });

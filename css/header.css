@@ -37,7 +37,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Unbounded';
   font-weight: 400;
   font-size: 18px;
   line-height: 22.32px;
@@ -131,7 +131,7 @@ nav ul li a:hover {
 }
 
 .header-call .phones span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 19.5px;
@@ -237,7 +237,7 @@ nav ul li a:hover {
     height: 20px;
   }
   .header-call .phones span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;

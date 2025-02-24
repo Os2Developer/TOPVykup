@@ -1,0 +1,3203 @@
+.h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+}
+
+p { margin: 0; }
+
+.hero {
+  position: relative; 
+  background-color: #15151857;
+  background: url("../img/lviv-hero-image.png") no-repeat center center;
+  background-size: cover;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 212px;
+  text-align: center;
+  color: #FFFFFF;
+  height: 100vh;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background: rgba(21, 21, 24, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  z-index: 2; /* Above the overlay */
+}
+
+.hero-content h1 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 69.44px;
+  margin: 0 0 80px;
+}
+
+.hero-content p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.27px;
+  margin: 0 0 24px;
+}
+
+.hero-navigation-text-block {
+  position: absolute;
+  top: 17%;
+  left: 8%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-navigation-text-block a {
+  text-decoration: none;
+}
+
+.hero-navigation-text-block div {
+  height: 18px;
+  width: 2px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.hero-navigation-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.stopwatch-block {
+  display: flex;
+  flex-direction: row;
+  bottom: 4%;
+  position: absolute;
+  right: 7%;
+  align-items: center;
+  z-index: 2;
+}
+
+.stopwatch-block-mobile {
+  display: none;
+}
+
+.stopwatch-block img {
+  margin-left: 0px;
+  margin-right: 12px;
+  height: 32px;
+  width: 32px;
+}
+
+.stopwatch-block p, .stopwatch-block-mobile p {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* Service point section */
+
+.service-point {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.service-point-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.service-point-content-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left: 4px solid rgba(122, 184, 255, 1);
+  margin-bottom: 80px;
+  padding-left: 24px;
+}
+
+.service-point-content-text-block p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgba(227, 234, 241, 1);
+}
+
+/* Urgent car section */
+
+.urgent-car-buyout {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.urgent-car-buyout-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.urgent-car-buyout-content .h3 {
+  max-width: 950px;
+}
+
+.urgent-car-buyout-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 435px;
+}
+
+.urgent-car-buyout-cards-1-block {
+  display: flex;
+  min-height: 435px;
+  width: 48%;
+  position: relative;
+}
+
+.urgent-car-buyout-cards-2-block {
+  display: flex;
+  min-height: 435px;
+  width: 48%;
+  position: relative;
+}
+
+.step-card {
+  width: 345px;
+  height: 225px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 24px;
+  position: relative;
+}
+
+.step-1, .step-3 {
+  align-self: flex-start;
+  padding: 18px 16px;
+  border-radius: 24px;
+}
+
+.step-2, .step-4 {
+  position: absolute;
+  align-self: flex-end;
+  right: -12%;
+  bottom: 0;
+  z-index: 1;
+  padding: 18px 16px;
+  border-radius: 24px;
+}
+
+.step-4 {
+  border: 2px solid #E3EAF1;
+}
+
+.step-2 div, .step-4 div {
+  background-color: #7AB8FF;
+}
+
+.step-1 div, .step-3 div {
+  background-color: #E3EAF1;
+}
+
+.step-1 {
+  z-index: 1;
+  position: relative;
+}
+
+.step-1::before,
+.step-1::after {
+  position: absolute;
+  content: "";
+}
+
+.step-1::before {
+  width: 72%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #7AB8FF;
+  border-bottom: 2px solid #7AB8FF;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.step-1::after {
+  width: 100%;
+  height: 40%;
+  right: 0;
+  top: 0;
+  border-top: 2px solid #7AB8FF;
+  border-right: 2px solid #7AB8FF;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.step-1-arrow {
+  border-left: 2px solid #7AB8FF;
+  border-bottom: 2px solid #7AB8FF;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 37%;
+  right: -4px;
+  background-color: unset !important;
+}
+
+.step-2 { z-index: 2; }
+
+.step-2::before,
+.step-2::after {
+  position: absolute;
+  content: "";
+}
+
+.step-2::before {
+  width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-left: 2px solid #7AB8FF;
+  border-top: 2px solid #7AB8FF;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.step-2::after {
+  width: 100%;
+  height: 42%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #7AB8FF;
+  border-right: 2px solid #7AB8FF;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.step-2-arrow {
+  border-right: 2px solid #7AB8FF;
+  border-top: 2px solid #7AB8FF;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 39%;
+  right: -6px;
+  background-color: unset !important;
+}
+
+.step-3 {
+  z-index: 3;
+  position: relative;
+}
+
+.step-3::before,
+.step-3::after {
+  position: absolute;
+  content: "";
+}
+
+.step-3::before {
+  width: 72%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #E3EAF1;
+  border-bottom: 2px solid #E3EAF1;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.step-3::after {
+  width: 100%;
+  height: 40%;
+  right: 0;
+  top: 0;
+  border-top: 2px solid #E3EAF1;
+  border-right: 2px solid #E3EAF1;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.step-3-arrow {
+  border-left: 2px solid #E3EAF1;
+  border-bottom: 2px solid #E3EAF1;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 37%;
+  right: -4px;
+  background-color: unset !important;
+}
+
+.step-4 { z-index: 4; }
+
+.step-image {
+  height: 92px;
+}
+
+.step-2 .step-image {
+  height: 97px;
+}
+
+.step-3 .step-image {
+  height: 94px;
+}
+
+.step-card span {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Buyout advantages section */
+
+.buyout-advantages {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 150px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.buyout-advantages-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.buyout-advantages-info-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.buyout-advantages-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left-width: 4px;
+  border-left-color: #7AB8FF;
+  border-left-style: solid;
+  padding-left: 24px;
+  max-width: 64%;
+}
+
+.buyout-advantages-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+
+.buyout-advantages-info-block img {
+  height: 424px;
+}
+
+.buyout-advantages-white-block {
+  position: absolute;
+  background-color: #E3EAF1;
+  width: 280px;
+  height: 65px;
+  border-radius: 16px;
+  right: 35%;
+  bottom: -5%;
+}
+
+.buyout-advantages-blue-block {
+  position: absolute;
+  right: 26%;
+  bottom: -19%;
+  background-color: #7AB8FF;
+  width: 70px;
+  height: 65px;
+  border-radius: 12px;
+}
+
+.buyout-advantages-small-blue-block {
+  position: absolute;
+  left: -5%;
+  bottom: -10%;
+  background-color: #7AB8FF;
+  width: 34px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+/* Send request section */
+
+.send-request {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.send-request-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  align-items: center;
+}
+
+.send-request-content span {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: #E3EAF1;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+/* Guarantees section */
+
+.guarantees {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.guarantees-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.guarantees-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.guarantees-info-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.guarantees-info-block img {
+  height: 467px;
+}
+
+.guarantees-list-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: #BEBEBE solid 2px;
+}
+
+.guarantees-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+}
+
+.guarantees-list-item span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  color: #7AB8FF;
+}
+
+.guarantees-list-item p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+  text-align: left;
+}
+
+/* Repurchased cars section */
+
+.repurchased-cars {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.repurchased-cars-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.repurchased-cars-slider-wrapper {
+  position: relative;
+  display: block;
+}
+
+.repurchased-cars-slider-wrapper-mobile {
+  position: relative;
+  display: none;
+}
+
+.repurchased-cars-slider-block {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-bottom: 80px;
+}
+
+.repurchased-cars-slider-block-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(122, 184, 255, 1);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.repurchased-cars-slider-block-item img {
+  height: 288px;
+  width: 384px;
+  border-radius: 32px;
+}
+
+.repurchased-cars-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.repurchased-cars-image:hover {
+  transform: scale(1.1);
+}
+
+.repurchased-cars-info-block {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.repurchased-cars-info-block p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.repurchased-cars-info-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.repurchased-cars-slider-nav-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.repurchased-cars-slider-nav-line {
+  height: 1px;
+  max-width: 945px;
+  width: 100%;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.repurchased-cars-slider-nav {
+  position: relative;
+  width: 144px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 56px;
+}
+
+.repurchased-cars-slider-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.repurchased-cars-slider-nav img {
+  width: 56px;
+  height: 56px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next:before {
+  content: none;
+}
+
+.slick-prev:before {
+  content: none;
+}
+
+.repurchased-cars-pagination {
+  display: flex;
+  max-width: 95px;
+  width: 100%;
+  height: 27px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.repurchased-cars-page p {
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+.repurchased-cars-page.active p {
+  color: rgba(122, 184, 255, 1);
+}
+
+.slick-next img, .slick-prev img {
+  transition: filter 0.3s ease;
+  filter: none;
+}
+
+.slick-next.disabled img {
+  filter: brightness(0) saturate(100%) invert(70%);
+}
+
+.slick-prev.disabled img {
+  filter: none;
+}
+
+/* Cities section */
+
+.cities {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cities-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cities-info-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.cities-text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.cities-mark {
+  height: 40px;
+  align-self: flex-start;
+}
+
+.cities-info-block p, a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  margin: 0;
+}
+
+.cities-info-block a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  text-decoration-skip-ink: auto;
+  color: rgba(122, 184, 255, 1);
+  cursor: pointer;
+}
+
+.cities-car {
+  height: 300px;
+  border-radius: 32px;
+}
+
+.car-buyback-mobile {
+  display: none;
+}
+
+/* Common questions section */
+
+.common-questions {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.common-questions-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.common-questions-info-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.common-questions-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.common-questions-list-item {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom-color: #7AB8FF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.common-questions-question-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.common-questions-question-container p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(227, 234, 241, 1);
+  margin: 0;
+}
+
+.common-questions-question-container img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+}
+
+.common-questions-image {
+  display: block;
+}
+
+.common-questions-answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.common-questions-answer-container p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgba(227, 234, 241, 1);
+  margin: 24px 0 0 0;
+  max-width: 1115px;
+}
+
+/* Sell today section */
+
+.sell-today {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 0px 0px 110px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sell-today-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  min-height: 714px;
+}
+
+.sell-today-info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sell-today-info-block span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.sell-today-image-block {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  right: 0;
+}
+
+.sell-today-image-block img {
+  height: 714px;
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  z-index: 1;
+}
+
+.sell-today-blue-block {
+  background-color: #7AB8FF;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width: 518px;
+  height: 622px;
+}
+
+/* Reviews section */
+
+.reviews {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.reviews-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-info-item { 
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom-color: #7AB8FF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.reviews-info-date {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: right;
+  margin: 0;
+}
+
+.reviews-info-review-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.reviews-info-review-block p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 815px;
+  margin: 0;
+}
+
+.review-info-star-block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  width: 151px;
+  text-align: center;
+}
+
+.review-info-star-block p {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.review-info-star-block img {
+  height: 22.5px;
+}
+
+.reviews-leave-review {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-leave-review .h3 {
+  margin-bottom: 40px;
+}
+
+.reviews-leave-review-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews-leave-review-inputs-block {
+  max-width: 903px;
+  width: 100%;
+}
+
+.reviews-leave-review-name-input-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.feedback-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.feedback-form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feedback-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form-group label span {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+}
+
+.feedback-form-group input,
+.feedback-form-group textarea {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.feedback-form-group input[type="text"],
+.feedback-form-group input[type="email"] {
+  width: 440px;
+  height: 49px;
+}
+
+.feedback-form-group textarea {
+  width: 903px;
+  height: 151px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.feedback-form-group textarea::placeholder, input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.reviews-select-stars-mobile {
+  display: none;
+}
+
+.reviews-select-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: min-content;
+  cursor: pointer;
+}
+
+.reviews-select-stars img {
+  height: 33px;
+  width: 33px;
+}
+
+/* Editor group section */
+
+.editor-group {
+  position: relative; 
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 190px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.editor-group-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.editor-group-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor {
+  padding: 24px 32px 24px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.editor:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0 0 68px rgba(0, 0, 0, 0.24),
+    0 0 48px rgba(0, 0, 0, 0.24);
+}
+
+.editor img {
+  border-radius: 50%;
+  height: 115px;
+}
+
+.editor-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 259px;
+}
+
+.editor-info a {
+  color: rgba(80, 160, 255, 1);
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+  text-decoration-skip-ink: auto;
+}
+
+.editor-info p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+.logo-block {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.logo-block img {
+  position: absolute;
+  width: 86px;
+  height: 65px;
+  right: 5px;
+}
+
+/* Buyback info section */
+
+.buyback-info {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 110px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.buyback-info-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+}
+
+.buyback-info-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.buyback-info-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+  
+@media (max-width: 1439px) and (min-width: 1280px) {
+  .h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /* Hero section */
+  .hero-navigation-text-block {
+    left: 6%;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero-content p {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0 0 30px;
+  }
+
+  .stopwatch-block {
+    bottom: 7%;
+    right: 5%;
+  }
+
+  .stopwatch-block p {
+    margin: 0;
+  }
+
+  /* Service point section */
+
+  .service-point-content-text-block p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* Urgent car section */
+
+  .step-card {
+    width: 305px;
+    height: 205px;
+    padding: 24px 20px;
+  }
+
+  .step-image {
+    height: 82px;
+  }
+  
+  .step-2 .step-image {
+    height: 87px;
+  }
+  
+  .step-3 .step-image {
+    height: 84px;
+  }
+  
+
+  /* Buyout advantages section */
+
+  .buyout-advantages-text-block {
+    gap: 24px;
+  }
+
+  .buyout-advantages-text-block span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .buyout-advantages-info-block img {
+    height: 300px;
+  }
+
+  .buyout-advantages-white-block {
+    width: 250px;
+    height: 55px;
+    border-radius: 16px;
+    right: 35%;
+    bottom: -15%;
+  }
+
+  .buyout-advantages-blue-block {
+    width: 60px;
+    height: 55px;
+  }
+  
+  .buyout-advantages-small-blue-block {
+    position: absolute;
+    left: -5%;
+    bottom: -10%;
+    background-color: #7AB8FF;
+    width: 34px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  /* Guarantees section */
+
+  .guarantees-list-item p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .guarantees-list {
+    max-width: 700px;
+  }
+
+  .guarantees-info-block img {
+    height: 370px;
+  }
+
+  .guarantees-list-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  /* Repurchased cars section */
+
+  .repurchased-cars-slider-block-item img {
+    height: 230px;
+    width: 307px;
+  }
+
+  .repurchased-cars-info-block span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* Cities section */
+
+  .cities-text-block {
+    margin-bottom: 60px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  
+  .cities-info-block {
+    max-width: 600px;
+  }
+
+  .cities-car {
+    height: 270px;
+  }
+
+   /* Common questions section */
+
+  .common-questions-answer-container p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .common-questions-info-block img {
+    height: 350px;
+  }
+
+  .common-questions-question-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Sell today section */
+
+  .sell-today-content {
+    min-height: 614px;
+  }
+
+  .sell-today-content img {
+    height: 614px;
+  }
+
+  .sell-today-blue-block {
+    width: 450px;
+    height: 562px;
+  }
+
+  /* Reviews section */
+
+  .reviews-info-review-block p {
+    font-size: 17px;
+    line-height: 23px;
+    max-width: 730px;
+  }
+
+  .feedback-form {
+    max-width: 800px;
+    gap: 32px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: 380px;
+  }
+
+  .feedback-form-group textarea {
+    width: 803px;
+  }
+  
+  /* Buyback info section */
+
+  .buyback-info-text-block span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 50px;
+    margin: 0 0 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 25px;
+  }
+
+  .hero-navigation-text-block {
+    left: 5%;
+  }
+
+  .stopwatch-block {
+    bottom: 7%;
+    right: 5%;
+  }
+
+  .stopwatch-block img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .stopwatch-block p {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+  }
+
+  /* Service point section */
+
+  .service-point {
+    padding: 80px 92px 0;
+  }
+
+  .service-point-content-text-block {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .service-point-content-text-block p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Urgent car section */
+
+  .urgent-car-buyout {
+    padding: 80px 92px 0;
+  }
+
+  .step-card {
+    width: 285px;
+    height: 185px;
+    padding: 16px;
+    justify-content: space-around;
+  }
+
+  .step-image {
+    height: 72px;
+  }
+  
+  .step-2 .step-image {
+    height: 77px;
+  }
+  
+  .step-3 .step-image {
+    height: 74px;
+  }
+
+  /* Buyout advantages section */
+
+  .buyout-advantages {
+    padding: 80px 92px 0;
+  }
+
+  .buyout-advantages-text-block {
+    gap: 16px;
+  }
+
+  .buyout-advantages-text-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .buyout-advantages-info-block img {
+    height: 260px;
+  }
+
+  .buyout-advantages-white-block {
+    width: 200px;
+    height: 45px;
+    bottom: -20%;
+  }
+
+  .buyout-advantages-blue-block {
+    width: 50px;
+    height: 45px;
+    right: 23%;
+    bottom: -12%;
+  }
+  
+  .buyout-advantages-small-blue-block {
+    bottom: -15%;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 150px 92px 0;
+  }
+
+  .send-request-content span {
+    margin-bottom: 32px;
+  }
+
+  /* Guarantees section */
+
+  .guarantees {
+    padding: 80px 92px 0;
+  }
+
+  .guarantees-list-item {
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .guarantees-info-block {
+    margin-bottom: 40px;
+  }
+
+  .guarantees-info-block img {
+    height: 337px;
+  }
+
+  .guarantees-list {
+    max-width: 500px;
+  }
+
+  .guarantees-list-item span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .guarantees-list-item p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  /* Repurchased cars section */
+
+  .repurchased-cars {
+    padding: 80px 92px 0;
+  }
+
+  .repurchased-cars-slider-block {
+    justify-content: space-evenly;
+  }
+
+  .repurchased-cars-slider-block-item img {
+    height: 230px;
+    width: 307px;
+  }
+
+  .repurchased-cars-info-block {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .repurchased-cars-info-block p {
+    margin-bottom: 10px;
+  }
+
+  .repurchased-cars-info-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Cities section */
+
+  .cities {
+    padding: 80px 92px 0;
+  }
+
+  .cities-text-block {
+    margin-bottom: 40px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .cities-info-block {
+    max-width: 500px;
+  }
+
+  .cities-car {
+    height: 220px;
+  }
+
+  .cities-mark {
+    height: 25px;
+  }
+
+  /* Common questions section */
+
+  .common-questions {
+    padding: 80px 92px 0;
+  }
+
+  .common-questions-content .h3 {
+    margin-bottom: 8px;
+  }
+
+  .common-questions-question-container p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .common-questions-question-container img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Sell today section */
+
+  .sell-today {
+    padding: 80px 0 110px;
+  }
+
+  .sell-today-content {
+    min-height: 514px;
+  }
+
+  .sell-today-content img {
+    height: 514px;
+  }
+
+  .sell-today-info-block {
+    padding-left: 92px;
+  }
+
+  .sell-today-info-block span {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 47px;
+  }
+
+  .sell-today-blue-block {
+    width: 370px;
+    height: 562px;
+  }
+
+  /* Reviews section */
+
+  .reviews {
+    padding: 50px 92px 0;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 520px;
+  }
+
+  .reviews-info-date {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .feedback-form {
+    max-width: 500px;
+    gap: 24px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .feedback-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+  }
+  
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: 300px;
+  }
+
+  .feedback-form-group textarea {
+    width: 500px;
+  }
+
+  /* Editor group section */
+
+  .editor-group {
+    padding: 80px 92px 0;
+  }
+
+  .editor-info p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .editor-info {
+    margin-left: 15px;
+  }
+
+  .editor {
+    padding: 12px;
+  }
+
+  .editor img {
+    height: 75px;
+  }
+
+  .logo-block {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-block img {
+    width: 66px;
+    height: 45px;
+    right: -5px;
+  }
+
+  /* Buyback info section */
+
+  .buyback-info {
+    padding: 80px 92px;
+  }
+
+  .buyback-info-text-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .h3 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    position: relative; 
+    background: none;
+    background-color: #15151857;
+    padding: 106px 16px 0;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .lviv-hero-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+  }
+
+  .hero-navigation-text-block {
+    position: relative;
+    left: unset;
+    top: unset;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+    margin: 0 0 40px;
+  }
+
+  .hero-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 0 0 24px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .stopwatch-block {
+    display: none;
+  }
+
+  .stopwatch-block-mobile {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+  }
+
+  .stopwatch-block-mobile p {
+    margin: 0;
+  }
+  
+  .stopwatch-block-mobile img {
+    margin-left: 0px;
+    margin-right: 12px;
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Service point section */
+
+  .service-point {
+    padding: 60px 32px 0;
+  }
+
+  .service-point-content-text-block {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .service-point-content-text-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  /* Urgent car section */
+
+  .urgent-car-buyout {
+    padding: 60px 32px 0;
+  }
+
+  .urgent-car-buyout-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .urgent-car-buyout-cards-1-block, .urgent-car-buyout-cards-2-block {
+    display: flex;
+    min-height: auto;
+    width: 100%;
+    position: relative;
+    gap: 16px;
+    justify-content: space-around;
+  }
+
+  .step-card {
+    width: 285px;
+    height: 185px;
+    padding: 16px;
+    justify-content: space-around;
+  }
+  
+  .step-card span {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .step-2 {
+    align-self: flex-start;
+    right: unset;
+    position: relative;
+  }
+  
+  .step-4 {
+    align-self: flex-start;
+    right: unset;
+    position: relative;
+  }
+
+  .step-image {
+    height: 52px;
+  }
+  
+  .step-2 .step-image {
+    height: 57px;
+  }
+  
+  .step-3 .step-image {
+    height: 54px;
+  }
+
+  /* Buyout advantages section */
+
+  .buyout-advantages {
+    padding: 60px 32px;
+  }
+
+  .buyout-advantages-info-block {
+    flex-direction: column;
+  }
+
+  .buyout-advantages-info-block img {
+    display: none;
+  }
+
+  .buyout-advantages-text-block {
+    gap: 16px;
+    padding-left: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .buyout-advantages-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .buyout-advantages-white-block {
+    position: absolute;
+    background-color: #E3EAF1;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    left: 0%;
+    bottom: -10%;
+  }
+  
+  .buyout-advantages-blue-block {
+    right: 0;
+    bottom: -9%;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  .buyout-advantages-small-blue-block {
+    display: none;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 60px 32px 0px;
+  }
+
+  .send-request-content span {
+    font-size: 16px;
+    line-height: 19.84px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  /* Guarantees section */
+
+  .guarantees {
+    padding: 60px 32px;
+  }
+
+  .guarantees-info-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .guarantees-info-block img {
+    display: none;
+  }
+
+  .guarantees-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .guarantees-list-item {
+    width: 100%;
+    gap: 8px;
+    padding: 0;
+    border-bottom: none;
+  }
+  
+  .guarantees-list-item span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.32px;
+    min-width: 30px;
+  }
+  
+  .guarantees-list-item p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  
+  /* Repurchased cars section */
+
+  .repurchased-cars {
+    padding: 60px 32px 0px;
+  }
+
+  .repurchased-cars-slider-wrapper {
+    position: relative;
+    display: none;
+  }
+  
+  .repurchased-cars-slider-wrapper-mobile {
+    display: block;
+  }
+
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .repurchased-cars-slider-block {
+    justify-content: center;
+    margin-bottom: 0;
+    flex-direction: row !important;
+  }
+
+  .repurchased-cars-slider-block-item {
+    width: auto;
+  }
+
+  .repurchased-cars-slider-block-item img {
+    height: 245px;
+    width: 300px;
+  }
+
+  .repurchased-cars-info-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .repurchased-cars-info-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .repurchased-cars-slider-mobile .slick-slide:not(.slick-center) {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .repurchased-cars-slider-mobile .slick-center {
+    filter: none;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    padding: 0;
+    border: none;
+  }
+
+  .slick-dots li button:before {
+    content: none;
+  }
+
+  .slick-dots li.slick-active {
+    width: 60px;
+    background-color: rgba(122, 184, 255, 1);
+  }
+
+  .repurchased-cars-slider-mobile .slick-track {
+    min-height: 400px !important;
+  }
+
+  /* Cities section */
+
+  .cities {
+    padding: 60px 32px;
+  }
+
+  .cities-content {
+    flex-direction: column;
+  }
+
+  .cities-text-block {
+    margin-bottom: 32px;
+  }
+
+  .cities-mark {
+    height: 32px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .cities-car {
+    display: none;
+  }
+
+  .car-buyback-mobile {
+    display: block;
+  }
+
+  .car-buyback-mobile img {
+    min-height: 192px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Common questions section */
+
+  .common-questions {
+    padding: 60px 32px 0;
+  }
+
+  .common-questions-content .h3 {
+    margin-bottom: 16px;
+  }
+
+  .common-questions-line {
+    width: 103vw;
+  }
+
+  .common-questions-info-block {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .common-questions-list {
+    margin-bottom: 32px;
+  }
+
+  .common-questions-list-item {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .common-questions-question-container p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 16px 0 0 0;
+  }
+
+  .common-questions-question-container img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+  }
+
+  /* Sell today section */
+
+  .sell-today {
+    position: relative; 
+    background-color: #15151857;
+    padding: 64px 16px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sell-today-content {
+    flex-direction: column-reverse;
+    min-height: 303px;
+  }
+
+  .sell-today-info-block span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .sell-today-image-block {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    right: unset;
+    margin-bottom: 104px;
+    justify-content: flex-end;
+    min-height: 403px;
+  }
+  
+  .sell-today-image-block img {
+    height: 403px;
+    position: absolute;
+    bottom: -15%;
+    right: -5%;
+    z-index: 1;
+  }
+
+  .sell-today-blue-block {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    width: 290px;
+    height: 403px;
+    margin-right: -5%;
+  }
+
+  /* Reviews section */
+
+  .reviews {
+    padding: 0 32px;
+  }
+
+  .reviews-content .h3 {
+    margin: 16px 0 0;
+  }
+
+  .reviews-info-date {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .reviews-info-review-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .review-info-star-block {
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: auto;
+    text-align: left;
+  }
+
+  .review-info-star-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .reviews-leave-review {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-leave-review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reviews-select-stars {
+    display: none;
+  }
+
+  .reviews-select-stars-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    height: min-content;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .reviews-select-stars-mobile img {
+    height: 33px;
+    width: 33px;
+  }
+
+  .feedback-form {
+    gap: 24px;
+    margin-bottom: 48px;
+    margin-top: 16px;
+  }
+
+  .feedback-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .feedback-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .feedback-form-group label span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: auto;
+    height: 56px;
+  }
+
+  .feedback-form-group textarea {
+    width: auto;
+    height: 190px;
+  }
+
+  /* Editor group section */
+
+  .editor-group {
+    padding: 60px 32px 0px;
+  }
+
+  .editor-group-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .editor {
+    padding: 16px 12px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .editor img {
+    border-radius: 50%;
+    height: 64px;
+  }
+
+  .editor-info {
+    margin-left: 16px;
+    gap: 12px;
+  }
+
+  .editor-info a {
+    font-size: 14px;
+    line-height: 19.84px;
+  }
+  
+  .editor-info p {
+    font-size: 14px;
+    line-height: 19.5px;
+  }
+
+  .logo-block {
+    width: 40px;
+    height: 30px;
+    position: relative;
+  }
+
+  .logo-block img {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right: -10px;
+  }
+
+  /* Buyback info section */
+
+  .buyback-info {
+    padding: 60px 32px 0px;
+  }
+
+  .buyback-info-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .buyback-info-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+    margin-bottom: 32px;
+  }
+
+  .hero {
+    position: relative; 
+    background: none;
+    background-color: #15151857;
+    padding: 106px 16px 0;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .lviv-hero-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+  }
+
+  .hero-navigation-text-block {
+    position: relative;
+    left: unset;
+    top: unset;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+    margin: 0 0 40px;
+  }
+
+  .hero-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 0 0 24px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .stopwatch-block {
+    display: none;
+  }
+
+  .stopwatch-block-mobile {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+  }
+
+  .stopwatch-block-mobile p {
+    margin: 0;
+  }
+  
+  .stopwatch-block-mobile img {
+    margin-left: 0px;
+    margin-right: 12px;
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Service point section */
+
+  .service-point {
+    padding: 80px 16px 0;
+  }
+
+  .service-point-content-text-block {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+
+  .service-point-content-text-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  /* Urgent car section */
+
+  .urgent-car-buyout {
+    padding: 80px 16px 0;
+  }
+
+  .urgent-car-buyout-cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    gap: 16px;
+  }
+
+  .urgent-car-buyout-cards-1-block, .urgent-car-buyout-cards-2-block {
+    display: flex;
+    min-height: auto;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .step-card {
+    min-width: 319px;
+    width: auto;
+    min-height: auto;
+    height: 88px;
+    padding: 24px 16px;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 16px;
+  }
+
+  .step-card span {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .step-1, .step-3 {
+    align-self: center;
+    padding: 12px;
+    border-radius: 16px;
+    width: 100%;
+  }
+  
+  .step-2, .step-4 {
+    position: relative;
+    align-self: center;
+    right: unset;
+    bottom: unset;
+    z-index: 1;
+    padding: 12px;
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .step-image {
+    height: 38px !important;
+  }
+
+  .step-2::before { width: 72%; }
+
+  .step-1-arrow {
+    top: 34%;
+    right: -4px;
+  }
+
+  .step-2-arrow {
+    bottom: 36%;
+    right: -6px;
+  }
+
+  .step-3-arrow {
+    top: 34%;
+    right: -4px;
+  }
+
+  /* Buyout advantages section */
+
+  .buyout-advantages {
+    padding: 80px 16px;
+  }
+
+  .buyout-advantages-info-block {
+    flex-direction: column;
+  }
+
+  .buyout-advantages-info-block img {
+    display: none;
+  }
+
+  .buyout-advantages-text-block {
+    gap: 16px;
+    padding-left: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .buyout-advantages-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .buyout-advantages-white-block {
+    position: absolute;
+    background-color: #E3EAF1;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    left: 0%;
+    bottom: -10%;
+  }
+  
+  .buyout-advantages-blue-block {
+    right: 0;
+    bottom: -9%;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  .buyout-advantages-small-blue-block {
+    display: none;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 80px 16px 0px;
+  }
+
+  .send-request-content span {
+    font-size: 16px;
+    line-height: 19.84px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  /* Guarantees section */
+
+  .guarantees {
+    padding: 80px 16px 64px;
+  }
+
+  .guarantees-info-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .guarantees-info-block img {
+    display: none;
+  }
+
+  .guarantees-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .guarantees-list-item {
+    width: 100%;
+    gap: 8px;
+    padding: 0;
+    border-bottom: none;
+  }
+  
+  .guarantees-list-item span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.32px;
+    min-width: 30px;
+  }
+  
+  .guarantees-list-item p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  
+  /* Repurchased cars section */
+
+  .repurchased-cars {
+    padding: 80px 16px 0;
+  }
+
+  .repurchased-cars-slider-wrapper {
+    position: relative;
+    display: none;
+  }
+  
+  .repurchased-cars-slider-wrapper-mobile {
+    display: block;
+  }
+
+  .repurchased-cars-slider-block {
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .repurchased-cars-slider-block-item img {
+    height: 195px;
+    width: 260px;
+  }
+
+  .repurchased-cars-info-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .repurchased-cars-info-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .repurchased-cars-slider-mobile .slick-slide:not(.slick-center) {
+    filter: blur(4px);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .repurchased-cars-slider-mobile .slick-center {
+    filter: none;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    padding: 0;
+    border: none;
+  }
+
+  .slick-dots li button:before {
+    content: none;
+  }
+
+  .slick-dots li.slick-active {
+    width: 60px;
+    background-color: rgba(122, 184, 255, 1);
+  }
+
+  .repurchased-cars-slider-mobile .slick-track {
+    min-height: 620px !important;
+  }
+
+  /* Cities section */
+
+  .cities {
+    padding: 80px 16px 16px;
+    padding-bottom: 64px;
+  }
+
+  .cities-content {
+    flex-direction: column;
+  }
+
+  .cities-text-block {
+    margin-bottom: 64px;
+  }
+
+  .cities-mark {
+    height: 32px;
+  }
+
+  .cities-info-block p, a {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .cities-car {
+    display: none;
+  }
+
+  .car-buyback-mobile {
+    display: block;
+  }
+
+  .car-buyback-mobile img {
+    min-height: 192px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Common questions section */
+
+  .common-questions {
+    padding: 80px 16px 0;
+  }
+
+  .common-questions-line {
+    width: 103vw;
+  }
+
+  .common-questions-info-block {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .common-questions-list {
+    margin-bottom: 0;
+  }
+
+  .common-questions-list-item {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .common-questions-question-container p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .common-questions-answer-container p {
+    font-size: 16px;
+    line-height: 19.5px;
+    margin: 16px 0 0 0;
+  }
+
+  .common-questions-question-container img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease;
+  }
+
+  /* Sell today section */
+
+  .sell-today {
+    position: relative; 
+    background-color: #15151857;
+    padding: 64px 16px 0px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sell-today-content {
+    flex-direction: column-reverse;
+    min-height: 303px;
+  }
+
+  .sell-today-info-block span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .sell-today-image-block {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    right: unset;
+    margin-bottom: 104px;
+    justify-content: flex-end;
+    min-height: 303px;
+  }
+  
+  .sell-today-image-block img {
+    height: 303px;
+    position: absolute;
+    bottom: -15%;
+    right: -5%;
+    z-index: 1;
+  }
+
+  .sell-today-blue-block {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    width: 260px;
+    height: 263px;
+    margin-right: -5%;
+  }
+
+  /* Reviews section */
+
+  .reviews {
+    padding: 80px 16px 0;
+    text-align: start;
+  }
+
+  .reviews-content .h3 {
+    margin-bottom: 8px;
+  }
+
+  .reviews-info-date {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .reviews-info-review-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .reviews-info-review-block p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .review-info-star-block {
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: auto;
+    text-align: left;
+  }
+
+  .review-info-star-block p {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .reviews-leave-review {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-leave-review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reviews-select-stars {
+    display: none;
+  }
+
+  .reviews-select-stars-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    height: min-content;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .reviews-select-stars-mobile img {
+    height: 33px;
+    width: 33px;
+  }
+
+  .feedback-form {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .feedback-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .feedback-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+
+  .feedback-form-group label span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .feedback-form-group input[type="text"],
+  .feedback-form-group input[type="email"] {
+    width: auto;
+    height: 56px;
+  }
+
+  .feedback-form-group textarea {
+    width: auto;
+    height: 190px;
+  }
+
+  /* Editor group section */
+
+  .editor-group {
+    padding: 80px 16px 0;
+    color: #FFFFFF;
+  }
+
+  .editor-group-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .editor {
+    padding: 16px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .editor img {
+    border-radius: 50%;
+    height: 64px;
+  }
+
+  .editor-info {
+    margin-left: 16px;
+    gap: 16px;
+  }
+
+  .editor-info a {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  
+  .editor-info p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .logo-block {
+    width: 40px;
+    height: 30px;
+    position: relative;
+  }
+
+  .logo-block img {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right: 0;
+  }
+  
+  /* Buyback info section */
+
+  .buyback-info {
+    padding: 80px 16px 64px;
+  }
+
+  .buyback-info-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .buyback-info-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+}

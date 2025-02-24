@@ -11,12 +11,44 @@ async function loadComponent(targetId, componentPath) {
   }
 }
 
+// Button Configurations
+const buttonConfigs = [
+  // HOME
+  { id: "car-buyback-connect-button", widths: { xl: "294px", lg: "294px", md: "294px", sm: "220px", xs: "216px" } },
+  { id: "urgent-buyout-connect-button", widths: { xl: "259px", lg: "259px", md: "259px", sm: "195px", xs: "190px" } },
+  { id: "cities-button", widths: { xl: "294px", lg: "294px", md: "294px", sm: "220px", xs: "216px" } },
+  { id: "blog-articles-button", widths: { xl: "203px", lg: "203px", md: "203px", sm: "160px", xs: "150px" } },
+  { id: "review-send-button", widths: { xl: "300px", lg: "294px", md: "294px", sm: "230px", xs: "223px" } },
+  { id: "send-application-button", widths: { xl: "392px", lg: "392px", md: "392px", sm: "294px", xs: "297px" } },
+  // LVIV
+  { id: "service-point-button", widths: { xl: "291px", lg: "291px", md: "291px", sm: "230px", xs: "216px" } },
+  { id: "sell-today-button", widths: { xl: "394px", lg: "394px", md: "394px", sm: "294px", xs: "297px" } },
+];
+
+// Responsive Button Widths
+const updateButtonWidths = (configs) => {
+  configs.forEach(({ id, widths }) => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+
+    const width = window.innerWidth >= 1440 ? widths.lg :
+                  window.innerWidth >= 1280 ? widths.md :
+                  window.innerWidth >= 1024 ? widths.sm : widths.xs;
+
+    const wrapper = btn.shadowRoot?.querySelector('.global-btn');
+
+    if (wrapper) wrapper.style.setProperty('width', width, 'important');
+  });
+};
+
+
 document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
     loadComponent('header', '../components/header.html'),
     loadComponent('footer', '../components/footer.html')
   ]);
 
+  // FOOTER
   const toTopButton = document.querySelector('.footer-to-top-button');
   if (toTopButton) {
     toTopButton.addEventListener('click', () => {
@@ -24,6 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  // HEADER
   const citiesArrowText = document.querySelector('.cities-arrow-text');
   const arrowIcon = citiesArrowText?.querySelector('img');
   const menuPopUp = document.getElementById('menu-pop-up');
@@ -73,6 +106,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     $('#arrow-down').css('transform', 'rotate(0deg)');
   });
 
+  // BUTTONS
+  updateButtonWidths(buttonConfigs);
+
   // all header and pop up mobile related code
   if (window.innerWidth <= 1023) {
     const hamburgerBtn = document.getElementById('hamburger-button');
@@ -112,3 +148,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 });
+
+window.addEventListener('resize', () => updateButtonWidths(buttonConfigs));
