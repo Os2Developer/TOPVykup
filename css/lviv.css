@@ -24,6 +24,10 @@ p { margin: 0; }
   border-bottom-left-radius: 32px;
 }
 
+.lviv-hero-mobile {
+  display: none;
+}
+
 .hero::before {
   content: '';
   position: absolute;
