@@ -3006,14 +3006,14 @@ p { margin: 0; }
     right: unset;
     margin-bottom: 104px;
     justify-content: flex-end;
-    min-height: 303px;
+    min-height: 293px;
   }
   
   .sell-today-image-block img {
-    height: 303px;
+    height: 293px;
     position: absolute;
     bottom: -15%;
-    right: -5%;
+    right: -3%;
     z-index: 1;
   }
 
@@ -3022,7 +3022,7 @@ p { margin: 0; }
     border-bottom-left-radius: 24px;
     width: 260px;
     height: 263px;
-    margin-right: -5%;
+    margin-right: -3%;
   }
 
   /* Reviews section */
