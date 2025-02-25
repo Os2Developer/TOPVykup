@@ -327,3 +327,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-container { 
+    padding-top: 0;
+  }
+}

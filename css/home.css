@@ -794,7 +794,14 @@
 }
 
 .blog-articles-item-info-block {
-  padding: 0 24px 24px 24px;
+  padding: 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-articles-item-info-block p {
+  margin: 0;
 }
 
 .blog-articles-item-date {
@@ -803,6 +810,12 @@
   font-size: 20px;
   line-height: 24.38px;
   text-align: right;
+}
+
+.blog-articles-item-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .blog-articles-item-question {
@@ -826,6 +839,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .blog-articles-read-block p {
@@ -1472,7 +1486,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 0 24px 24px 24px;
+    padding: 24px;
   }
 
   .blog-articles-info-block-item img {
@@ -1832,17 +1846,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 0 24px 24px 24px;
+    padding: 16px;
   }
 
   .blog-articles-info-block-item img {
     height: 200px;
   }
-
-  .blog-articles-item-info-block {
-    padding: 0 16px 16px 16px;
-  }
-  
 
   .blog-articles-item-date {
     font-size: 16px;
@@ -2529,7 +2538,7 @@
   }
 
   .blog-articles-item-info-block {
-    padding: 0 16px 16px 16px;
+    padding: 16px;
   }
 
   .blog-articles-item-date {
@@ -3415,7 +3424,7 @@
   }
 
   .blog-articles-cars-slider {
-    margin-bottom: 80px !important;
+    margin-bottom: 45px !important;
   }
 
   .blog-articles-cars-slider .slick-track {
@@ -3443,7 +3452,7 @@
   }
 
   .blog-articles-item-info-block {
-    padding: 0 16px 16px 16px;
+    padding: 16px;
   }
 
   .blog-articles-item-date {

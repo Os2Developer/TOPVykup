@@ -18,7 +18,7 @@ p { margin: 0; }
   padding-top: 212px;
   justify-content: center;
   color: #FFFFFF;
-  height: 100vh;
+  height: 97vh;
 }
 
 .hero-content {
@@ -144,7 +144,7 @@ p { margin: 0; }
 
 .hero-small-blue-block {
   position: absolute;
-  bottom: 4%;
+  bottom: 10%;
   right: 12%;
   width: 26px;
   height: 26px;
@@ -167,7 +167,7 @@ p { margin: 0; }
 .contacts-addresses {
   position: relative; 
   background-color: #15151857;
-  padding: 150px 110px 0;
+  padding: 0 110px 0;
   color: #FFFFFF;
   align-items: center;
   justify-content: center;
@@ -321,7 +321,7 @@ p { margin: 0; }
   /* Contacts addresses section */
 
   .contacts-addresses {
-    padding: 60px 110px 0;
+    padding: 0 110px 0;
   }
 
   .appointments-info span {
@@ -351,6 +351,7 @@ p { margin: 0; }
   .hero {
     padding-left: 92px;
     padding-right: 92px;
+    height: 98vh;
   }
 
   .contacts-info {
@@ -460,6 +461,7 @@ p { margin: 0; }
 
   .hero {
     padding: 212px 70px 0;
+    height: 98vh;
   }
 
   .hero-content {
