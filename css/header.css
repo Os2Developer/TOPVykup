@@ -592,6 +592,10 @@ nav ul li a:hover {
     margin-top: 20px;
   }
 
+  .mobile-menu-content a {
+    text-decoration: none;
+  }
+
   .mobile-menu-content span, .mobile-cities-list span {
     font-family: Unbounded;
     font-weight: 400;

@@ -796,7 +796,6 @@ blog-item {
     height: auto;
     min-height: 255px;
     width: 100%;
-    /* object-fit: cover; */
   }
 
   .sell-today-white-block {

@@ -1,0 +1,794 @@
+.h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  color: #FFFFFF;
+}
+
+p { margin: 0; }
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-color: #15151857;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 212px;
+  justify-content: center;
+  color: #FFFFFF;
+  height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1216px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.contacts-info h1 {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 69.44px;
+  margin: 0;
+}
+
+.contacts-info p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+}
+
+.hero-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
+
+.hero-phones p {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+}
+
+.phones-info {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.phones-info img {
+  width: 42px;
+  height: 42px;
+}
+
+.hero-phones-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-phones-text-block span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+}
+
+.hero-navigation-text-block {
+  position: absolute;
+  top: 17%;
+  left: 8%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-navigation-text-block a {
+  text-decoration: none;
+}
+
+.hero-navigation-text-block div {
+  height: 18px;
+  width: 2px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.hero-navigation-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 80px;
+}
+
+.hero-blue-block {
+  position: absolute;
+  top: 24%;
+  right: 8%;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background-color: #7AB8FF;
+}
+
+.hero-small-blue-block {
+  position: absolute;
+  bottom: 4%;
+  right: 12%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #7AB8FF;
+}
+
+.hero-white-block {
+  position: absolute;
+  bottom: 50%;
+  left: 12%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+}
+
+/* Contacts addresses section */
+
+.contacts-addresses {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 0;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.contacts-addresses-white-block {
+  position: absolute;
+  bottom: 29%;
+  right: 20%;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background-color: #E3EAF1;
+}
+
+.contacts-addresses-small-white-block {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+}
+
+.contacts-addresses-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  gap: 64px;
+}
+
+.appointments-info {
+  backdrop-filter: blur(48px);
+  box-shadow: 0px 0px 68px 0px #0000000D inset,
+  0px 4px 4px 0px #0000000D inset;
+  background-color: #FFFFFF1F;
+  padding: 24px 16px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.appointments-info span {
+  font-family: Unbounded;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.28px;
+  color: #FFFFFF;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addresses img {
+  height: 336px;
+}
+
+.addresses-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: fit-content;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-list-item {
+  padding-left: 24px;
+  border-left: 4px solid #FFFFFF;
+}
+
+.blue {
+  border-left: 4px solid #7AB8FF;
+}
+
+.info-list-item span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #FFFFFF;  
+}
+
+/* Sell today section */
+
+.contacts-working-info {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 0 110px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.contacts-working-info-image-mobile {
+  display: none;
+}
+
+.contacts-working-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/contacts-image.png") no-repeat center center;
+  background-size: cover;
+  height: 490px;
+  min-height: 490px;
+  width: 100%;
+}
+
+.contacts-working-info-content .h1 {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 750px;
+}
+
+@media (max-width: 1439px) and (min-width: 1280px) {
+  .h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /* Hero section */
+
+  .hero-navigation-text-block {
+    left: 6%;
+  }
+
+  .contacts-info h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  /* Contacts addresses section */
+
+  .contacts-addresses {
+    padding: 60px 110px 0;
+  }
+
+  .appointments-info span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .addresses img {
+    height: 290px;
+  }
+
+  .info-list-item span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  
+}
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  .contacts-info {
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+
+  .contacts-info h1 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .contacts-info p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .hero-phones {
+    gap: 24px;
+  }
+
+  .hero-phones p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .hero-phones-text-block span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .hero-navigation-text-block {
+    left: 5%;
+  }
+
+  .hero-blue-block {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hero-white-block {
+    left: 5%;
+    bottom: 55%;
+  }
+
+  .hero-small-blue-block {
+    bottom: 20%;
+    right: 12%;
+  }
+
+  /* Contacts addresses section */
+
+  .contacts-addresses {
+    padding: 0 90px;
+  }
+
+  .contacts-addresses-white-block {
+    bottom: 32%;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .contacts-addresses-content {
+    gap: 48px;
+  }
+
+  .appointments-info {
+    padding: 18px 12px;
+  }
+
+  .appointments-info span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .addresses img {
+    height: 220px;
+  }
+
+  .addresses-info {
+    gap: 24px;
+  }
+
+  .info-list {
+    gap: 12px;
+  }
+
+  .info-list-item span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Sell today section */
+
+  .contacts-working-info {
+    padding: 90px 0 110px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    padding: 212px 70px 0;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contacts-info {
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+
+  .contacts-info h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+  }
+
+  .contacts-info p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero-phones {
+    gap: 24px;
+  }
+
+  .hero-phones p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .hero-phones-text-block span {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .hero-blue-block {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .hero-white-block {
+    left: 5%;
+    bottom: 55%;
+    width: 18px;
+    height: 18px;
+    left: 3%;
+  }
+
+  .hero-small-blue-block {
+    bottom: 15%;
+    right: 12%;
+  }
+
+  .hero-navigation-text-block {
+    left: 5%;
+  }
+
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  /* Contacts addresses section */
+
+  .contacts-addresses {
+    padding: 0 70px;
+  }
+
+  .contacts-addresses-white-block {
+    bottom: 32%;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .contacts-addresses-content {
+    gap: 48px;
+  }
+
+  .appointments-info {
+    padding: 18px 12px;
+  }
+
+  .appointments-info span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .addresses {
+    flex-direction: column;
+  }
+  
+  .addresses img {
+    height: 220px;
+    margin-top: 24px;
+  }
+
+  .addresses-info {
+    gap: 24px;
+  }
+
+  .info-list {
+    gap: 12px;
+  }
+
+  .info-list-item span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Sell today section */
+
+  .contacts-working-info {
+    padding: 90px 0 70px;
+  }
+
+  .contacts-working-info-content {
+    gap: 32px;
+  }
+
+  .contacts-working-info-content .h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+  }
+
+  .hero {
+    position: relative; 
+    padding: 106px 16px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 85vh;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-info {
+    margin-bottom: 32px;
+  }
+  
+  .contacts-info h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+  }
+
+  .contacts-info p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero-phones p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .phones-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-phones-text-block {
+    gap: 6px;
+  }
+
+  .hero-phones-text-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .hero-blue-block {
+    top: 20%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  .hero-white-block {
+    left: 3%;
+    bottom: 30%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+  }
+
+  .hero-small-blue-block {
+    display: none;
+  }
+
+  .hero-navigation-text-block {
+    position: relative;
+    left: unset;
+    top: unset;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  /* Contacts addresses section */
+
+  .contacts-addresses {
+    padding: 0 16px;
+  }
+
+  .contacts-addresses-white-block {
+    display: none;
+  }
+
+  .contacts-addresses-white-block {
+    bottom: 32%;
+    width: 52px;
+    height: 52px;
+  }
+
+  .contacts-addresses-small-white-block {
+    bottom: -4%;
+    right: 3%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    z-index: 1;
+  }
+  
+  .contacts-addresses-content {
+    gap: 32px;
+  }
+
+  .appointments-info {
+    padding: 24px 16px;
+  }
+
+  .appointments-info span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .addresses {
+    flex-direction: column;
+  }
+  
+  .addresses img {
+    height: 220px;
+    margin-top: 32px;
+  }
+
+  .addresses-info {
+    gap: 32px;
+  }
+
+  .info-list {
+    gap: 16px;
+  }
+
+  .info-list-item span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Sell today section */
+
+  .contacts-working-info {
+    padding: 80px 16px;
+  }
+
+  .contacts-working-info-content {
+    min-height: auto;
+    height: auto;
+    background: none;
+    gap: 32px;
+  }
+
+  .contacts-working-info-content .h1 {
+    font-size: 18px;
+    line-height: 22.32px;
+  }
+  
+  .contacts-working-info-image-mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 64px;
+  }
+
+  .contacts-working-info-image-mobile img {
+    height: auto;
+    min-height: 255px;
+    width: 100%;
+  }
+
+  .contacts-working-info-white-block {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #E3EAF1;
+    left: 0;
+    bottom: -30%;
+  }
+}

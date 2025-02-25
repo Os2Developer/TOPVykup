@@ -30,7 +30,7 @@ class GlobalButton extends HTMLElement {
     const openPopUp = this.getAttribute('openPopUp') === 'true';
   
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/styles.css">
       <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id=${customId}` : ''}">
         <span>${text}</span>
         <img src="${imgSrc}" alt="button-arrow">

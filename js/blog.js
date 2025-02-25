@@ -175,11 +175,11 @@ const updatePagination = (currentSlide) => {
 const renderPageItems = () => {
   const slider = document.querySelector('.blog-articles-slider');
   if (slider) {
-    slider.innerHTML = ''; // Clear existing page items
+    slider.innerHTML = '';
     blogArticles.forEach((page) => {
       const pageItems = document.createElement('div');
       pageItems.className = 'blog-articles-page-items';
-      pageItems.dataset.page = page.page; // Set data-page dynamically
+      pageItems.dataset.page = page.page;
       slider.appendChild(pageItems);
     });
   }
@@ -191,7 +191,7 @@ const renderBlogItems = (pageIndex = null) => {
     blogArticles.forEach((page, index) => {
       const pageItems = document.querySelector(`.blog-articles-page-items[data-page="${page.page}"]`);
       if (pageItems) {
-        pageItems.innerHTML = ''; // Clear existing items for this page
+        pageItems.innerHTML = '';
         page.articles.forEach((article) => {
           const blogItem = document.createElement('blog-item');
           blogItem.setAttribute('image', article.image);
@@ -206,7 +206,7 @@ const renderBlogItems = (pageIndex = null) => {
     // Render a specific page for mobile/tablet
     const pageItems = document.querySelector(`.blog-articles-page-items[data-page="${pageIndex + 1}"]`);
     if (pageItems) {
-      pageItems.innerHTML = ''; // Clear existing items for this page
+      pageItems.innerHTML = '';
       const articles = blogArticles[pageIndex]?.articles || [];
       articles.forEach((article) => {
         const blogItem = document.createElement('blog-item');
@@ -223,7 +223,7 @@ const renderBlogItems = (pageIndex = null) => {
 const renderPagination = () => {
   const pagination = document.querySelector('.blog-articles-pagination');
   if (pagination) {
-    pagination.innerHTML = ''; // Clear existing pagination
+    pagination.innerHTML = '';
     blogArticles.forEach((page, index) => {
       const pageDiv = document.createElement('div');
       pageDiv.className = 'blog-articles-page';
@@ -262,16 +262,6 @@ const handleShowMore = () => {
       // Restore scroll position after rendering
       requestAnimationFrame(() => {
         window.scrollTo(0, scrollPosition);
-
-        // Smoothly scroll to the newly added page items
-        // const newPageItems = document.querySelector(`.blog-articles-page-items[data-page="${currentPage + 1}"]`);
-        // if (newPageItems) {
-        //   newPageItems.scrollIntoView({
-        //     behavior: 'smooth',
-        //     block: 'start',
-        //     inline: 'nearest'
-        //   });
-        // }
       });
     }
   };
@@ -292,7 +282,7 @@ const initSliders = () => {
   renderPageItems();
 
   if (!isMobileOrTablet) {
-    renderBlogItems(); // Render all pages for desktop
+    renderBlogItems();
     renderPagination();
 
     $('.blog-articles-slider').slick({

@@ -14,9 +14,9 @@ class ApplicationForm extends HTMLElement {
   
   renderForm() {
     this.shadowRoot.innerHTML = `
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <div class="sell-car-form" part="sell-car-form">
-        <h2 class="sell-car-title">ПРОДАЙТЕ АВТОМОБІЛЬ ВЖЕ СЬОГОДНІ</h2>
+        <div class="sell-car-title">ПРОДАЙТЕ АВТОМОБІЛЬ ВЖЕ СЬОГОДНІ</div>
         <form class="sell-car-fields">
         <div class="form-group">
             <label for="name">Ім’я</label>

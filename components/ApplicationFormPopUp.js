@@ -8,7 +8,7 @@ class ApplicationFormPopUp extends HTMLElement {
 
   connectedCallback() {
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/styles.css">
       <div class="popup">
         <img
           src="../img/pop-up-close-icon.svg"
