@@ -2018,7 +2018,6 @@
     line-height: 59px;
     margin-bottom: 24px;
   }
-
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -2841,7 +2840,6 @@
     background-color: rgba(122, 184, 255, 1);
     display: none;
   }
-  
 }
 
 @media (max-width: 767px) {
@@ -3756,5 +3754,4 @@
     background-color: rgba(122, 184, 255, 1);
     display: none;
   }
-  
 }

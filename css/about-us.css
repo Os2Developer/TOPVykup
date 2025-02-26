@@ -1,0 +1,1402 @@
+.h3 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39.68px;
+  color: #FFFFFF;
+}
+
+p, h1 { margin: 0; }
+
+/* Hero section */
+
+.hero {
+  position: relative;
+  display: flex;
+  background-color: #15151857;
+  padding: 145px 110px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+}
+
+.hero-navigation-text-block {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.hero-navigation-text-block a {
+  text-decoration: none;
+}
+
+.hero-navigation-text-block div {
+  height: 18px;
+  width: 2px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+.hero-navigation-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  gap: 80px;
+}
+
+.hero-info h1 {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 69.44px;
+  text-align: center;
+  color: #E3EAF1;
+}
+
+.hero-info-image-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hero-info-image-block div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-info-image-block p, span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+
+.hero-info-image-block span {
+  color: #7AB8FF;
+}
+
+.hero-desktop-image {
+  display: block;
+}
+
+.hero-mobile-image {
+  display: none;
+}
+
+.hero-info-image-block img {
+  height: 323px;
+}
+
+.hero-floating-block-1 {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+}
+
+.hero-floating-block-2 {
+  position: absolute;
+  top: 5%;
+  right: -5%;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background-color: #7AB8FF;
+}
+
+.hero-floating-block-3 {
+  position: absolute;
+  bottom: -11%;
+  right: -2%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+  z-index: 1;
+}
+
+/* Our advantages section */
+
+.our-advantages {
+  position: relative; 
+  background-color: #15151857;
+  padding: 64px 110px 0px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-advantages-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  gap: 64px;
+}
+
+.our-advantages-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 32px;
+}
+
+.our-advantages-info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 24px;
+  background-color: #7AB8FF;
+  min-width: 280px;
+}
+
+.our-advantages-info .white {
+  background-color: #E3EAF1;
+}
+
+.our-advantages-info-item img {
+  width: 64px;
+  height: 64px;
+}
+
+.our-advantages-info-item span {
+  font-family: Unbounded;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.32px;
+  color: #000000;
+}
+
+.our-advantages-extra-description {
+  position: relative;
+  padding: 64px 110px 0 0;
+  background-color: #15151857;
+}
+
+.our-advantages-description {
+  backdrop-filter: blur(48px);
+  box-shadow: 0px 0px 68px 0px #0000000D inset,
+  0px 4px 4px 0px #0000000D inset;
+  background-color: #FFFFFF14;
+  padding: 32px 40px 32px 110px;
+  gap: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  max-width: 1440px;
+  border: 1px solid;
+  border-image-source: radial-gradient(18.24% 100% at 97.67% 0%, #7AB8FF 0%, rgba(73, 110, 153, 0.3) 100%);
+}
+
+.our-advantages-description p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;
+}
+
+.our-advantages-description span {
+  color: #7AB8FF;
+}
+
+.our-advantages-description-item {
+  padding: 4px 0 4px 24px;
+  border-left: 4px solid #E3EAF1;
+}
+
+.our-advantages-description .blue {
+  border-left: 4px solid #7AB8FF;
+}
+
+/* History section */
+
+.history {
+  position: relative; 
+  background-color: #15151857;
+  padding-top: 150px;
+  width: 100%;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.history-text-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 32px 64px 110px;
+  gap: 40px;
+  background-color: #E3EAF1;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.history-text-block .h3 {
+  color: #000000;
+}
+
+.history-text-info-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.history-text-info-block span, a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.history-text-info-block a {
+  color: #7AB8FF;
+}
+
+.history-image-block {
+  padding-top: 127px;
+  display: flex;
+  position: relative;
+}
+
+.history-image-floating-block {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  right: 7%;
+  border-radius: 4px;
+  background-color: #E3EAF1;
+}
+
+.history-image-block-inner {
+  display: flex;
+  position: relative;
+  width: 360px;
+  height: 316px;
+  background-color: #7AB8FF;
+}
+
+.history-image-block-inner img {
+  position: absolute;
+  bottom: -37%;
+  height: 340px;
+  right: -3%;
+  z-index: 1;
+}
+
+/* Mission section */
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: flex-start;
+  background-color: #15151857;
+  position: relative;
+  padding-top: 150px;
+}
+
+.mission-header-info {
+  padding-left: 110px;
+}
+
+.mission-info {
+  position: relative;
+  padding: 0 110px 0 0;
+}
+
+.mission-text-block {
+  backdrop-filter: blur(48px);
+  box-shadow: 0px 0px 68px 0px #0000000D inset,
+  0px 4px 4px 0px #0000000D inset;
+  background-color: #FFFFFF14;
+  padding: 32px 40px 32px 110px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border: 1px solid;
+  border-image-source: radial-gradient(18.24% 100% at 97.67% 0%, #7AB8FF 0%, rgba(73, 110, 153, 0.3) 100%);
+}
+
+.mission-text-block div {
+  padding: 4px 0 4px 24px;
+  border-left: 4px solid #7AB8FF;
+}
+
+.mission-text-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #E3EAF1;  
+}
+
+/* Vision section */
+
+.vision {
+  position: relative; 
+  background-color: #15151857;
+  padding-top: 150px;
+  width: 100%;
+}
+
+.vision-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  align-items: flex-end;
+}
+
+.vision-content-floating-block {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  left: 4%;
+  border-radius: 4px;
+  background-color: #7AB8FF;
+}
+
+.vision-text-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 32px 64px 110px;
+  gap: 40px;
+  background-color: #7AB8FF;
+}
+
+.vision-text-block .h3 {
+  color: #000000;
+}
+
+.vision-text-info-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vision-text-info-block span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.vision-image-block-inner {
+  display: flex;
+  position: relative;
+  width: 360px;
+  height: 424px;
+  background-color: #E3EAF1;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.vision-image-block-inner img {
+  position: absolute;
+  bottom: -12%;
+  height: 356px;
+  right: 0%;
+  z-index: 1;
+}
+
+/* Send request section */
+
+.send-request {
+  position: relative; 
+  background-color: #15151857;
+  padding: 150px 110px 110px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.send-request-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 1216px;
+  align-items: center;
+}
+
+.send-request-content .h3 {
+  font-size: 56px;
+  line-height: 69.44px;
+  text-align: center;
+  color: rgba(122, 184, 255, 1);
+  margin-bottom: 64px;
+}
+
+.floating-white-block {
+  position: absolute;
+  left: 3%;
+  bottom: 35%;
+  border-radius: 8px;
+  width: 34px;
+  height: 32px;
+  background-color: rgba(227, 234, 241, 1);
+}
+
+.floating-blue-block {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  border-radius: 12px;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(122, 184, 255, 1);
+}
+
+@media (max-width: 1439px) and (min-width: 1280px) {
+  .h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  /* Hero section */
+
+  .hero-info h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero-info-image-block p, span {
+    font-size: 18px;
+  }
+
+  /* Our advantages section */
+
+  .our-advantages-info-item {
+    gap: 12px;
+    min-width: 241px;
+  }
+
+  .our-advantages-info-item img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .our-advantages-info-item span {
+    font-size: 17px;
+  }
+
+  .our-advantages-description p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* History section */
+
+  .history-text-info-block span, a {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* Mission section */
+
+  .mission-text-block span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  /* Vision section */
+
+  .vision-text-info-block span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    padding: 145px 92px 0;
+  }
+
+  .hero-navigation-text-block {
+    margin-bottom: 30px;
+  }
+
+  .hero-info {
+    gap: 64px;
+  }
+
+  .hero-info h1 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .hero-info-image-block div {
+    gap: 24px;
+  }
+
+  .hero-info-image-block p, span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Our advantages section */
+
+  .our-advantages {
+    padding: 64px 90px 0px;
+  }
+
+  .our-advantages-content {
+    gap: 48px;
+  }
+
+  .our-advantages-info {
+    gap: 15px;
+  }
+
+  .our-advantages-info-item {
+    gap: 12px;
+    padding: 12px;
+    min-width: 200px;
+  }
+
+  .our-advantages-info-item img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .our-advantages-info-item span {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .our-advantages-extra-description {
+    padding: 64px 90px 0 0;
+  }
+
+  .our-advantages-description {
+    padding: 24px 30px 24px 90px;
+    gap: 24px;
+  }
+
+  .our-advantages-description p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* History section */
+
+  .history {
+    padding-top: 110px;
+  }
+
+  .history-text-block {
+    padding: 32px 24px 32px 90px;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .history-text-info-block span, a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .history-image-block-inner {
+    width: 290px;
+    height: 316px;
+  }
+  
+  .history-image-block-inner img {
+    height: 290px;
+  }
+
+  /* Mission section */
+
+  .mission {
+    gap: 32px;
+    padding-top: 130px;
+  }
+  
+  .mission-header-info {
+    padding-left: 90px;
+  }
+  
+  .mission-info {
+    padding: 0 90px 0 0;
+  }
+
+  .mission-text-block {
+    padding: 24px 30px 24px 90px;
+    gap: 24px;
+  }
+
+  .mission-text-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* Vision section */
+
+  .vision {
+    padding-top: 110px;
+  }
+  
+  .vision-text-block {
+    gap: 24px;
+    padding: 32px 24px 32px 90px;
+    justify-content: center;
+  }
+
+  .vision-text-info-block span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .vision-image-block-inner {
+    width: 290px;
+    height: 316px;
+  }
+  
+  .vision-image-block-inner img {
+    height: 306px;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 80px 92px 92px;
+  }
+
+  .send-request-content .h3 {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    padding: 106px 16px 0;
+  }
+  
+  .hero-navigation-text-block {
+    margin-bottom: 24px;
+  }
+
+  .hero-navigation-text-block div {
+    height: 15px;
+    width: 2px;
+  }
+  
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  .hero-info {
+    gap: 40px;
+  }
+  
+  .hero-info h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+  }
+
+  .hero-info-image-block {
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .hero-info-image-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .hero-info-image-block p, span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .hero-desktop-image {
+    display: none;
+  }
+
+  .hero-mobile-image {
+    display: block;
+  }
+
+  .hero-info img {
+    height: 432px;
+    width: 100vw;
+    margin-left: calc(-16px);
+    margin-right: calc(-16px);
+    object-fit: cover;
+  }
+
+  .hero-floating-block-1 {
+    display: none;
+  }
+  
+  .hero-floating-block-2 {
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #7AB8FF;
+  }
+  
+  .hero-floating-block-3 {
+    bottom: 55%;
+    right: 2%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+  }
+
+  /* Our advantages section */
+
+  .our-advantages {
+    padding: 80px 16px 0px;
+  }
+
+  .our-advantages-content {
+    gap: 32px;
+  }
+
+  .our-advantages-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .our-advantages-info-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 16px;
+    border-radius: 16px;
+    min-width: auto;
+    width: 48%;
+  }
+  
+  .our-advantages-info-item img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .our-advantages-info-item span {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .our-advantages-extra-description {
+    padding: 64px 16px 0 0;
+  }
+  
+  .our-advantages-description {
+    padding: 24px 16px;
+    gap: 16px;
+  }
+  
+  .our-advantages-description p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .our-advantages-description-item {
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid #E3EAF1;
+  }
+  
+  .our-advantages-description .blue {
+    border-left: 2px solid #7AB8FF;
+  }
+
+  /* History section */
+
+  .history {
+    padding-top: 80px;
+  }
+
+  .history-content {
+    flex-direction: column;
+  }
+
+  .history-text-block {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 32px;
+    border-radius: 24px;
+  }
+
+  .history-text-info-block {
+    gap: 16px;
+  }
+  
+  .history-text-info-block span, a {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .history-image-block {
+    padding-top: 0;
+    margin-top: calc(-24px);
+    justify-content: flex-end;
+  }
+
+  .history-image-floating-block {
+    width: 16px;
+    height: 16px;
+    top: unset;
+    right: unset;
+    bottom: -30%;
+    left: 5%;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  .history-image-block-inner {
+    width: 185px;
+    height: 163px;
+    border-top-left-radius: 16px;
+  }
+  
+  .history-image-block-inner img {
+    height: 176px;
+    right: -3%;
+  }
+
+  /* Mission section */
+
+  .mission {
+    gap: 32px;
+    padding-top: 125px;
+  }
+
+  .mission-header-info {
+    padding-left: 16px;
+  }
+
+  .mission-info {
+    padding: 0 16px 0 0;
+  }
+
+  .mission-text-block {
+    padding: 24px 16px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  
+  .mission-text-block div {
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid #7AB8FF;
+  }
+  
+  .mission-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  /* Vision section */
+
+  .vision {
+    padding-top: 80px;
+  }
+
+  .vision-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vision-content-floating-block {
+    width: 40px;
+    height: 40px;
+    top: unset;
+    bottom: -15%;
+    left: 4%;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .vision-text-block {
+    padding: 24px 16px;
+    gap: 32px;
+    border-radius: 24px;
+  }
+
+  .vision-text-info-block span {
+    font-size: 16px;
+    line-height: 19.5px;    
+  }
+
+  .vision-image-block-inner {
+    display: flex;
+    position: relative;
+    width: 360px;
+    height: 424px;
+    background-color: #E3EAF1;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .vision-image-block-inner img {
+    position: absolute;
+    bottom: -12%;
+    height: 356px;
+    right: 0%;
+    z-index: 1;
+  }
+
+  .vision-image-block {
+    display: flex;
+    margin-top: calc(-24px);
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .vision-image-block-inner {
+    width: 185px;
+    height: 163px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  
+  .vision-image-block-inner img {
+    bottom: -33%;
+    height: 200px;
+    right: 0%;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 60px 32px;
+  }
+
+  .send-request-content .h3 {
+    font-size: 24px;
+    line-height: 29.76px;
+  }
+
+  .floating-white-block {
+    position: absolute;
+    left: 3%;
+    bottom: 35%;
+    border-radius: 8px;
+    width: 34px;
+    height: 32px;
+    background-color: rgba(227, 234, 241, 1);
+    display: none;
+  }
+  
+  .floating-blue-block {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(122, 184, 255, 1);
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 18px;
+    line-height: 22.32px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    padding: 106px 16px 0;
+  }
+  
+  .hero-navigation-text-block {
+    margin-bottom: 24px;
+  }
+
+  .hero-navigation-text-block div {
+    height: 15px;
+    width: 2px;
+  }
+  
+  .hero-navigation-text-block span {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  .hero-info {
+    gap: 40px;
+  }
+  
+  .hero-info h1 {
+    font-size: 24px;
+    line-height: 29.76px;
+  }
+
+  .hero-info-image-block {
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .hero-info-image-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .hero-info-image-block p, span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .hero-desktop-image {
+    display: none;
+  }
+
+  .hero-mobile-image {
+    display: block;
+  }
+
+  .hero-info img {
+    height: 432px;
+    width: 100vw;
+    margin-left: calc(-16px);
+    margin-right: calc(-16px);
+    object-fit: cover;
+  }
+
+  .hero-floating-block-1 {
+    display: none;
+  }
+  
+  .hero-floating-block-2 {
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #7AB8FF;
+  }
+  
+  .hero-floating-block-3 {
+    bottom: 44%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+  }
+
+  /* Our advantages section */
+
+  .our-advantages {
+    padding: 80px 16px 0px;
+  }
+
+  .our-advantages-content {
+    gap: 32px;
+  }
+
+  .our-advantages-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .our-advantages-info-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 16px;
+    border-radius: 16px;
+    min-width: auto;
+  }
+  
+  .our-advantages-info-item img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .our-advantages-info-item span {
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+
+  .our-advantages-extra-description {
+    padding: 64px 16px 0 0;
+  }
+  
+  .our-advantages-description {
+    padding: 24px 16px;
+    gap: 16px;
+  }
+  
+  .our-advantages-description p {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .our-advantages-description-item {
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid #E3EAF1;
+  }
+  
+  .our-advantages-description .blue {
+    border-left: 2px solid #7AB8FF;
+  }
+
+  /* History section */
+
+  .history {
+    padding-top: 80px;
+  }
+
+  .history-content {
+    flex-direction: column;
+  }
+
+  .history-text-block {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 32px;
+    border-radius: 24px;
+  }
+
+  .history-text-info-block {
+    gap: 16px;
+  }
+  
+  .history-text-info-block span, a {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  .history-image-block {
+    padding-top: 0;
+    margin-top: calc(-24px);
+    justify-content: flex-end;
+  }
+
+  .history-image-floating-block {
+    width: 16px;
+    height: 16px;
+    top: unset;
+    right: unset;
+    bottom: -30%;
+    left: 5%;
+    border-radius: 2px;
+    z-index: 1;
+  }
+
+  .history-image-block-inner {
+    width: 185px;
+    height: 163px;
+    border-top-left-radius: 16px;
+  }
+  
+  .history-image-block-inner img {
+    height: 176px;
+    right: -3%;
+  }
+
+  /* Mission section */
+
+  .mission {
+    gap: 32px;
+    padding-top: 125px;
+  }
+
+  .mission-header-info {
+    padding-left: 16px;
+  }
+
+  .mission-info {
+    padding: 0 16px 0 0;
+  }
+
+  .mission-text-block {
+    padding: 24px 16px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  
+  .mission-text-block div {
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid #7AB8FF;
+  }
+  
+  .mission-text-block span {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  /* Vision section */
+
+  .vision {
+    padding-top: 80px;
+  }
+
+  .vision-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vision-content-floating-block {
+    width: 40px;
+    height: 40px;
+    top: unset;
+    bottom: -15%;
+    left: 4%;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .vision-text-block {
+    padding: 24px 16px;
+    gap: 32px;
+    border-radius: 24px;
+  }
+
+  .vision-text-info-block span {
+    font-size: 16px;
+    line-height: 19.5px;    
+  }
+
+  .vision-image-block-inner {
+    display: flex;
+    position: relative;
+    width: 360px;
+    height: 424px;
+    background-color: #E3EAF1;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .vision-image-block-inner img {
+    position: absolute;
+    bottom: -12%;
+    height: 356px;
+    right: 0%;
+    z-index: 1;
+  }
+
+  .vision-image-block {
+    display: flex;
+    margin-top: calc(-24px);
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .vision-image-block-inner {
+    width: 185px;
+    height: 163px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  
+  .vision-image-block-inner img {
+    bottom: -33%;
+    height: 200px;
+    right: 0%;
+  }
+
+  /* Send request section */
+
+  .send-request {
+    padding: 80px 16px 64px;
+  }
+
+  .send-request-content .h3 {
+    font-size: 24px;
+    line-height: 29.76px;
+    margin-bottom: 32px;
+  }
+
+  .floating-white-block {
+    position: absolute;
+    left: 3%;
+    bottom: 35%;
+    border-radius: 8px;
+    width: 34px;
+    height: 32px;
+    background-color: rgba(227, 234, 241, 1);
+    display: none;
+  }
+  
+  .floating-blue-block {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(122, 184, 255, 1);
+    display: none;
+  }
+}
