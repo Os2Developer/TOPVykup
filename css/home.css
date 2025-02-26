@@ -1363,7 +1363,6 @@
     margin-top: 0;
   }
 
-
   /* BuyBack process section */
 
   .buyback-process-step-block-1-row div {
@@ -1560,7 +1559,6 @@
   .editor img {
     height: 95px;
   }
-
 }
 
 @media (max-width: 1279px) and (min-width: 1024px) {
@@ -1569,7 +1567,9 @@
     line-height: 32px;
     margin-bottom: 32px;
   }
+
   /* Hero section */
+
   .hero {
     padding-top: 172px;
     padding-left: 92px;

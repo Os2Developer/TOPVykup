@@ -2,13 +2,14 @@
   width: 100%;
   background-color: #15151857;
   padding-bottom: 65px;
+  display: flex;
+  padding-left: 110px;
+  padding-right: 110px;
+  justify-content: center;
 }
 
 .footer-container { 
-  max-width: 1216px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

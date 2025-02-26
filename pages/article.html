@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400&family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/article.css">
+  </head>
+
+    <div id="header"></div>
+
+    <main style="width: 100%; background-color: #15151857;">
+
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-mobile-blue-block"></div>
+          <div class="hero-navigation-text-block">
+            <a href="home.html">
+              <span>Головна сторінка</span>
+            </a>
+            <div style="background-color: #FFFFFF;"></div>
+            <a href="blog.html">
+              <span>Блог</span>
+            </a>
+            <div></div>
+            <a>
+              <span style="color:rgba(122, 184, 255, 1);">
+                Які нові технології допомагають запобігати ДТП?
+              </span>
+            </a>
+          </div>
+          <div class="hero-header-name">
+            <h1>ЯКІ НОВІ ТЕХНОЛОГІЇ ДОПОМАГАЮТЬ ЗАПОБІГАТИ ДТП?</h1>
+            <img src="../img/article-hero-image.png" alt="article-hero-image" class="hero-desktop-image">
+            <img src="../img/article-hero-mobile.png" alt="article-hero-mobile" class="hero-mobile-image">
+          </div>
+          <div class="article-info">
+            <div class="editors-info-block">
+              <div class="editor">
+                <img src="../img/editor-1.jpg" alt="editor-1-image">
+                <div class="editor-info">
+                  <a>
+                    Подорога<br/> Оксана Олександрівна
+                  </a>
+                  <p>Автор контенту</p>
+                </div>
+              </div>
+              <div class="editor">
+                <img src="../img/editor-2.jpg" alt="editor-2-image">
+                <div class="editor-info">
+                  <a>
+                    Севрюков<br/> Олександр Вікторович
+                  </a>
+                  <p>Рецензент</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-stat-block">
+              <div class="article-stat">
+                <img src="../img/article-views.svg" alt="article-views">
+                <span>Кількість переглядів: 5</span>
+              </div>
+              <div class="article-stat">
+                <img src="../img/article-publication-date.svg" alt="article-publication-date">
+                <span>Дата публікації: 05.06.2024 </span>
+              </div>
+              <div class="article-stat">
+                <img src="../img/article-edit-date.svg" alt="article-edit-date">
+                <span>Дата оновлення: 10.07.2024 </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="h3">ЗМІСТ</div>
+        <div class="content-nav">
+          <div class="content-nav-item">
+            <span>1.</span>
+            <span data-target="modern-tech">Сучасні технології в автомобілях</span>
+          </div>
+          <div class="content-nav-item">
+            <span>2.</span>
+            <span data-target="parking-assist">Асистенти паркування та маневрування</span>
+          </div>
+          <div class="content-nav-item">
+            <span>3.</span>
+            <div class="content-nav-item inner">
+              <span data-target="adaptive-cruise">Адаптивний круїз-контроль</span>
+              <div>
+                <span>3.1</span>
+                <span data-target="adaptive-cruise-1">Як це працює?</span>
+              </div>
+              <div>
+                <span>3.2</span>
+                <span data-target="adaptive-cruise-2">Безпека на першому місці</span>
+              </div>
+              <div>
+                <span>3.3</span>
+                <span data-target="adaptive-cruise-3">Кому це може стати в пригоді?</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-nav-item">
+            <span>4.</span>
+            <div class="content-nav-item inner">
+              <span data-target="automatic-braking-systems">Системи автоматичного гальмування</span>
+              <div>
+                <span>4.1</span>
+                <span data-target="automatic-braking-systems-1">Що таке система автоматичного гальмування?</span>
+              </div>
+              <div>
+                <span>4.2</span>
+                <span data-target="automatic-braking-systems-2">Як це працює?</span>
+              </div>
+              <div>
+                <span>4.3</span>
+                <span data-target="automatic-braking-systems-3">Чому це так важливо?</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-nav-item">
+            <span>5.</span>
+            <div class="content-nav-item inner">
+              <span data-target="collision-systems">Системи попередження зіткнень</span>
+              <div>
+                <span>5.1</span>
+                <span data-target="collision-systems-1">Що являють собою такі системи?</span>
+              </div>
+              <div>
+                <span>5.2</span>
+                <span data-target="collision-systems-2">Як це працює?</span>
+              </div>
+              <div>
+                <span>5.3</span>
+                <span data-target="collision-systems-3">Додаткова безпека на дорозі</span>
+              </div>
+              <div>
+                <span>5.4</span>
+                <span data-target="collision-systems-4">Погляд у майбутнє</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-nav-item">
+            <span>6.</span>
+            <span data-target="conclusion">Висновок</span>
+          </div>
+        </div>
+        <div class="content-blue-block"></div>
+        <div class="content-white-block"></div>
+      </div>
+
+      <div class="modern-tech">
+        <div class="h3" id="modern-tech">СУЧАСНІ ТЕХНОЛОГІЇ В АВТОМОБІЛЯХ</div>
+        <div class="modern-tech-nav">
+          <span>
+            З кожним роком автомобільна промисловість робить великі кроки вперед, інтегруючи нові технології
+            для підвищення рівня безпеки, комфорту та ефективності автомобілів. Сучасні технології перетворили
+            способи, якими ми взаємодіємо з автомобілями, і очікування від їхніх можливостей.
+          </span>
+          <div class="modern-tech-nav-list">
+            <div class="modern-tech-nav-list-item">
+              <span>1.</span>
+              <span>
+                Електрифікація та гібридні технології. З появою безперебійних джерел живлення та батарей великої ємності
+                автомобілі на електроприводі стають дедалі популярнішими. Гібридні автомобілі, що поєднують традиційні
+                двигуни внутрішнього згоряння з електричними моторами, також пропонують поліпшену ефективність паливоспоживання.
+              </span>
+            </div>
+            <div class="modern-tech-nav-list-item">
+              <span>2.</span>
+              <span>
+                Автономне водіння. З використанням датчиків, радарів і камер, сучасні автомобілі тепер можуть аналізувати
+                своє навколишнє середовище і приймати рішення на дорозі. Це може включати в себе автоматичне гальмування,
+                утримання смуги і навіть повне автономне водіння в деяких умовах.
+              </span>
+            </div>
+            <div class="modern-tech-nav-list-item">
+              <span>3.</span>
+              <span>
+                Інтеграція зі смартфонами. З появою систем, таких як Apple CarPlay та Android Auto, автомобілі стали
+                продовженням наших смартфонів. Водії можуть безпечно і зручно використовувати додатки, слухати музику,
+                робити виклики і багато іншого прямо з центрального екрану автомобіля.
+              </span>
+            </div>
+            <div class="modern-tech-nav-list-item">
+              <span>4.</span>
+              <span>
+                Розширена реальність та інтерактивні дисплеї. Деякі виробники почали інтегрувати системи розширеної
+                реальності у свої автомобілі, що дає змогу водіям бачити інформацію, таку як навігаційні вказівки,
+                безпосередньо на вітровому склі.
+              </span>
+            </div>
+            <div class="modern-tech-nav-list-item">
+              <span>5.</span>
+              <span>
+                Cистеми безпеки. Окрім класичних систем безпеки, таких як подушки безпеки та антиблокувальні системи
+                гальм (ABS), нові технології, такі як системи запобігання зіткненням, асистенти паркування та
+                моніторингу сліпих зон, надають водіям додаткові інструменти для запобігання аваріям.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="modern-tech-block"></div>
+      </div>
+
+      <div class="qa-article">
+        <div class="h3" id="adaptive-cruise">АДАПТИВНИЙ КРУЇЗ-КОНТРОЛЬ</div>
+        <div class="qa-article-nav">
+          <span>
+            Кожен з нас знає про переваги звичайного круїз-контролю, який дозволяє автомобілю рухатися на заданій
+            швидкості без участі водія. Але що, якби ваш автомобіль міг автоматично адаптуватися до руху
+            транспортного засобу, який їде попереду, забезпечуючи не тільки комфортний, а й безпечний рух?
+            Зустрічайте адаптивний круїз-контроль!
+          </span>
+          <div class="qa-article-nav-list">
+            <div class="qa-article-nav-list-item" id="adaptive-cruise-1">
+              <p>Як це працює?</p>
+              <span>
+                Адаптивний круїз-контроль використовує датчики (зазвичай радари або камери) для моніторингу руху
+                автомобілів, що їдуть попереду. Якщо автомобіль, що їде попереду, уповільнює свій рух,
+                система автоматично знижує швидкість вашого автомобіля, щоб підтримувати безпечну відстань.
+                Щойно дорога попереду стає вільною, система повертає ваш автомобіль до початково заданої швидкості.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="adaptive-cruise-2">
+              <p>Безпека на першому місці</p>
+              <span>
+                Однією з основних переваг адаптивного круїз-контролю є поліпшення безпеки. Водії можуть бути впевнені,
+                що їхній автомобіль автоматично вживе необхідних заходів, щоб запобігти зіткненню через раптове
+                гальмування автомобіля попереду.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="adaptive-cruise-3">
+              <p>Кому це може стати в пригоді?</p>
+              <span>
+                Ця технологія особливо корисна на автомагістралях або в щільному міському русі, де швидкість
+                автомобілів часто змінюється. Водії можуть почуватися менш втомленими після тривалих поїздок,
+                оскільки система значно знижує необхідність постійно коригувати швидкість або тримати ногу на
+                педалі гальма.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-image">
+        <img src="../img/article-image.png" alt="article-image" class="article-image-desktop">
+        <img src="../img/article-image-mobile.png" alt="article-image" class="article-image-mobile">
+        <div class="article-image-block"></div>
+      </div>
+
+      <div class="qa-article braking-systems">
+        <div class="h3" id="automatic-braking-systems">Системи автоматичного гальмування</div>
+        <div class="qa-article-nav">
+          <span>
+            З кожним роком автомобільні виробники впроваджують все більше технологій, спрямованих на підвищення
+            безпеки руху. Одним із таких нововведень, яке вже встигло завоювати довіру багатьох водіїв, є система
+            автоматичного гальмування.
+          </span>
+          <div class="qa-article-nav-list">
+            <div class="qa-article-nav-list-item" id="automatic-braking-systems-1">
+              <p>Що таке система автоматичного гальмування?</p>
+              <span>
+                Система автоматичного гальмування призначена для виявлення потенційно небезпечних ситуацій на дорозі
+                та автоматичного втручання в процес гальмування, якщо водій не реагує відповідним чином.
+                Завдяки датчикам, радарам і камерам система може "бачити" перешкоди на дорозі та реагувати на них
+                швидше, ніж людина.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="automatic-braking-systems-2">
+              <p>Як це працює?</p>
+              <span>
+                Як правило, система автоматичного гальмування використовує комбінацію різних сенсорів для визначення
+                відстані до предметів або транспортних засобів перед автомобілем. При виявленні можливого зіткнення
+                система попереджає водія за допомогою звукових або візуальних сигналів. Якщо водій не реагує,
+                система починає автоматичне гальмування, щоб або запобігти зіткненню, або знизити його наслідки.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="automatic-braking-systems-3">
+              <p>Чому це так важливо?</p>
+              <span>
+                Дорожньо-транспортні пригоди можуть статися за частки секунди. Іноді водії просто не встигають
+                адекватно відреагувати на небезпечну ситуацію через людський фактор, втому або відволікання.
+                Система автоматичного гальмування може стати додатковою "страховкою", знижуючи ризики і запобігаючи
+                аваріям.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="braking-systems-block"></div>
+      </div>
+
+      <div class="qa-article collision-systems">
+        <div class="h3" id="collision-systems">Системи попередження зіткнень</div>
+        <div class="qa-article-nav">
+          <span>
+            В епоху швидкого розвитку технологій і збільшення потоку автомобілів на дорогах, безпека водіння стає
+            основним пріоритетом для автовиробників. Системи попередження зіткнень - один з новітніх і найбільш
+            перспективних напрямків у галузі автомобільної безпеки.
+          </span>
+          <div class="qa-article-nav-list">
+            <div class="qa-article-nav-list-item" id="collision-systems-1">
+              <p>Що являють собою такі системи?</p>
+              <span>
+                Системи запобігання зіткненням призначені для виявлення найближчих перешкод, чи то інші автомобілі,
+                пішоходи, чи то раптові перешкоди на дорозі. При визначенні потенційної загрози система активує низку
+                сигналів - звукових, візуальних або навіть тактильних, щоб попередити водія про необхідність
+                негайної дії.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="collision-systems-2">
+              <p>Як це працює?</p>
+              <span>
+                Більшість систем попередження зіткнень використовує комбінацію радарів, камер та інших датчиків для
+                сканування навколишнього середовища перед автомобілем. Алгоритми обробки даних аналізують отриману
+                інформацію, обчислюючи ймовірність зіткнення. У разі виявлення небезпеки система негайно активує
+                попередження.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="collision-systems-3">
+              <p>Додаткова безпека на дорозі</p>
+              <span>
+                Навіть найдосвідченіші водії не застраховані від помилок або моментів неуважності. Системи
+                попередження зіткнень можуть стати важливим інструментом, що запобігає аваріям, особливо за
+                складних дорожніх умов або за несприятливих погодних явищ.
+              </span>
+            </div>
+            <div class="qa-article-nav-list-item" id="collision-systems-4">
+              <p>Погляд у майбутнє</p>
+              <span>
+                Багато автовиробників уже впроваджують ці системи в стандартне оснащення своїх автомобілів.
+                Очікується, що з часом такі системи ставатимуть дедалі більш просунутими,
+                забезпечуючи вищий рівень захисту на дорозі.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="collision-systems-block"></div>
+      </div>
+
+      <div class="qa-article">
+        <div class="h3" id="conclusion">ВИСНОВОК</div>
+        <div class="qa-article-nav">
+          <span>
+            На закінчення, сучасні технології відіграють ключову роль у запобіганні ДТП. Однак важливо пам'ятати,
+            що найкращим захистом від аварій завжди буде уважне і відповідальне водіння.
+          </span>
+        </div>
+      </div>
+
+      <div class="blog-articles">
+        <div class="blog-articles-content">
+          <div class="h3">ОСТАННІ СТАТТІ БЛОГУ</div>
+          <div class="blog-articles-info-block">
+            <div class="blog-articles-info-block-item">
+              <img src="../img/blog-articles-1-image.jpg" alt="car-buyback-image">
+              <div class="blog-articles-item-info-block">
+                <p class="blog-articles-item-date">01.11.2024</p>
+                <p class="blog-articles-item-question">
+                  Кому та скільки платити податків за продаж авто?
+                </p>
+                <p class="blog-articles-item-answer">
+                  Продаж автомобіля може здатися простою справою, але варто пам’ятати про податки...
+                </p>
+                <div class="blog-articles-read-block">
+                  <p>ЧИТАТИ СТАТТЮ</p>
+                  <img
+                    id="read-1-article-arrow"
+                    src="../img/button-arrow-white.svg"
+                    alt="blog-articles-button-arrow-image"
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="blog-articles-info-block-item">
+              <img src="../img/blog-articles-2-image.jpg" alt="blog-articles-2-image">
+              <div class="blog-articles-item-info-block">
+                <p class="blog-articles-item-date">27.08.2024</p>
+                <p class="blog-articles-item-question">
+                  Де найдешевші автомобілі в Європі
+                </p>
+                <p class="blog-articles-item-answer">
+                  Якщо ви задаєтесь питанням, де найдешевші авто в Європі, варто розглянути кілька країн
+                </p>
+                <div class="blog-articles-read-block">
+                  <p>ЧИТАТИ СТАТТЮ</p>
+                  <img
+                    id="read-2-article-arrow"
+                    src="../img/button-arrow-white.svg"
+                    alt="blog-articles-button-arrow-image"
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="blog-articles-info-block-item">
+              <img src="../img/blog-articles-3-image.jpg" alt="blog-articles-3-image">
+              <div class="blog-articles-item-info-block">
+                <p class="blog-articles-item-date">05.06.2024</p>
+                <p class="blog-articles-item-question">
+                  Кому та скільки платити податків за продаж авто?
+                </p>
+                <p class="blog-articles-item-answer">
+                  Продаж автомобіля може здатися простою справою, але варто пам’ятати про податки...
+                </p>
+                <div class="blog-articles-read-block">
+                  <p>ЧИТАТИ СТАТТЮ</p>
+                  <img
+                    id="read-3-article-arrow"
+                    src="../img/button-arrow-white.svg"
+                    alt="blog-articles-button-arrow-image"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-articles-slider-wrapper">
+            <div class="blog-articles-cars-slider">
+              <div class="blog-articles-cars-slider-block">
+                <div class="blog-articles-info-block-item">
+                  <img src="../img/blog-articles-1-image.jpg" alt="car-buyback-image">
+                  <div class="blog-articles-item-info-block">
+                    <p class="blog-articles-item-date">01.11.2024</p>
+                    <p class="blog-articles-item-question">
+                      Кому та скільки платити податків за продаж авто?
+                    </p>
+                    <p class="blog-articles-item-answer">
+                      Продаж автомобіля може здатися простою справою, але варто пам’ятати про податки...
+                    </p>
+                    <div class="blog-articles-read-block">
+                      <p>ЧИТАТИ СТАТТЮ</p>
+                      <img
+                        id="read-1-article-arrow"
+                        src="../img/button-arrow-white.svg"
+                        alt="blog-articles-button-arrow-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-articles-cars-slider-block">
+                <div class="blog-articles-info-block-item">
+                  <img src="../img/blog-articles-2-image.jpg" alt="blog-articles-2-image">
+                  <div class="blog-articles-item-info-block">
+                    <p class="blog-articles-item-date">27.08.2024</p>
+                    <p class="blog-articles-item-question">
+                      Де найдешевші автомобілі в Європі
+                    </p>
+                    <p class="blog-articles-item-answer">
+                      Якщо ви задаєтесь питанням, де найдешевші авто в Європі, варто розглянути кілька країн
+                    </p>
+                    <div class="blog-articles-read-block">
+                      <p>ЧИТАТИ СТАТТЮ</p>
+                      <img
+                        id="read-2-article-arrow"
+                        src="../img/button-arrow-white.svg"
+                        alt="blog-articles-button-arrow-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-articles-cars-slider-block">
+                <div class="blog-articles-info-block-item">
+                  <img src="../img/blog-articles-3-image.jpg" alt="blog-articles-3-image">
+                  <div class="blog-articles-item-info-block">
+                    <p class="blog-articles-item-date">05.06.2024</p>
+                    <p class="blog-articles-item-question">
+                      Кому та скільки платити податків за продаж авто?
+                    </p>
+                    <p class="blog-articles-item-answer">
+                      Продаж автомобіля може здатися простою справою, але варто пам’ятати про податки...
+                    </p>
+                    <div class="blog-articles-read-block">
+                      <p>ЧИТАТИ СТАТТЮ</p>
+                      <img
+                        id="read-3-article-arrow"
+                        src="../img/button-arrow-white.svg"
+                        alt="blog-articles-button-arrow-image"
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <global-button
+            id="blog-articles-button"
+            text="БЛОГ"
+            bgcolor="#7AB8FF"
+            imgsrc="../img/button-arrow.svg"
+            alignSelf="center"
+            href="blog.html"
+          >
+          </global-button>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="review-floating-block"></div>
+        <div class="reviews-content">
+          <div class="h3">КОМЕНТАРІ</div>
+          <div class="reviews-info-container">
+            <div class="reviews-info-item">
+              <p class="reviews-info-date">15.11.2022</p>
+              <div class="reviews-info-review-block">
+                <div class="review-info-star-block">
+                  <p>Вадим</p>
+                </div>
+                <p>
+                  Зміст чітко описує сучасні технології в авто, акцентуючи на безпеці, комфорті й інноваціях.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-leave-review">
+            <div class="h3">ЗАЛИШИТИ КОМЕНТАР</div>
+            <div class="reviews-leave-review-content">
+              <div class="reviews-leave-review-inputs-block">
+                <form class="feedback-form">
+                  <div class="feedback-form-row">
+                    <div class="feedback-form-group">
+                      <label for="name">
+                        <span style="color: red;">*</span> Ім’я
+                      </label>
+                      <input type="text" id="name" placeholder="Введіть Ім’я" />
+                    </div>
+                    <div class="feedback-form-group">
+                      <label for="email">
+                        <span style="color: red;">*</span> Email
+                      </label>
+                      <input type="email" id="email" placeholder="Введіть Email" />
+                    </div>
+                  </div>
+                
+                  <div class="feedback-form-group">
+                    <label for="review">
+                      <span style="color: red;">*</span> Написати відгук
+                    </label>
+                    <textarea id="review" placeholder="Написати відгук"></textarea>
+                  </div>
+                </form>
+                <global-button
+                  id="review-send-button"
+                  text="ВІДПРАВИТИ"
+                  bgcolor="#7AB8FF"
+                  imgsrc="../img/button-arrow.svg"
+                >
+                </global-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+  
+    </main>
+
+  <body>
+
+    <script type="module" src="../components/GlobalButton.js"></script>
+    <script type="module" src="../components/ApplicationForm.js"></script>
+    <script type="module" src="../components/ApplicationFormPopUp.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/article.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </body>
+</html>
