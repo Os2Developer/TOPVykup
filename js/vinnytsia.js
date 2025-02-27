@@ -1,64 +1,107 @@
-// Pagination for Slider
-const updatePagination = (currentSlide) => {
-  document.querySelectorAll('.repurchased-cars-page').forEach((page) => {
-    const index = Number(page.dataset.index);
-    page.classList.toggle('active', index === currentSlide);
-  });
-};
+import { renderReviews } from '../components/ReviewsSection.js';
+import { renderPurchasedCars } from '../components/RepurchasedCarsSection.js';
 
-// Slider Initialization
-const initSliders = () => {
-  const isMobile = window.innerWidth <= 768;
-  const baseConfig = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: document.querySelector('.slick-prev'),
-    nextArrow: document.querySelector('.slick-next'),
-  };
+const reviewsData = [
+  {
+    date: '15.11.2022',
+    name: 'Андрій',
+    review: 'Хочу продать свою машину опель кадет 300₴. Не на ходу.'
+  },
+];
 
-  if (isMobile) {
-    $('.repurchased-cars-slider-mobile').slick({
-      ...baseConfig,
-      centerMode: true,
-      centerPadding: '22px',
-      dots: true,
-    });
-  } else {
-    $('.repurchased-cars-slider').slick({
-      ...baseConfig,
-      infinite: false,
-      centerMode: false,
-      dots: false,
-    }).on('init afterChange', (event, slick, currentSlide = 0) => {
-      const totalSlides = slick.$slides.length;
-      const nextImg = document.querySelector('.slick-next img');
-      const prevImg = document.querySelector('.slick-prev img');
-      const nextBtn = document.querySelector('.slick-next');
-      const prevBtn = document.querySelector('.slick-prev');
+const repurchasedCarsData = [
+  {
+    title: 'Нісан жук 2012',
+    description: 'Викуплений за 9 500$',
+    image: '../img/vinnytsia-repurchased-cars-1-image.png'
+  },
+  {
+    title: 'Део Ланос 2007',
+    description: 'Викуплений за 1 400$',
+    image: '../img/vinnytsia-repurchased-cars-2-image.png'
+  },
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-3-image.png'
+  },
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-4-image.png'
+  },
+  {
+    title: 'Мазда 6 2010',
+    description: 'Викуплений за 4 500$',
+    image: '../img/vinnytsia-repurchased-cars-5-image.png'
+  },
+  {
+    title: 'Ауді А6 2001',
+    description: 'Викуплений за 2 500$',
+    image: '../img/vinnytsia-repurchased-cars-6-image.png'
+  }, // 2
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-3-image.png'
+  },
+  {
+    title: 'Део Ланос 2007',
+    description: 'Викуплений за 1 400$',
+    image: '../img/vinnytsia-repurchased-cars-2-image.png'
+  },
+  {
+    title: 'Нісан жук 2012',
+    description: 'Викуплений за 9 500$',
+    image: '../img/vinnytsia-repurchased-cars-1-image.png'
+  },
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-4-image.png'
+  },
+  {
+    title: 'Мазда 6 2010',
+    description: 'Викуплений за 4 500$',
+    image: '../img/vinnytsia-repurchased-cars-5-image.png'
+  },
+  {
+    title: 'Ауді А6 2001',
+    description: 'Викуплений за 2 500$',
+    image: '../img/vinnytsia-repurchased-cars-6-image.png'
+  }, // 3
+  {
+    title: 'Мазда 6 2010',
+    description: 'Викуплений за 4 500$',
+    image: '../img/vinnytsia-repurchased-cars-5-image.png'
+  },
+  {
+    title: 'Део Ланос 2007',
+    description: 'Викуплений за 1 400$',
+    image: '../img/vinnytsia-repurchased-cars-2-image.png'
+  },
+  {
+    title: 'Нісан жук 2012',
+    description: 'Викуплений за 9 500$',
+    image: '../img/vinnytsia-repurchased-cars-1-image.png'
+  },
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-4-image.png'
+  },
+  {
+    title: 'Renge Rover 2011 бенз',
+    description: 'Викуплений за 22 500$',
+    image: '../img/vinnytsia-repurchased-cars-3-image.png'
+  },
+  {
+    title: 'Ауді А6 2001',
+    description: 'Викуплений за 2 500$',
+    image: '../img/vinnytsia-repurchased-cars-6-image.png'
+  },
+];
 
-      nextImg.src = currentSlide === totalSlides - 1 
-        ? '../img/slider-forward-icon-disabled.svg' 
-        : '../img/slider-forward-icon.svg';
-      nextBtn.classList.toggle('disabled', currentSlide === totalSlides - 1);
-
-      prevImg.src = currentSlide === 0 
-        ? '../img/slider-back-icon-disabled.svg' 
-        : '../img/slider-back-icon.svg';
-      prevBtn.classList.toggle('disabled', currentSlide === 0);
-
-      updatePagination(currentSlide);
-    });
-
-    document.querySelectorAll('.repurchased-cars-page').forEach(page => {
-      page.addEventListener('click', () => {
-        const index = Number(page.dataset.index);
-        $('.repurchased-cars-slider').slick('slickGoTo', index);
-      });
-    });
-  }
-};
 
 // FAQ
 const initFAQ = () => {
@@ -80,41 +123,8 @@ const initFAQ = () => {
   });
 };
 
-// Star Rating
-const initStarRating = () => {
-  const starsContainer = window.innerWidth <= 768 
-    ? document.querySelector(".reviews-select-stars-mobile") 
-    : document.querySelector(".reviews-select-stars");
-  const stars = starsContainer?.querySelectorAll(".star") || [];
-  let isRated = false;
-  let currentRating = -1;
-
-  stars.forEach((star, index) => {
-    star.addEventListener("mouseover", () => {
-      if (!isRated) {
-        for (let i = 0; i <= index; i++) stars[i].src = "../img/reviews-star.svg";
-      }
-    });
-
-    star.addEventListener("mouseout", () => {
-      if (!isRated) {
-        stars.forEach(s => s.src = "../img/reviews-star-empty.svg");
-      }
-    });
-
-    star.addEventListener("click", () => {
-      isRated = true;
-      currentRating = index;
-      stars.forEach((s, i) => {
-        s.src = i <= index ? "../img/reviews-star.svg" : "../img/reviews-star-empty.svg";
-      });
-    });
-  });
-};
-
 document.addEventListener('DOMContentLoaded', () => {
+  renderReviews(reviewsData, 'reviews-placeholder');
+  renderPurchasedCars(repurchasedCarsData, 'repurchased-cars-container');
   initFAQ();
-  initStarRating();
-  initSliders();
-  updatePagination(0);
 });

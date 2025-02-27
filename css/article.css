@@ -366,125 +366,6 @@ span {
   background-color: #E3EAF1;
 }
 
-/* Blog articles section */
-
-.blog-articles {
-  position: relative; 
-  background-color: #15151857;
-  padding: 150px 110px 0;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.blog-articles-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  max-width: 1216px;
-}
-
-.blog-articles-slider-wrapper {
-  display: none;
-}
-
-.blog-articles-info-block {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 32px;
-  margin-bottom: 80px;
-  margin-top: 64px;
-}
-
-.blog-articles-info-block-item {
-  display: flex;
-  flex-direction: column;
-  width: 384px;
-  border-radius: 24px;
-  cursor: pointer;
-  box-shadow: 0px 0px 68px 0px #0000000D inset,
-  0px 4px 4px 0px #0000000D inset;
-  background-color: #FFFFFF14;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(48px);
-}
-
-.blog-articles-info-block-item:hover {
-  background-color: #0000003D;
-  box-shadow: 0px 10px 10px 0px #FFFFFF1A inset,
-  0px 10px 32px 0px #7AB8FF40;
-}
-
-.blog-articles-info-block-item img {
-  height: 280px;
-  border-radius: 24px;
-}
-
-.blog-articles-item-info-block {
-  padding: 24px;
-  gap: 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-articles-item-info-block p {
-  margin: 0;
-}
-
-.blog-articles-item-date {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  text-align: right;
-}
-
-.blog-articles-item-info-text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.blog-articles-item-question {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22.32px;
-  color: #FFFFFF;
-}
-
-.blog-articles-item-answer {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  margin-top: 12px;
-  color: #FFFFFF;
-}
-
-.blog-articles-read-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.blog-articles-read-block p {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24.8px;
-  color: rgba(122, 184, 255, 1);
-}
-
-.blog-articles-read-block img {
-  height: 64px;
-  width: auto;
-}
-
 /* Reviews section */
 
 .reviews {
@@ -664,29 +545,6 @@ span {
     line-height: 65px;
   }
 
-  /* Blog articles section */
-
-  .blog-articles-item-info-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 24px;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 240px;
-  }
-
-  .blog-articles-read-block img {
-    height: 64px;
-  }
-
-  .blog-articles-item-answer {
-    font-size: 17px;
-    line-height: 23px;
-  }
-
   /* Reviews section */
 
   .reviews-info-review-block p {
@@ -821,80 +679,6 @@ span {
     height: 52px;
   }
 
-  /* Blog articles section */
-
-  .blog-articles {
-    padding-top: 80px;
-    padding-left: 92px;
-    padding-right: 92px;
-  }
-
-  .blog-articles-info-block {
-    gap: 24px;
-    margin-bottom: 40px;
-    margin-top: 48px;
-  }
-
-  .blog-articles-item-info-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 16px;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 200px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19px;
-    margin: 0;
-    margin-top: 10px;
-  }
-
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19px;
-    margin-top: 8px;
-  }
-
-  .blog-articles-item-question {
-    margin-bottom: 10px;
-  }
-
-  .blog-articles-read-block img {
-    height: 36px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 18px;
-  }
-
-  .slick-dots li {
-    width: 10px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 6px;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border: none;
-  }
-
-  .slick-dots li button:before {
-    content: none;
-  }
-
-  .slick-dots li.slick-active {
-    width: 60px;
-    background-color: rgba(122, 184, 255, 1);
-  }
-
   /* Reviews section */
 
   .reviews {
@@ -988,9 +772,7 @@ span {
 
   .hero-header-name img {
     height: 290px;
-    width: 100vw;
-    margin-left: calc(-16px);
-    margin-right: calc(-16px);
+    border-radius: 24px;
     object-fit: cover;
   }
 
@@ -1158,12 +940,12 @@ span {
 
   .article-image {
     padding: 64px 0 0;
-    display: block;
+    display: flex;
   }
 
   .article-image img {
     height: 290px;
-    width: 100vw;
+    border-radius: 24px;
     object-fit: cover;
   }
 
@@ -1186,91 +968,10 @@ span {
     background-color: #7AB8FF;
   }
 
-  /* Blog articles section */
-
-  .blog-articles {
-    padding: 60px 32px 0px;
-  }
-
-  .blog-articles-info-block {
-    display: none;
-  }
-
-  .blog-articles-slider-wrapper {
-    position: relative;
-    display: block;
-    margin-top: 32px;
-  }
-
-  .blog-articles-cars-slider {
-    margin-bottom: 50px !important;
-  }
-
-  .slick-track {
-    min-height: 500px !important;
-    display: flex;
-    align-items: center;
-  }
-
-  .blog-articles-cars-slider-block {
-    height: 500px;
-    margin-bottom: 20px;
-  }
-
-  .blog-articles-info-block-item {
-    min-width: 260px;
-    width: 50vw;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 190px;
-    object-fit: cover;
-  }
-
-  .blog-articles-item-info-block {
-    padding: 16px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-item-question {
-    font-size: 16px;
-    line-height: 19.84px;
-    min-height: 59px;
-  }
-  
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .blog-articles-read-block img {
-    height: 32px;
-    width: auto;
-  }
-
-  .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-
   /* Reviews section */
 
   .reviews {
-    padding: 0 32px;
+    padding: 0 32px 32px;
   }
 
   .reviews-content .h3 {
@@ -1602,104 +1303,6 @@ span {
     height: 16px;
     border-radius: 2px;
     background-color: #7AB8FF;
-  }
-
-  /* Blog articles section */
-
-  .blog-articles {
-    padding: 80px 16px 0;
-    text-align: center;
-  }
-
-  .blog-articles-info-block {
-    display: none;
-  }
-
-  .blog-articles-slider-wrapper {
-    position: relative;
-    display: block;
-    margin-top: 32px;
-  }
-
-  .blog-articles-cars-slider {
-    margin-bottom: 45px !important;
-  }
-
-  .blog-articles-cars-slider .slick-track {
-    min-height: 500px !important;
-  }
-
-  .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    height: auto !important;
-  }
-
-  .blog-articles-cars-slider-block {
-    height: 500px;
-  }
-
-  .blog-articles-info-block-item {
-    min-width: 260px;
-    width: 70vw;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 190px;
-    object-fit: cover;
-  }
-
-  .blog-articles-item-info-block {
-    padding: 16px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-item-question {
-    font-size: 16px;
-    line-height: 19.84px;
-    min-height: 59px;
-  }
-  
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .blog-articles-read-block img {
-    height: 32px;
-    width: auto;
-  }
-
-  .slick-dots li {
-    width: 10px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 6px;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border: none;
-  }
-
-  .slick-dots li button:before {
-    content: none;
-  }
-
-  .slick-dots li.slick-active {
-    width: 60px;
-    background-color: rgba(122, 184, 255, 1);
   }
 
   /* Reviews section */

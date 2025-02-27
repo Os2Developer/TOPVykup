@@ -1,72 +1,136 @@
-// Pagination for Slider
-const updatePagination = (currentSlide) => {
-  document.querySelectorAll('.repurchased-cars-page').forEach((page) => {
-    const index = Number(page.dataset.index);
-    page.classList.toggle('active', index === currentSlide);
-  });
+import { renderBlog } from '../components/BlogSection.js';
+import { renderReviews } from '../components/ReviewsSection.js';
+import { renderPurchasedCars } from '../components/RepurchasedCarsSection.js';
+
+const blogData = {
+  sectionName: 'ОСТАННІ СТАТТІ БЛОГУ',
+  articles: [
+    {
+      carImage: '../img/blog-articles-1-image.jpg',
+      date: '01.11.2024',
+      question: 'Кому та скільки платити податків за продаж авто?',
+      answer: 'Продаж автомобіля може здатися простою справою, але варто пам’ятати про податки...'
+    },
+    {
+      carImage: '../img/blog-articles-2-image.jpg',
+      date: '27.08.2024',
+      question: 'Де найдешевші автомобілі в Європі',
+      answer: 'Якщо ви задаєтесь питанням, де найдешевші авто в Європі, варто розглянути кілька країн'
+    },
+    {
+      carImage: '../img/blog-articles-3-image.jpg',
+      date: '05.06.2024',
+      question: 'Як обрати найкращий автомобіль для сім’ї?',
+      answer: 'Вибір авто для сім’ї залежить від багатьох факторів, таких як безпека...'
+    }
+  ]
 };
 
-// Slider Initialization
-const initSliders = () => {
-  const isMobile = window.innerWidth <= 767;
-  const isTablet = window.innerWidth >= 768 && window.innerWidth <= 1023;
-  const baseConfig = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: document.querySelector('.slick-prev'),
-    nextArrow: document.querySelector('.slick-next'),
-  };
-
-  if (isMobile || isTablet) {
-    $('.repurchased-cars-slider-mobile').slick({
-      ...baseConfig,
-      centerMode: true,
-      centerPadding: '22px',
-      dots: true,
-    });
-
-    $('.blog-articles-cars-slider').slick({
-      ...baseConfig,
-      centerMode: true,
-      centerPadding: '22px',
-      dots: true,
-    });
-  } else {
-    $('.repurchased-cars-slider').slick({
-      ...baseConfig,
-      infinite: false,
-      centerMode: false,
-      dots: false,
-    }).on('init afterChange', (event, slick, currentSlide = 0) => {
-      const totalSlides = slick.$slides.length;
-      const nextImg = document.querySelector('.slick-next img');
-      const prevImg = document.querySelector('.slick-prev img');
-      const nextBtn = document.querySelector('.slick-next');
-      const prevBtn = document.querySelector('.slick-prev');
-
-      nextImg.src = currentSlide === totalSlides - 1 
-        ? '../img/slider-forward-icon-disabled.svg' 
-        : '../img/slider-forward-icon.svg';
-      nextBtn.classList.toggle('disabled', currentSlide === totalSlides - 1);
-
-      prevImg.src = currentSlide === 0 
-        ? '../img/slider-back-icon-disabled.svg' 
-        : '../img/slider-back-icon.svg';
-      prevBtn.classList.toggle('disabled', currentSlide === 0);
-
-      updatePagination(currentSlide);
-    });
-
-    document.querySelectorAll('.repurchased-cars-page').forEach(page => {
-      page.addEventListener('click', () => {
-        const index = Number(page.dataset.index);
-        $('.repurchased-cars-slider').slick('slickGoTo', index);
-      });
-    });
+const reviewsData = [
+  {
+    date: '15.11.2022',
+    name: 'Андрій',
+    review: 'Скористався викупом авто після ДТП, бо сам не місцевий, був проїздом в Києві. Дякую що допомгли з оформленням документів.'
+  },
+  {
+    date: '19.02.2021',
+    name: 'Тарас',
+    review: 'Дякую, що викупили моє авто з місця ДТП. Повністю задоволений сервісом: машину евакуювали, провели оцінку та допомогли з оформленням документів.'
   }
-};
+];
+
+const repurchasedCarsData = [
+  {
+    title: 'Ауді Q3 2019',
+    description: 'Викуплений за 13 700$',
+    image: '../img/repurchased-cars-1-image.jpg'
+  },
+  {
+    title: 'Фіат тіпо ДТП 2018',
+    description: 'Викуплений за 7 300$',
+    image: '../img/repurchased-cars-2-image.jpg'
+  },
+  {
+    title: 'Фольцвагені гольф 2013',
+    description: 'Викуплений за 6 500$',
+    image: '../img/repurchased-cars-3-image.jpg'
+  },
+  {
+    title: 'Тойота Камрі 50 2012',
+    description: 'Викуплений за 7 000$',
+    image: '../img/repurchased-cars-4-image.jpg'
+  },
+  {
+    title: 'Опель Астра 2015',
+    description: 'Викуплений за 4 700$',
+    image: '../img/repurchased-cars-5-image.jpg'
+  },
+  {
+    title: 'Тойота рав4 2010',
+    description: 'Викуплений за 7 500$',
+    image: '../img/repurchased-cars-6-image.jpg'
+  }, // 2
+  {
+    title: 'Фольцвагені гольф 2013',
+    description: 'Викуплений за 6 500$',
+    image: '../img/repurchased-cars-3-image.jpg'
+  },
+  {
+    title: 'Фіат тіпо ДТП 2018',
+    description: 'Викуплений за 7 300$',
+    image: '../img/repurchased-cars-2-image.jpg'
+  },
+  {
+    title: 'Ауді Q3 2019',
+    description: 'Викуплений за 13 700$',
+    image: '../img/repurchased-cars-1-image.jpg'
+  },
+  {
+    title: 'Тойота Камрі 50 2012',
+    description: 'Викуплений за 7 000$',
+    image: '../img/repurchased-cars-4-image.jpg'
+  },
+  {
+    title: 'Опель Астра 2015',
+    description: 'Викуплений за 4 700$',
+    image: '../img/repurchased-cars-5-image.jpg'
+  },
+  {
+    title: 'Тойота рав4 2010',
+    description: 'Викуплений за 7 500$',
+    image: '../img/repurchased-cars-6-image.jpg'
+  }, // 3
+  {
+    title: 'Опель Астра 2015',
+    description: 'Викуплений за 4 700$',
+    image: '../img/repurchased-cars-5-image.jpg'
+  },
+  {
+    title: 'Фіат тіпо ДТП 2018',
+    description: 'Викуплений за 7 300$',
+    image: '../img/repurchased-cars-2-image.jpg'
+  },
+  {
+    title: 'Ауді Q3 2019',
+    description: 'Викуплений за 13 700$',
+    image: '../img/repurchased-cars-1-image.jpg'
+  },
+  {
+    title: 'Тойота Камрі 50 2012',
+    description: 'Викуплений за 7 000$',
+    image: '../img/repurchased-cars-4-image.jpg'
+  },
+  {
+    title: 'Фольцвагені гольф 2013',
+    description: 'Викуплений за 6 500$',
+    image: '../img/repurchased-cars-3-image.jpg'
+  },
+  {
+    title: 'Тойота рав4 2010',
+    description: 'Викуплений за 7 500$',
+    image: '../img/repurchased-cars-6-image.jpg'
+  },
+];
 
 // FAQ
 const initFAQ = () => {
@@ -88,42 +152,10 @@ const initFAQ = () => {
   });
 };
 
-// Star Rating
-const initStarRating = () => {
-  const starsContainer = window.innerWidth <= 768 
-    ? document.querySelector(".reviews-select-stars-mobile") 
-    : document.querySelector(".reviews-select-stars");
-  const stars = starsContainer?.querySelectorAll(".star") || [];
-  let isRated = false;
-  let currentRating = -1;
-
-  stars.forEach((star, index) => {
-    star.addEventListener("mouseover", () => {
-      if (!isRated) {
-        for (let i = 0; i <= index; i++) stars[i].src = "../img/reviews-star.svg";
-      }
-    });
-
-    star.addEventListener("mouseout", () => {
-      if (!isRated) {
-        stars.forEach(s => s.src = "../img/reviews-star-empty.svg");
-      }
-    });
-
-    star.addEventListener("click", () => {
-      isRated = true;
-      currentRating = index;
-      stars.forEach((s, i) => {
-        s.src = i <= index ? "../img/reviews-star.svg" : "../img/reviews-star-empty.svg";
-      });
-    });
-  });
-};
-
 // DOM Loaded Handler
 document.addEventListener('DOMContentLoaded', () => {
-  initSliders();
+  renderReviews(reviewsData, 'reviews-placeholder');
+  renderBlog(blogData, 'blog-articles-placeholder');
+  renderPurchasedCars(repurchasedCarsData, 'repurchased-cars-container');
   initFAQ();
-  initStarRating();
-  updatePagination(0);
 });

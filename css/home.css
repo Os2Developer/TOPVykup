@@ -10,7 +10,7 @@
 .hero {
   position: relative; 
   background-color: #15151857;
-  background: url("../img/hero-road.jpg") center/cover no-repeat;
+  background: url("../img/hero-road.jpg") no-repeat center center;
   padding-left: 110px;
   padding-right: 110px;
   padding-top: 212px;
@@ -410,185 +410,6 @@
   margin-bottom: 80px;
 }
 
-/* Repurchased cars section */
-
-.repurchased-cars {
-  position: relative; 
-  background-color: #15151857;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 150px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.repurchased-cars-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  max-width: 1216px;
-}
-
-.repurchased-cars-slider-wrapper {
-  position: relative;
-  display: block;
-}
-
-.repurchased-cars-slider-wrapper-mobile {
-  position: relative;
-  display: none;
-}
-
-.repurchased-cars-slider-block {
-  display: flex !important;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 26px;
-  margin-bottom: 80px;
-}
-
-.repurchased-cars-slider-block-item {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(122, 184, 255, 1);
-  border-radius: 32px;
-  cursor: pointer;
-}
-
-.repurchased-cars-slider-block-item img {
-  height: 288px;
-  width: 384px;
-  border-radius: 32px;
-}
-
-.repurchased-cars-image {
-  transition: transform 0.3s ease-in-out;
-}
-
-.repurchased-cars-image:hover {
-  transform: scale(1.1);
-}
-
-.repurchased-cars-info-block {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-.repurchased-cars-info-block p {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22.32px;
-  color: rgba(0, 0, 0, 1);
-  margin: 0;
-}
-
-.repurchased-cars-info-block span {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-}
-
-.repurchased-cars-slider-nav-block {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.repurchased-cars-slider-nav-line {
-  height: 1px;
-  max-width: 945px;
-  width: 100%;
-  background-color: rgba(122, 184, 255, 1);
-}
-
-.repurchased-cars-slider-nav {
-  position: relative;
-  width: 144px;
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  height: 56px;
-}
-
-.repurchased-cars-slider-nav button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  width: 56px;
-  height: 56px;
-  position: relative;
-}
-
-.repurchased-cars-slider-nav img {
-  width: 56px;
-  height: 56px;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next:before {
-  content: none;
-}
-
-.slick-prev:before {
-  content: none;
-}
-
-.repurchased-cars-pagination {
-  display: flex;
-  max-width: 95px;
-  width: 100%;
-  height: 27px;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 24px;
-}
-
-.repurchased-cars-page p {
-  font-family: 'Unbounded';
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 27.28px;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 0;
-}
-
-.repurchased-cars-page.active p {
-  color: rgba(122, 184, 255, 1);
-}
-
-/* Default arrow styling */
-.slick-next img, .slick-prev img {
-  transition: filter 0.3s ease;
-  filter: none;
-}
-
-/* When disabled, the forward arrow becomes disabled */
-.slick-next.disabled img {
-  filter: brightness(0) saturate(100%) invert(70%);
-}
-
-/* When disabled, the back arrow  becomes active (if not already) */
-.slick-prev.disabled img {
-  filter: none;
-}
-
 /* Cities section */
 
 .cities {
@@ -733,126 +554,6 @@
 
 .video-section-6-block {
   display: none;
-}
-
-/* Blog articles section */
-
-.blog-articles {
-  position: relative; 
-  background-color: #15151857;
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top: 150px;
-  color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.blog-articles-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  max-width: 1216px;
-}
-
-.blog-articles-slider-wrapper {
-  display: none;
-}
-
-.blog-articles-info-block {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 32px;
-  margin-bottom: 80px;
-}
-
-.blog-articles-info-block-item {
-  display: flex;
-  flex-direction: column;
-  width: 384px;
-  border-radius: 24px;
-  cursor: pointer;
-  box-shadow: 0px 0px 68px 0px #0000000D inset,
-  0px 4px 4px 0px #0000000D inset;
-  background-color: #FFFFFF14;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(48px);
-}
-
-.blog-articles-info-block-item:hover {
-  background-color: #0000003D;
-  box-shadow: 0px 10px 10px 0px #FFFFFF1A inset,
-  0px 10px 32px 0px #7AB8FF40;
-}
-
-.blog-articles-info-block-item img {
-  height: 280px;
-  border-radius: 24px;
-}
-
-.blog-articles-item-info-block {
-  padding: 24px;
-  gap: 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-articles-item-info-block p {
-  margin: 0;
-}
-
-.blog-articles-item-date {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  text-align: right;
-}
-
-.blog-articles-item-info-text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.blog-articles-item-question {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22.32px;
-  color: #FFFFFF;
-}
-
-.blog-articles-item-answer {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24.38px;
-  margin-top: 12px;
-  color: #FFFFFF;
-}
-
-.blog-articles-read-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.blog-articles-read-block p {
-  font-family: Unbounded;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24.8px;
-  color: rgba(122, 184, 255, 1);
-}
-
-.blog-articles-read-block img {
-  height: 64px;
-  width: auto;
 }
 
 /* Common questions section */
@@ -1437,13 +1138,6 @@
     margin-top: 0;
   }
 
-  /* Repurchased cars section */
-
-  .repurchased-cars-slider-block-item img {
-    height: 230px;
-    width: 307px;
-  }
-
   /* Cities section */
 
   .cities-text-block {
@@ -1476,29 +1170,6 @@
     width: 126px;
     height: 97px;
     left: 10%;
-  }
-
-  /* Blog articles section */
-
-  .blog-articles-item-info-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 24px;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 240px;
-  }
-
-  .blog-articles-read-block img {
-    height: 64px;
-  }
-
-  .blog-articles-item-answer {
-    font-size: 17px;
-    line-height: 23px;
   }
 
   /* Common questions section */
@@ -1747,37 +1418,6 @@
     height: 30px;
   }
 
-  /* Repurchased cars section */
-
-  .repurchased-cars {
-    padding-top: 80px;
-    padding-left: 92px;
-    padding-right: 92px;
-  }
-
-  .repurchased-cars-slider-block {
-    justify-content: space-evenly;
-  }
-
-  .repurchased-cars-slider-block-item img {
-    height: 230px;
-    width: 307px;
-  }
-
-  .repurchased-cars-info-block {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  .repurchased-cars-info-block p {
-    margin-bottom: 10px;
-  }
-
-  .repurchased-cars-info-block span {
-    font-size: 16px;
-    line-height: 19px;
-  }
-
   /* Cities section */
 
   .cities {
@@ -1826,60 +1466,6 @@
     width: 106px;
     height: 77px;
     left: 5%;
-  }
-
-  /* Blog articles section */
-
-  .blog-articles {
-    padding-top: 80px;
-    padding-left: 92px;
-    padding-right: 92px;
-  }
-
-  .blog-articles-info-block {
-    gap: 24px;
-    margin-bottom: 40px;
-  }
-
-  .blog-articles-item-info-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 16px;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 200px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19px;
-    margin: 0;
-    margin-top: 10px;
-  }
-
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19px;
-    margin-top: 8px;
-  }
-
-  .blog-articles-item-question {
-    margin-bottom: 10px;
-  }
-
-  .blog-articles-read-block img {
-    height: 36px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 18px;
   }
 
   /* Common questions section */
@@ -2321,84 +1907,6 @@
     margin-bottom: 32px;
   }
 
-  /* Repurchased cars section */
-
-  .repurchased-cars {
-    padding: 60px 32px 0px;
-  }
-
-  .repurchased-cars-slider-wrapper {
-    position: relative;
-    display: none;
-  }
-  
-  .repurchased-cars-slider-wrapper-mobile {
-    display: block;
-  }
-
-  .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .repurchased-cars-slider-block {
-    justify-content: center;
-    margin-bottom: 0;
-    flex-direction: row !important;
-  }
-
-  .repurchased-cars-slider-block-item {
-    width: auto;
-  }
-
-  .repurchased-cars-slider-block-item img {
-    height: 245px;
-    width: 300px;
-  }
-
-  .repurchased-cars-info-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .repurchased-cars-info-block span {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .repurchased-cars-slider-mobile .slick-slide:not(.slick-center) {
-    filter: blur(4px);
-    transition: filter 0.3s ease-in-out;
-  }
-
-  .repurchased-cars-slider-mobile .slick-center {
-    filter: none;
-  }
-
-  .slick-dots li {
-    width: 10px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 6px;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border: none;
-  }
-
-  .slick-dots li button:before {
-    content: none;
-  }
-
-  .slick-dots li.slick-active {
-    width: 60px;
-    background-color: rgba(122, 184, 255, 1);
-  }
-
-  .repurchased-cars-slider-mobile .slick-track {
-    min-height: 400px !important;
-  }
-
   /* Cities section */
 
   .cities {
@@ -2494,80 +2002,6 @@
     top: 12%;
     background-color: rgba(122, 184, 255, 1);
     border-radius: 4px;
-  }
-
-  /* Blog articles section */
-
-  .blog-articles {
-    padding: 60px 32px 0px;
-  }
-
-  .blog-articles-info-block {
-    display: none;
-  }
-
-  .blog-articles-slider-wrapper {
-    position: relative;
-    display: block;
-  }
-
-  .blog-articles-cars-slider {
-    margin-bottom: 50px !important;
-  }
-
-  .slick-track {
-    min-height: 500px !important;
-    display: flex;
-    align-items: center;
-  }
-
-  .blog-articles-cars-slider-block {
-    height: 500px;
-    margin-bottom: 20px;
-  }
-
-  .blog-articles-info-block-item {
-    min-width: 260px;
-    width: 50vw;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 190px;
-    object-fit: cover;
-  }
-
-  .blog-articles-item-info-block {
-    padding: 16px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-item-question {
-    font-size: 16px;
-    line-height: 19.84px;
-    min-height: 59px;
-  }
-  
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .blog-articles-read-block img {
-    height: 32px;
-    width: auto;
   }
 
   /* Common questions section */
@@ -3235,73 +2669,6 @@
     margin-bottom: 64px;
   }
 
-  /* Repurchased cars section */
-
-  .repurchased-cars {
-    padding: 80px 16px 16px;
-  }
-
-  .repurchased-cars-slider-wrapper {
-    position: relative;
-    display: none;
-  }
-  
-  .repurchased-cars-slider-wrapper-mobile {
-    display: block;
-  }
-
-  .repurchased-cars-slider-block {
-    justify-content: center;
-    margin-bottom: 0px;
-  }
-
-  .repurchased-cars-slider-block-item img {
-    height: 195px;
-    width: 260px;
-  }
-
-  .repurchased-cars-info-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .repurchased-cars-info-block span {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .repurchased-cars-slider-mobile .slick-slide:not(.slick-center) {
-    filter: blur(4px);
-    transition: filter 0.3s ease-in-out;
-  }
-
-  .repurchased-cars-slider-mobile .slick-center {
-    filter: none;
-  }
-
-  .slick-dots li {
-    width: 10px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 6px;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border: none;
-  }
-
-  .slick-dots li button:before {
-    content: none;
-  }
-
-  .slick-dots li.slick-active {
-    width: 60px;
-    background-color: rgba(122, 184, 255, 1);
-  }
-
-  .repurchased-cars-slider-mobile .slick-track {
-    min-height: 620px !important;
-  }
-
   /* Cities section */
 
   .cities {
@@ -3406,81 +2773,7 @@
   /* Blog articles section */
 
   .blog-articles {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .blog-articles-info-block {
-    display: none;
-  }
-
-  .blog-articles-slider-wrapper {
-    position: relative;
-    display: block;
-  }
-
-  .blog-articles-cars-slider {
-    margin-bottom: 45px !important;
-  }
-
-  .blog-articles-cars-slider .slick-track {
-    min-height: 500px !important;
-  }
-
-  .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    height: auto !important;
-  }
-
-  .blog-articles-cars-slider-block {
-    height: 500px;
-  }
-
-  .blog-articles-info-block-item {
-    min-width: 260px;
-    width: 70vw;
-  }
-
-  .blog-articles-info-block-item img {
-    height: 190px;
-    object-fit: cover;
-  }
-
-  .blog-articles-item-info-block {
-    padding: 16px;
-  }
-
-  .blog-articles-item-date {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-item-question {
-    font-size: 16px;
-    line-height: 19.84px;
-    min-height: 59px;
-  }
-  
-  .blog-articles-item-answer {
-    font-size: 16px;
-    line-height: 19.5px;
-  }
-
-  .blog-articles-read-block {
-    align-items: center;
-  }
-
-  .blog-articles-read-block p {
-    font-size: 16px;
-    line-height: 19.84px;
-  }
-  
-  .blog-articles-read-block img {
-    height: 32px;
-    width: auto;
+    padding: 10px 16px 0 !important; 
   }
 
   /* Common questions section */
