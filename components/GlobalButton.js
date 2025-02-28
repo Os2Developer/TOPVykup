@@ -28,10 +28,24 @@ class GlobalButton extends HTMLElement {
     const disableAnimation = this.getAttribute('disable-animation') === 'true';
     const alignSelf = this.getAttribute('alignSelf');
     const openPopUp = this.getAttribute('openPopUp') === 'true';
-  
+    const whiteShadow = this.getAttribute('whiteShadow') === 'true';
+
+    const boxShadow = whiteShadow
+    ? '0px 10px 32px 0px #E3EAF140, 0px 0px 10px 0px #FFFFFF1A inset'
+    : '0px 10px 16px 0px rgba(122, 184, 255, 0.25), 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset';
+
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="../css/styles.css">
-      <a class="global-btn" ${href ? `href="${href}"` : ''} style="color: ${textColor}; --bg-color: ${bgColor}; ${width ? `width: ${width};` : ''} ${customId ? `id=${customId}` : ''}">
+      <a
+        class="global-btn" ${href ? `href="${href}"` : ''}
+        style="
+          color: ${textColor};
+          --bg-color: ${bgColor};
+          ${width ? `width: ${width};` : ''}
+          ${customId ? `id=${customId};` : ''}
+          box-shadow: ${boxShadow};
+        "
+      >
         <span>${text}</span>
         <img src="${imgSrc}" alt="button-arrow">
       </a>

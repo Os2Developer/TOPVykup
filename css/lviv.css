@@ -1800,7 +1800,7 @@ p { margin: 0; }
     height: 403px;
     position: absolute;
     bottom: -15%;
-    right: -5%;
+    right: -2%;
     z-index: 1;
   }
 
@@ -1809,7 +1809,7 @@ p { margin: 0; }
     border-bottom-left-radius: 24px;
     width: 290px;
     height: 403px;
-    margin-right: -5%;
+    margin-right: -2%;
   }
 
   /* Editor group section */
@@ -2016,7 +2016,6 @@ p { margin: 0; }
   }
 
   .step-card {
-    min-width: 319px;
     width: auto;
     min-height: auto;
     height: 88px;
@@ -2266,6 +2265,7 @@ p { margin: 0; }
     align-items: center;
     justify-content: center;
     display: flex;
+    overflow: hidden;
   }
 
   .sell-today-content {
@@ -2295,7 +2295,7 @@ p { margin: 0; }
     height: 293px;
     position: absolute;
     bottom: -15%;
-    right: -3%;
+    right: -5%;
     z-index: 1;
   }
 
@@ -2304,7 +2304,7 @@ p { margin: 0; }
     border-bottom-left-radius: 24px;
     width: 260px;
     height: 263px;
-    margin-right: -3%;
+    margin-right: -5%;
   }
 
   /* Editor group section */

@@ -609,7 +609,7 @@ p { margin: 0; }
     padding: 106px 16px 0;
     flex-direction: column;
     justify-content: flex-start;
-    height: 85vh;
+    height: auto;
   }
 
   .hero-content {
@@ -695,7 +695,7 @@ p { margin: 0; }
   /* Contacts addresses section */
 
   .contacts-addresses {
-    padding: 0 16px;
+    padding: 30px 16px 0px;
   }
 
   .contacts-addresses-white-block {
@@ -775,7 +775,8 @@ p { margin: 0; }
     position: relative;
     width: 100%;
     padding-top: 0;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+    background-color: #15151857;
   }
 
   .contacts-working-info-image-mobile img {
@@ -791,6 +792,6 @@ p { margin: 0; }
     border-radius: 4px;
     background-color: #E3EAF1;
     left: 0;
-    bottom: -30%;
+    bottom: -4%;
   }
 }
