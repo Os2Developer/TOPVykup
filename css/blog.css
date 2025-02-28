@@ -89,7 +89,7 @@ p { margin: 0; }
   color: rgba(255, 255, 255, 1);
 }
 
-.header {
+.hero {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -98,7 +98,7 @@ p { margin: 0; }
   margin-bottom: 40px;
 }
 
-.header h1 {
+.hero h1 {
   font-family: Unbounded;
   font-weight: 400;
   font-size: 56px;
@@ -106,7 +106,7 @@ p { margin: 0; }
   color: #FFFFFF;
 }
 
-.header span {
+.hero span {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
@@ -366,12 +366,12 @@ blog-item {
 }
 
 @media (max-width: 1439px) and (min-width: 1280px) {
-  .header h1 {
+  .hero h1 {
     font-size: 50px;
     line-height: 65px;
   }
 
-  .header span {
+  .hero span {
     font-size: 20px;
     line-height: 28px;
     max-width: 740px;
@@ -417,12 +417,12 @@ blog-item {
     left: -4%;
   }
 
-  .header h1 {
+  .hero h1 {
     font-size: 38px;
     line-height: 50px;
   }
 
-  .header span {
+  .hero span {
     font-size: 20px;
     line-height: 28px;
     max-width: 740px;
@@ -534,16 +534,16 @@ blog-item {
     line-height: 14px;
   }
 
-  .header {
+  .hero {
     gap: 24px;
   }
 
-  .header h1 {
+  .hero h1 {
     font-size: 28px;
     line-height: 40px;
   }
 
-  .header span {
+  .hero span {
     font-size: 18px;
     line-height: 25px;
     max-width: 640px;
@@ -676,16 +676,16 @@ blog-item {
     line-height: 14px;
   }
 
-  .header {
+  .hero {
     gap: 40px;
   }
 
-  .header h1 {
+  .hero h1 {
     font-size: 24px;
     line-height: 29px;
   }
 
-  .header span {
+  .hero span {
     font-size: 16px;
     line-height: 19px;
     max-width: 640px;

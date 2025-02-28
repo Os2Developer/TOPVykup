@@ -142,7 +142,7 @@
 .footer-to-top-button {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   width: 151px;
   height: 40px;
   cursor: pointer;
@@ -182,6 +182,35 @@
   background-color: #7AB8FF;
 }
 
+.sticky-to-top-button {
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  width: 151px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky-to-top-button p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+.sticky-to-top-button img {
+  width: 40px;
+  height: 40px;
+}
+
 @media (max-width: 1278px) and (min-width: 1024px) {
 
   .app-footer {
@@ -191,7 +220,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  
 
   .footer-logo-block img {
     width: 50px;
@@ -205,6 +233,17 @@
     line-height: 19px;
     color: rgba(255, 255, 255, 1);
     margin: 0;
+  }
+
+  .sticky-to-top-button {
+    width: 140px;
+    height: 35px;
+    bottom: 3%;
+  }
+  
+  .sticky-to-top-button img {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -327,10 +366,43 @@
     word-wrap: break-word;
     width: 100%;
   }
+
+  .sticky-to-top-button {
+    bottom: 3%;
+    right: 3%;
+    width: 90px;
+    height: 40px;
+  }
+
+  .sticky-to-top-button p {
+    display: none;
+  }
+
+  .sticky-to-top-button img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 768px) {
   .footer-container { 
     padding-top: 0;
+  }
+
+
+  .sticky-to-top-button {
+    bottom: 3%;
+    right: 5%;
+    width: auto;
+    height: 35px;
+  }
+
+  .sticky-to-top-button p {
+    display: none;
+  }
+
+  .sticky-to-top-button img {
+    width: 35px;
+    height: 35px;
   }
 }

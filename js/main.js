@@ -43,7 +43,6 @@ const updateButtonWidths = (configs) => {
   });
 };
 
-
 document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
     loadComponent('header', '../components/header.html'),
@@ -52,11 +51,39 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // FOOTER
   const toTopButton = document.querySelector('.footer-to-top-button');
-  if (toTopButton) {
-    toTopButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+  const stickyToTopButton = document.querySelector('.sticky-to-top-button');
+
+  function updateStickyButtonVisibility() {
+    const hero = document.querySelector('.hero');
+    if (hero && stickyToTopButton) {
+      const heroOutOfView = hero.getBoundingClientRect().bottom < 0;
+      const isSmallScreen = window.innerWidth <= 1023;
+
+      if (isSmallScreen) {
+        stickyToTopButton.style.display = heroOutOfView ? 'flex' : 'none';
+      } else if (toTopButton) {
+        const originalButtonOutOfView = toTopButton.getBoundingClientRect().top >= window.innerHeight;
+        if (heroOutOfView && originalButtonOutOfView) {
+          stickyToTopButton.style.display = 'flex';
+        } else {
+          stickyToTopButton.style.display = 'none';
+        }
+      }
+    }
   }
+
+  window.addEventListener('scroll', updateStickyButtonVisibility);
+  window.addEventListener('resize', updateStickyButtonVisibility);
+
+  updateStickyButtonVisibility();
+
+  [toTopButton, stickyToTopButton].forEach(button => {
+    if (button) {
+      button.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  });
 
   // HEADER
   const citiesArrowText = document.querySelector('.cities-arrow-text');
